@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-BioGenesis/Pods-BioGenesis-frameworks.sh
+${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework
+${BUILT_PRODUCTS_DIR}/Purchases/Purchases.framework
+${BUILT_PRODUCTS_DIR}/PurchasesCoreSwift/PurchasesCoreSwift.framework

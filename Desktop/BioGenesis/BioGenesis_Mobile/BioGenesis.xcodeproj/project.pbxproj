@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39A95AE23871B2859EA8E6B1 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369EF82BBDF1F3CF07BA94E /* AmplifyModels.swift */; };
+		3EBCDFE038554179124614B6 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B96D628F1BB74062D90D8F64 /* awsconfiguration.json */; };
+		416554CCB97BD31A9781E159 /* Therapeutics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8AC92E7E65F8F90C6D0F07 /* Therapeutics.swift */; };
+		4814D8E5478725657C53205D /* Symptoms+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ADFA34FBA3976B03BE967 /* Symptoms+Schema.swift */; };
+		5AA00FE48104C20974DA5A08 /* Profile+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C7B1E22A58645105D5825B /* Profile+Schema.swift */; };
+		5B55FD2428A69FEB0054BF1E /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5B55FD2328A69FEB0054BF1E /* AWSAPIPlugin */; };
+		5B55FD2628A69FEB0054BF1E /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5B55FD2528A69FEB0054BF1E /* AWSCognitoAuthPlugin */; };
+		5B55FD2828A69FEB0054BF1E /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5B55FD2728A69FEB0054BF1E /* AWSDataStorePlugin */; };
+		5B55FD2A28A69FEB0054BF1E /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 5B55FD2928A69FEB0054BF1E /* Amplify */; };
+		5B55FD2C28A6BE250054BF1E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B55FD2B28A6BE250054BF1E /* LoginVC.swift */; };
+		5B55FD2E28A6BE4C0054BF1E /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B55FD2D28A6BE4C0054BF1E /* SignupVC.swift */; };
+		5B55FD3028A7FEF30054BF1E /* Therapeutics+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B55FD2F28A7FEF30054BF1E /* Therapeutics+Extensions.swift */; };
+		5B55FD3228A8F2A10054BF1E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B55FD3128A8F2A00054BF1E /* SettingsVC.swift */; };
+		5B55FD3628A916880054BF1E /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B55FD3528A916880054BF1E /* Auth.swift */; };
+		5B55FD3828A91BBA0054BF1E /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B55FD3728A91BBA0054BF1E /* Onboarding.storyboard */; };
+		5B5B9114287EEAC100178C15 /* AddProtocolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B9113287EEAC000178C15 /* AddProtocolVC.swift */; };
+		5B5B9116287EF68700178C15 /* AddSymptomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B9115287EF68700178C15 /* AddSymptomVC.swift */; };
+		5B61382828AD0F590095D620 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61382728AD0F590095D620 /* DBManager.swift */; };
+		5B860A25289BEDEE008D597F /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A24289BEDEE008D597F /* ProfileData.swift */; };
+		5B860A27289BF30E008D597F /* ImmunizationDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A26289BF30E008D597F /* ImmunizationDetailsVC.swift */; };
+		5B860A29289BF32C008D597F /* AllergyDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A28289BF32C008D597F /* AllergyDetailsVC.swift */; };
+		5B860A2B289BF573008D597F /* AllergieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A2A289BF573008D597F /* AllergieData.swift */; };
+		5B860A2D289BF5A9008D597F /* HumanAPIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A2C289BF5A9008D597F /* HumanAPIFunctions.swift */; };
+		5B860A2F289D41DE008D597F /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A2E289D41DE008D597F /* Playground.swift */; };
+		5B8AF0B9287E1D6200C32DB1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8AF0B8287E1D6200C32DB1 /* TabBarController.swift */; };
+		5B8AF0BB287ED37700C32DB1 /* WeekCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8AF0BA287ED37700C32DB1 /* WeekCalendarCell.swift */; };
+		5BBBF2AC287C6B6900B47AF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBBF2AB287C6B6900B47AF6 /* AppDelegate.swift */; };
+		5BBBF2AE287C6B6900B47AF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBBF2AD287C6B6900B47AF6 /* SceneDelegate.swift */; };
+		5BBBF2B0287C6B6900B47AF6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBBF2AF287C6B6900B47AF6 /* HomeVC.swift */; };
+		5BBBF2B3287C6B6900B47AF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBBF2B1287C6B6900B47AF6 /* Main.storyboard */; };
+		5BBBF2B5287C6B6F00B47AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBBF2B4287C6B6F00B47AF6 /* Assets.xcassets */; };
+		5BBBF2B8287C6B6F00B47AF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBBF2B6287C6B6F00B47AF6 /* LaunchScreen.storyboard */; };
+		5BBC5D7028857CF600F0A2AF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC5D6F28857CF600F0A2AF /* Extensions.swift */; };
+		5BBC5D8F2887FF9000F0A2AF /* ECheckupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC5D8E2887FF9000F0A2AF /* ECheckupVC.swift */; };
+		5BBC5D93289A71A700F0A2AF /* BiomarkersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC5D92289A71A700F0A2AF /* BiomarkersData.swift */; };
+		5BC09B0528856DB0008FAC9E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC09B0428856DB0008FAC9E /* Fonts.swift */; };
+		5BC2A27E287E0EF30011CF3B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A27D287E0EF30011CF3B /* Global.swift */; };
+		5BDE793B2881615900923579 /* InfermedicaAPIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE793A2881615900923579 /* InfermedicaAPIFunctions.swift */; };
+		5BDE793F288161FA00923579 /* DrugBankAPIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE793E288161FA00923579 /* DrugBankAPIFunctions.swift */; };
+		5BDE794328841A5D00923579 /* HealthWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE794228841A5D00923579 /* HealthWalletVC.swift */; };
+		5BDE79452884318B00923579 /* BloodDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE79442884318B00923579 /* BloodDetailsVC.swift */; };
+		5BDE794C2884321E00923579 /* BodyDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE794B2884321E00923579 /* BodyDetailsVC.swift */; };
+		5BDE794E2884322E00923579 /* ProfileDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE794D2884322E00923579 /* ProfileDetailsVC.swift */; };
+		5BDE79502884324900923579 /* GeneticDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE794F2884324900923579 /* GeneticDetailsVC.swift */; };
+		5BDE79522884327800923579 /* SymptomDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE79512884327800923579 /* SymptomDetailsVC.swift */; };
+		5BDE79542884328E00923579 /* ProtocolsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE79532884328E00923579 /* ProtocolsDetailsVC.swift */; };
+		AC6C2FC87E1938F9FDFF9ABC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C5E1FB8261DBA6CD5C9EFCA5 /* amplifyconfiguration.json */; };
+		B6A0A418BBCCB8E3D9EB304D /* Pods_BioGenesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0919510ACE3E777EBD14A308 /* Pods_BioGenesis.framework */; };
+		CD990DC7020A92A85B9B3B7C /* Therapeutics+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8955D882FA366A3188D80B /* Therapeutics+Schema.swift */; };
+		E346D582EEC7FC56001FB9AD /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B8E67ACCDE92565AED923 /* Profile.swift */; };
+		F072CC741761F8FCC28A56EC /* Symptoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21FC64DDAD14462F5D214A8 /* Symptoms.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08C7B1E22A58645105D5825B /* Profile+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Profile+Schema.swift"; path = "amplify/generated/models/Profile+Schema.swift"; sourceTree = "<group>"; };
+		0919510ACE3E777EBD14A308 /* Pods_BioGenesis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioGenesis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8955D882FA366A3188D80B /* Therapeutics+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Therapeutics+Schema.swift"; path = "amplify/generated/models/Therapeutics+Schema.swift"; sourceTree = "<group>"; };
+		5B55FD2B28A6BE250054BF1E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5B55FD2D28A6BE4C0054BF1E /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		5B55FD2F28A7FEF30054BF1E /* Therapeutics+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Therapeutics+Extensions.swift"; sourceTree = "<group>"; };
+		5B55FD3128A8F2A00054BF1E /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		5B55FD3528A916880054BF1E /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		5B55FD3728A91BBA0054BF1E /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		5B5B9113287EEAC000178C15 /* AddProtocolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProtocolVC.swift; sourceTree = "<group>"; };
+		5B5B9115287EF68700178C15 /* AddSymptomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSymptomVC.swift; sourceTree = "<group>"; };
+		5B61382728AD0F590095D620 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		5B860A24289BEDEE008D597F /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		5B860A26289BF30E008D597F /* ImmunizationDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmunizationDetailsVC.swift; sourceTree = "<group>"; };
+		5B860A28289BF32C008D597F /* AllergyDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyDetailsVC.swift; sourceTree = "<group>"; };
+		5B860A2A289BF573008D597F /* AllergieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergieData.swift; sourceTree = "<group>"; };
+		5B860A2C289BF5A9008D597F /* HumanAPIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanAPIFunctions.swift; sourceTree = "<group>"; };
+		5B860A2E289D41DE008D597F /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
+		5B8AF0B8287E1D6200C32DB1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		5B8AF0BA287ED37700C32DB1 /* WeekCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalendarCell.swift; sourceTree = "<group>"; };
+		5BBBF2A8287C6B6900B47AF6 /* BioGenesis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioGenesis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BBBF2AB287C6B6900B47AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BBBF2AD287C6B6900B47AF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5BBBF2AF287C6B6900B47AF6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5BBBF2B2287C6B6900B47AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BBBF2B4287C6B6F00B47AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BBBF2B7287C6B6F00B47AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BBBF2B9287C6B6F00B47AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BBC5D6F28857CF600F0A2AF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5BBC5D8E2887FF9000F0A2AF /* ECheckupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECheckupVC.swift; sourceTree = "<group>"; };
+		5BBC5D92289A71A700F0A2AF /* BiomarkersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomarkersData.swift; sourceTree = "<group>"; };
+		5BC09B0428856DB0008FAC9E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		5BC2A27D287E0EF30011CF3B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		5BDE793A2881615900923579 /* InfermedicaAPIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfermedicaAPIFunctions.swift; sourceTree = "<group>"; };
+		5BDE793E288161FA00923579 /* DrugBankAPIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugBankAPIFunctions.swift; sourceTree = "<group>"; };
+		5BDE794228841A5D00923579 /* HealthWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthWalletVC.swift; sourceTree = "<group>"; };
+		5BDE79442884318B00923579 /* BloodDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodDetailsVC.swift; sourceTree = "<group>"; };
+		5BDE794B2884321E00923579 /* BodyDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyDetailsVC.swift; sourceTree = "<group>"; };
+		5BDE794D2884322E00923579 /* ProfileDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsVC.swift; sourceTree = "<group>"; };
+		5BDE794F2884324900923579 /* GeneticDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticDetailsVC.swift; sourceTree = "<group>"; };
+		5BDE79512884327800923579 /* SymptomDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomDetailsVC.swift; sourceTree = "<group>"; };
+		5BDE79532884328E00923579 /* ProtocolsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsDetailsVC.swift; sourceTree = "<group>"; };
+		5C5B8E67ACCDE92565AED923 /* Profile.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Profile.swift; path = amplify/generated/models/Profile.swift; sourceTree = "<group>"; };
+		66328802D9D8422ADCE9C1D3 /* Pods-BioGenesis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioGenesis.debug.xcconfig"; path = "Target Support Files/Pods-BioGenesis/Pods-BioGenesis.debug.xcconfig"; sourceTree = "<group>"; };
+		B96D628F1BB74062D90D8F64 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		BC8ADFA34FBA3976B03BE967 /* Symptoms+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Symptoms+Schema.swift"; path = "amplify/generated/models/Symptoms+Schema.swift"; sourceTree = "<group>"; };
+		C21FC64DDAD14462F5D214A8 /* Symptoms.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Symptoms.swift; path = amplify/generated/models/Symptoms.swift; sourceTree = "<group>"; };
+		C369EF82BBDF1F3CF07BA94E /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		C5E1FB8261DBA6CD5C9EFCA5 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		CA0B820AB3B9E6915CE60050 /* Pods-BioGenesis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioGenesis.release.xcconfig"; path = "Target Support Files/Pods-BioGenesis/Pods-BioGenesis.release.xcconfig"; sourceTree = "<group>"; };
+		FB8AC92E7E65F8F90C6D0F07 /* Therapeutics.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Therapeutics.swift; path = amplify/generated/models/Therapeutics.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BBBF2A5287C6B6900B47AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B55FD2428A69FEB0054BF1E /* AWSAPIPlugin in Frameworks */,
+				5B55FD2A28A69FEB0054BF1E /* Amplify in Frameworks */,
+				B6A0A418BBCCB8E3D9EB304D /* Pods_BioGenesis.framework in Frameworks */,
+				5B55FD2628A69FEB0054BF1E /* AWSCognitoAuthPlugin in Frameworks */,
+				5B55FD2828A69FEB0054BF1E /* AWSDataStorePlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FF01B7CA41C4A67574F0000 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66328802D9D8422ADCE9C1D3 /* Pods-BioGenesis.debug.xcconfig */,
+				CA0B820AB3B9E6915CE60050 /* Pods-BioGenesis.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5BBBF29F287C6B6900B47AF6 = {
+			isa = PBXGroup;
+			children = (
+				5BBBF2AA287C6B6900B47AF6 /* BioGenesis */,
+				5BBBF2A9287C6B6900B47AF6 /* Products */,
+				1FF01B7CA41C4A67574F0000 /* Pods */,
+				97A8DF4C39D3595438EFC17B /* Frameworks */,
+				8E57C5E3F3290DFEC286A40A /* AmplifyConfig */,
+				C7706460B36CA08A0968200D /* AmplifyModels */,
+			);
+			sourceTree = "<group>";
+		};
+		5BBBF2A9287C6B6900B47AF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BBBF2A8287C6B6900B47AF6 /* BioGenesis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BBBF2AA287C6B6900B47AF6 /* BioGenesis */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE794128840C7400923579 /* Elements */,
+				5BDE79402881622D00923579 /* ViewCells */,
+				5BDE793D2881617F00923579 /* Misc */,
+				5BDE793C2881616300923579 /* Data Structures */,
+				5BDE7939288160B500923579 /* ViewControllers */,
+				5BBBF2AD287C6B6900B47AF6 /* SceneDelegate.swift */,
+				5BBBF2AB287C6B6900B47AF6 /* AppDelegate.swift */,
+				5BBBF2B1287C6B6900B47AF6 /* Main.storyboard */,
+				5B55FD3728A91BBA0054BF1E /* Onboarding.storyboard */,
+				5BBBF2B4287C6B6F00B47AF6 /* Assets.xcassets */,
+				5BBBF2B6287C6B6F00B47AF6 /* LaunchScreen.storyboard */,
+				5BBBF2B9287C6B6F00B47AF6 /* Info.plist */,
+				5B860A2E289D41DE008D597F /* Playground.swift */,
+				5B55FD2F28A7FEF30054BF1E /* Therapeutics+Extensions.swift */,
+			);
+			path = BioGenesis;
+			sourceTree = "<group>";
+		};
+		5BBC5D90289A716700F0A2AF /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE793E288161FA00923579 /* DrugBankAPIFunctions.swift */,
+				5BDE793A2881615900923579 /* InfermedicaAPIFunctions.swift */,
+				5B860A2C289BF5A9008D597F /* HumanAPIFunctions.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		5BBC5D91289A717C00F0A2AF /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				5BBC5D92289A71A700F0A2AF /* BiomarkersData.swift */,
+				5B860A24289BEDEE008D597F /* ProfileData.swift */,
+				5B860A2A289BF573008D597F /* AllergieData.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		5BDE7939288160B500923579 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE79462884319100923579 /* WalletElements */,
+				5BBBF2AF287C6B6900B47AF6 /* HomeVC.swift */,
+				5BDE794228841A5D00923579 /* HealthWalletVC.swift */,
+				5B5B9113287EEAC000178C15 /* AddProtocolVC.swift */,
+				5B5B9115287EF68700178C15 /* AddSymptomVC.swift */,
+				5BBC5D8E2887FF9000F0A2AF /* ECheckupVC.swift */,
+				5B55FD2B28A6BE250054BF1E /* LoginVC.swift */,
+				5B55FD2D28A6BE4C0054BF1E /* SignupVC.swift */,
+				5B55FD3128A8F2A00054BF1E /* SettingsVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5BDE793C2881616300923579 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				5BBC5D91289A717C00F0A2AF /* Internal */,
+				5BBC5D90289A716700F0A2AF /* APIs */,
+			);
+			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+		5BDE793D2881617F00923579 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				5BC2A27D287E0EF30011CF3B /* Global.swift */,
+				5BC09B0428856DB0008FAC9E /* Fonts.swift */,
+				5BBC5D6F28857CF600F0A2AF /* Extensions.swift */,
+				5B55FD3528A916880054BF1E /* Auth.swift */,
+				5B61382728AD0F590095D620 /* DBManager.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		5BDE79402881622D00923579 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				5B8AF0BA287ED37700C32DB1 /* WeekCalendarCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		5BDE794128840C7400923579 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				5B8AF0B8287E1D6200C32DB1 /* TabBarController.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		5BDE79462884319100923579 /* WalletElements */ = {
+			isa = PBXGroup;
+			children = (
+				5BDE79442884318B00923579 /* BloodDetailsVC.swift */,
+				5BDE794D2884322E00923579 /* ProfileDetailsVC.swift */,
+				5BDE794B2884321E00923579 /* BodyDetailsVC.swift */,
+				5BDE79532884328E00923579 /* ProtocolsDetailsVC.swift */,
+				5BDE79512884327800923579 /* SymptomDetailsVC.swift */,
+				5B860A26289BF30E008D597F /* ImmunizationDetailsVC.swift */,
+				5B860A28289BF32C008D597F /* AllergyDetailsVC.swift */,
+				5BDE794F2884324900923579 /* GeneticDetailsVC.swift */,
+			);
+			path = WalletElements;
+			sourceTree = "<group>";
+		};
+		8E57C5E3F3290DFEC286A40A /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				B96D628F1BB74062D90D8F64 /* awsconfiguration.json */,
+				C5E1FB8261DBA6CD5C9EFCA5 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		97A8DF4C39D3595438EFC17B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0919510ACE3E777EBD14A308 /* Pods_BioGenesis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7706460B36CA08A0968200D /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				C369EF82BBDF1F3CF07BA94E /* AmplifyModels.swift */,
+				08C7B1E22A58645105D5825B /* Profile+Schema.swift */,
+				5C5B8E67ACCDE92565AED923 /* Profile.swift */,
+				BC8ADFA34FBA3976B03BE967 /* Symptoms+Schema.swift */,
+				C21FC64DDAD14462F5D214A8 /* Symptoms.swift */,
+				4F8955D882FA366A3188D80B /* Therapeutics+Schema.swift */,
+				FB8AC92E7E65F8F90C6D0F07 /* Therapeutics.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BBBF2A7287C6B6900B47AF6 /* BioGenesis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BBBF2BC287C6B6F00B47AF6 /* Build configuration list for PBXNativeTarget "BioGenesis" */;
+			buildPhases = (
+				5C491B708AC6CF1B2532E7FB /* [CP] Check Pods Manifest.lock */,
+				5BBBF2A4287C6B6900B47AF6 /* Sources */,
+				5BBBF2A5287C6B6900B47AF6 /* Frameworks */,
+				5BBBF2A6287C6B6900B47AF6 /* Resources */,
+				266F19E1B02E8A69AAA58860 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BioGenesis;
+			packageProductDependencies = (
+				5B55FD2328A69FEB0054BF1E /* AWSAPIPlugin */,
+				5B55FD2528A69FEB0054BF1E /* AWSCognitoAuthPlugin */,
+				5B55FD2728A69FEB0054BF1E /* AWSDataStorePlugin */,
+				5B55FD2928A69FEB0054BF1E /* Amplify */,
+			);
+			productName = BioGenesis;
+			productReference = 5BBBF2A8287C6B6900B47AF6 /* BioGenesis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BBBF2A0287C6B6900B47AF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					5BBBF2A7287C6B6900B47AF6 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 5BBBF2A3287C6B6900B47AF6 /* Build configuration list for PBXProject "BioGenesis" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BBBF29F287C6B6900B47AF6;
+			packageReferences = (
+				5B55FD2228A69FEB0054BF1E /* XCRemoteSwiftPackageReference "amplify-ios" */,
+			);
+			productRefGroup = 5BBBF2A9287C6B6900B47AF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BBBF2A7287C6B6900B47AF6 /* BioGenesis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BBBF2A6287C6B6900B47AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BBBF2B8287C6B6F00B47AF6 /* LaunchScreen.storyboard in Resources */,
+				5BBBF2B5287C6B6F00B47AF6 /* Assets.xcassets in Resources */,
+				5BBBF2B3287C6B6900B47AF6 /* Main.storyboard in Resources */,
+				5B55FD3828A91BBA0054BF1E /* Onboarding.storyboard in Resources */,
+				3EBCDFE038554179124614B6 /* awsconfiguration.json in Resources */,
+				AC6C2FC87E1938F9FDFF9ABC /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		266F19E1B02E8A69AAA58860 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioGenesis/Pods-BioGenesis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioGenesis/Pods-BioGenesis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BioGenesis/Pods-BioGenesis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C491B708AC6CF1B2532E7FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioGenesis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BBBF2A4287C6B6900B47AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5B9116287EF68700178C15 /* AddSymptomVC.swift in Sources */,
+				5BC2A27E287E0EF30011CF3B /* Global.swift in Sources */,
+				5B860A2F289D41DE008D597F /* Playground.swift in Sources */,
+				5B8AF0BB287ED37700C32DB1 /* WeekCalendarCell.swift in Sources */,
+				5B860A25289BEDEE008D597F /* ProfileData.swift in Sources */,
+				5BDE794E2884322E00923579 /* ProfileDetailsVC.swift in Sources */,
+				5BDE793B2881615900923579 /* InfermedicaAPIFunctions.swift in Sources */,
+				5B8AF0B9287E1D6200C32DB1 /* TabBarController.swift in Sources */,
+				5BDE794328841A5D00923579 /* HealthWalletVC.swift in Sources */,
+				5B55FD2C28A6BE250054BF1E /* LoginVC.swift in Sources */,
+				5B860A2D289BF5A9008D597F /* HumanAPIFunctions.swift in Sources */,
+				5B860A2B289BF573008D597F /* AllergieData.swift in Sources */,
+				5B55FD2E28A6BE4C0054BF1E /* SignupVC.swift in Sources */,
+				5BBC5D7028857CF600F0A2AF /* Extensions.swift in Sources */,
+				5BBC5D8F2887FF9000F0A2AF /* ECheckupVC.swift in Sources */,
+				5BDE79452884318B00923579 /* BloodDetailsVC.swift in Sources */,
+				5BBBF2B0287C6B6900B47AF6 /* HomeVC.swift in Sources */,
+				5BDE79522884327800923579 /* SymptomDetailsVC.swift in Sources */,
+				5BDE794C2884321E00923579 /* BodyDetailsVC.swift in Sources */,
+				5B55FD3228A8F2A10054BF1E /* SettingsVC.swift in Sources */,
+				5BDE79542884328E00923579 /* ProtocolsDetailsVC.swift in Sources */,
+				5BBC5D93289A71A700F0A2AF /* BiomarkersData.swift in Sources */,
+				5B860A29289BF32C008D597F /* AllergyDetailsVC.swift in Sources */,
+				5BDE793F288161FA00923579 /* DrugBankAPIFunctions.swift in Sources */,
+				5BBBF2AC287C6B6900B47AF6 /* AppDelegate.swift in Sources */,
+				5B860A27289BF30E008D597F /* ImmunizationDetailsVC.swift in Sources */,
+				5B55FD3628A916880054BF1E /* Auth.swift in Sources */,
+				5BDE79502884324900923579 /* GeneticDetailsVC.swift in Sources */,
+				5B5B9114287EEAC100178C15 /* AddProtocolVC.swift in Sources */,
+				5BC09B0528856DB0008FAC9E /* Fonts.swift in Sources */,
+				5BBBF2AE287C6B6900B47AF6 /* SceneDelegate.swift in Sources */,
+				39A95AE23871B2859EA8E6B1 /* AmplifyModels.swift in Sources */,
+				5B55FD3028A7FEF30054BF1E /* Therapeutics+Extensions.swift in Sources */,
+				5AA00FE48104C20974DA5A08 /* Profile+Schema.swift in Sources */,
+				E346D582EEC7FC56001FB9AD /* Profile.swift in Sources */,
+				5B61382828AD0F590095D620 /* DBManager.swift in Sources */,
+				4814D8E5478725657C53205D /* Symptoms+Schema.swift in Sources */,
+				F072CC741761F8FCC28A56EC /* Symptoms.swift in Sources */,
+				CD990DC7020A92A85B9B3B7C /* Therapeutics+Schema.swift in Sources */,
+				416554CCB97BD31A9781E159 /* Therapeutics.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5BBBF2B1287C6B6900B47AF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BBBF2B2287C6B6900B47AF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BBBF2B6287C6B6F00B47AF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BBBF2B7287C6B6F00B47AF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BBBF2BA287C6B6F00B47AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BBBF2BB287C6B6F00B47AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BBBF2BD287C6B6F00B47AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66328802D9D8422ADCE9C1D3 /* Pods-BioGenesis.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4P8P42LX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BioGenesis/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BioGenesis;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.BioGenesis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5BBBF2BE287C6B6F00B47AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA0B820AB3B9E6915CE60050 /* Pods-BioGenesis.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4P8P42LX7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BioGenesis/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BioGenesis;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = none.BioGenesis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BBBF2A3287C6B6900B47AF6 /* Build configuration list for PBXProject "BioGenesis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BBBF2BA287C6B6F00B47AF6 /* Debug */,
+				5BBBF2BB287C6B6F00B47AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BBBF2BC287C6B6F00B47AF6 /* Build configuration list for PBXNativeTarget "BioGenesis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BBBF2BD287C6B6F00B47AF6 /* Debug */,
+				5BBBF2BE287C6B6F00B47AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B55FD2228A69FEB0054BF1E /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B55FD2328A69FEB0054BF1E /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B55FD2228A69FEB0054BF1E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		5B55FD2528A69FEB0054BF1E /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B55FD2228A69FEB0054BF1E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		5B55FD2728A69FEB0054BF1E /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B55FD2228A69FEB0054BF1E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSDataStorePlugin;
+		};
+		5B55FD2928A69FEB0054BF1E /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B55FD2228A69FEB0054BF1E /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5BBBF2A0287C6B6900B47AF6 /* Project object */;
+}

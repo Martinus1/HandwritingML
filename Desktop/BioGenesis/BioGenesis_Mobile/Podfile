@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'BioGenesis' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # General Pods
+  pod 'JTAppleCalendar', '~> 8.0.3'
+  pod 'Purchases'
+
+  # AWS Pods
+  #pod 'AWSCore'
+  #pod 'AWSCognito'
+  #pod 'AWSS3'
+
+
+end
