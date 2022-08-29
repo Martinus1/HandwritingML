@@ -1,0 +1,17 @@
+type Profile @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  data: AWSJSON
+  createdAt: AWSDateTime!
+}
+
+type Therapeutics @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  data: AWSJSON
+  createdAt: AWSDateTime!
+}
+
+type Symptoms @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  data: AWSJSON
+  createdAt: AWSDateTime!
+}

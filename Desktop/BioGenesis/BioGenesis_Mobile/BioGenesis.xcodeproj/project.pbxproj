@@ -27,7 +27,7 @@
 		5B61382828AD0F590095D620 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61382728AD0F590095D620 /* DBManager.swift */; };
 		5B860A25289BEDEE008D597F /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A24289BEDEE008D597F /* ProfileData.swift */; };
 		5B860A27289BF30E008D597F /* ImmunizationDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A26289BF30E008D597F /* ImmunizationDetailsVC.swift */; };
-		5B860A29289BF32C008D597F /* AllergyDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A28289BF32C008D597F /* AllergyDetailsVC.swift */; };
+		5B860A29289BF32C008D597F /* AllergyWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A28289BF32C008D597F /* AllergyWalletVC.swift */; };
 		5B860A2B289BF573008D597F /* AllergieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A2A289BF573008D597F /* AllergieData.swift */; };
 		5B860A2D289BF5A9008D597F /* HumanAPIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A2C289BF5A9008D597F /* HumanAPIFunctions.swift */; };
 		5B860A2F289D41DE008D597F /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B860A2E289D41DE008D597F /* Playground.swift */; };
@@ -47,12 +47,19 @@
 		5BDE793B2881615900923579 /* InfermedicaAPIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE793A2881615900923579 /* InfermedicaAPIFunctions.swift */; };
 		5BDE793F288161FA00923579 /* DrugBankAPIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE793E288161FA00923579 /* DrugBankAPIFunctions.swift */; };
 		5BDE794328841A5D00923579 /* HealthWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE794228841A5D00923579 /* HealthWalletVC.swift */; };
-		5BDE79452884318B00923579 /* BloodDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE79442884318B00923579 /* BloodDetailsVC.swift */; };
+		5BDE79452884318B00923579 /* BloodWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE79442884318B00923579 /* BloodWalletVC.swift */; };
 		5BDE794C2884321E00923579 /* BodyDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE794B2884321E00923579 /* BodyDetailsVC.swift */; };
-		5BDE794E2884322E00923579 /* ProfileDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE794D2884322E00923579 /* ProfileDetailsVC.swift */; };
+		5BDE794E2884322E00923579 /* ProfileWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE794D2884322E00923579 /* ProfileWalletVC.swift */; };
 		5BDE79502884324900923579 /* GeneticDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE794F2884324900923579 /* GeneticDetailsVC.swift */; };
-		5BDE79522884327800923579 /* SymptomDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE79512884327800923579 /* SymptomDetailsVC.swift */; };
-		5BDE79542884328E00923579 /* ProtocolsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE79532884328E00923579 /* ProtocolsDetailsVC.swift */; };
+		5BDE79522884327800923579 /* SymptomWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE79512884327800923579 /* SymptomWalletVC.swift */; };
+		5BDE79542884328E00923579 /* ProtocolsWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE79532884328E00923579 /* ProtocolsWalletVC.swift */; };
+		5BE78EB528AE6620006C01F0 /* BiogenesisAPIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE78EB428AE6620006C01F0 /* BiogenesisAPIFunctions.swift */; };
+		5BE78EB728AE8376006C01F0 /* TherapeuticProtocolsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE78EB628AE8376006C01F0 /* TherapeuticProtocolsVC.swift */; };
+		5BE78EBA28B24EA5006C01F0 /* ConditionDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE78EB928B24EA5006C01F0 /* ConditionDetailsVC.swift */; };
+		5BE78EBC28B272C5006C01F0 /* ProtocolDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE78EBB28B272C5006C01F0 /* ProtocolDetailsVC.swift */; };
+		5BFC909928BBD17800B9D1CE /* SearchProtocolsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC909828BBD17800B9D1CE /* SearchProtocolsVC.swift */; };
+		5BFC909D28BBD37B00B9D1CE /* YouVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC909C28BBD37B00B9D1CE /* YouVC.swift */; };
+		5BFC909F28BBD38C00B9D1CE /* SymptomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC909E28BBD38C00B9D1CE /* SymptomsVC.swift */; };
 		AC6C2FC87E1938F9FDFF9ABC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C5E1FB8261DBA6CD5C9EFCA5 /* amplifyconfiguration.json */; };
 		B6A0A418BBCCB8E3D9EB304D /* Pods_BioGenesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0919510ACE3E777EBD14A308 /* Pods_BioGenesis.framework */; };
 		CD990DC7020A92A85B9B3B7C /* Therapeutics+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8955D882FA366A3188D80B /* Therapeutics+Schema.swift */; };
@@ -75,7 +82,7 @@
 		5B61382728AD0F590095D620 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		5B860A24289BEDEE008D597F /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		5B860A26289BF30E008D597F /* ImmunizationDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmunizationDetailsVC.swift; sourceTree = "<group>"; };
-		5B860A28289BF32C008D597F /* AllergyDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyDetailsVC.swift; sourceTree = "<group>"; };
+		5B860A28289BF32C008D597F /* AllergyWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyWalletVC.swift; sourceTree = "<group>"; };
 		5B860A2A289BF573008D597F /* AllergieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergieData.swift; sourceTree = "<group>"; };
 		5B860A2C289BF5A9008D597F /* HumanAPIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanAPIFunctions.swift; sourceTree = "<group>"; };
 		5B860A2E289D41DE008D597F /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
@@ -97,12 +104,19 @@
 		5BDE793A2881615900923579 /* InfermedicaAPIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfermedicaAPIFunctions.swift; sourceTree = "<group>"; };
 		5BDE793E288161FA00923579 /* DrugBankAPIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugBankAPIFunctions.swift; sourceTree = "<group>"; };
 		5BDE794228841A5D00923579 /* HealthWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthWalletVC.swift; sourceTree = "<group>"; };
-		5BDE79442884318B00923579 /* BloodDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodDetailsVC.swift; sourceTree = "<group>"; };
+		5BDE79442884318B00923579 /* BloodWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodWalletVC.swift; sourceTree = "<group>"; };
 		5BDE794B2884321E00923579 /* BodyDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyDetailsVC.swift; sourceTree = "<group>"; };
-		5BDE794D2884322E00923579 /* ProfileDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsVC.swift; sourceTree = "<group>"; };
+		5BDE794D2884322E00923579 /* ProfileWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWalletVC.swift; sourceTree = "<group>"; };
 		5BDE794F2884324900923579 /* GeneticDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticDetailsVC.swift; sourceTree = "<group>"; };
-		5BDE79512884327800923579 /* SymptomDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomDetailsVC.swift; sourceTree = "<group>"; };
-		5BDE79532884328E00923579 /* ProtocolsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsDetailsVC.swift; sourceTree = "<group>"; };
+		5BDE79512884327800923579 /* SymptomWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomWalletVC.swift; sourceTree = "<group>"; };
+		5BDE79532884328E00923579 /* ProtocolsWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsWalletVC.swift; sourceTree = "<group>"; };
+		5BE78EB428AE6620006C01F0 /* BiogenesisAPIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiogenesisAPIFunctions.swift; sourceTree = "<group>"; };
+		5BE78EB628AE8376006C01F0 /* TherapeuticProtocolsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapeuticProtocolsVC.swift; sourceTree = "<group>"; };
+		5BE78EB928B24EA5006C01F0 /* ConditionDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionDetailsVC.swift; sourceTree = "<group>"; };
+		5BE78EBB28B272C5006C01F0 /* ProtocolDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolDetailsVC.swift; sourceTree = "<group>"; };
+		5BFC909828BBD17800B9D1CE /* SearchProtocolsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocolsVC.swift; sourceTree = "<group>"; };
+		5BFC909C28BBD37B00B9D1CE /* YouVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouVC.swift; sourceTree = "<group>"; };
+		5BFC909E28BBD38C00B9D1CE /* SymptomsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsVC.swift; sourceTree = "<group>"; };
 		5C5B8E67ACCDE92565AED923 /* Profile.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Profile.swift; path = amplify/generated/models/Profile.swift; sourceTree = "<group>"; };
 		66328802D9D8422ADCE9C1D3 /* Pods-BioGenesis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioGenesis.debug.xcconfig"; path = "Target Support Files/Pods-BioGenesis/Pods-BioGenesis.debug.xcconfig"; sourceTree = "<group>"; };
 		B96D628F1BB74062D90D8F64 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
@@ -184,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				5BDE793E288161FA00923579 /* DrugBankAPIFunctions.swift */,
+				5BE78EB428AE6620006C01F0 /* BiogenesisAPIFunctions.swift */,
 				5BDE793A2881615900923579 /* InfermedicaAPIFunctions.swift */,
 				5B860A2C289BF5A9008D597F /* HumanAPIFunctions.swift */,
 			);
@@ -203,11 +218,10 @@
 		5BDE7939288160B500923579 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5BFC909B28BBD1C000B9D1CE /* Tab Bar Controllers */,
+				5BFC909A28BBD1A100B9D1CE /* Add Data Controllers */,
+				5BE78EB828B24E80006C01F0 /* Detail Controllers */,
 				5BDE79462884319100923579 /* WalletElements */,
-				5BBBF2AF287C6B6900B47AF6 /* HomeVC.swift */,
-				5BDE794228841A5D00923579 /* HealthWalletVC.swift */,
-				5B5B9113287EEAC000178C15 /* AddProtocolVC.swift */,
-				5B5B9115287EF68700178C15 /* AddSymptomVC.swift */,
 				5BBC5D8E2887FF9000F0A2AF /* ECheckupVC.swift */,
 				5B55FD2B28A6BE250054BF1E /* LoginVC.swift */,
 				5B55FD2D28A6BE4C0054BF1E /* SignupVC.swift */,
@@ -256,16 +270,47 @@
 		5BDE79462884319100923579 /* WalletElements */ = {
 			isa = PBXGroup;
 			children = (
-				5BDE79442884318B00923579 /* BloodDetailsVC.swift */,
-				5BDE794D2884322E00923579 /* ProfileDetailsVC.swift */,
-				5BDE794B2884321E00923579 /* BodyDetailsVC.swift */,
-				5BDE79532884328E00923579 /* ProtocolsDetailsVC.swift */,
-				5BDE79512884327800923579 /* SymptomDetailsVC.swift */,
+				5BDE79442884318B00923579 /* BloodWalletVC.swift */,
+				5BDE794D2884322E00923579 /* ProfileWalletVC.swift */,
+				5BDE79512884327800923579 /* SymptomWalletVC.swift */,
+				5BDE79532884328E00923579 /* ProtocolsWalletVC.swift */,
+				5B860A28289BF32C008D597F /* AllergyWalletVC.swift */,
 				5B860A26289BF30E008D597F /* ImmunizationDetailsVC.swift */,
-				5B860A28289BF32C008D597F /* AllergyDetailsVC.swift */,
+				5BDE794B2884321E00923579 /* BodyDetailsVC.swift */,
 				5BDE794F2884324900923579 /* GeneticDetailsVC.swift */,
 			);
 			path = WalletElements;
+			sourceTree = "<group>";
+		};
+		5BE78EB828B24E80006C01F0 /* Detail Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BE78EB928B24EA5006C01F0 /* ConditionDetailsVC.swift */,
+				5BE78EBB28B272C5006C01F0 /* ProtocolDetailsVC.swift */,
+			);
+			path = "Detail Controllers";
+			sourceTree = "<group>";
+		};
+		5BFC909A28BBD1A100B9D1CE /* Add Data Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B5B9115287EF68700178C15 /* AddSymptomVC.swift */,
+				5BFC909828BBD17800B9D1CE /* SearchProtocolsVC.swift */,
+				5B5B9113287EEAC000178C15 /* AddProtocolVC.swift */,
+			);
+			path = "Add Data Controllers";
+			sourceTree = "<group>";
+		};
+		5BFC909B28BBD1C000B9D1CE /* Tab Bar Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BBBF2AF287C6B6900B47AF6 /* HomeVC.swift */,
+				5BE78EB628AE8376006C01F0 /* TherapeuticProtocolsVC.swift */,
+				5BFC909C28BBD37B00B9D1CE /* YouVC.swift */,
+				5BFC909E28BBD38C00B9D1CE /* SymptomsVC.swift */,
+				5BDE794228841A5D00923579 /* HealthWalletVC.swift */,
+			);
+			path = "Tab Bar Controllers";
 			sourceTree = "<group>";
 		};
 		8E57C5E3F3290DFEC286A40A /* AmplifyConfig */ = {
@@ -434,8 +479,10 @@
 				5BC2A27E287E0EF30011CF3B /* Global.swift in Sources */,
 				5B860A2F289D41DE008D597F /* Playground.swift in Sources */,
 				5B8AF0BB287ED37700C32DB1 /* WeekCalendarCell.swift in Sources */,
+				5BFC909D28BBD37B00B9D1CE /* YouVC.swift in Sources */,
 				5B860A25289BEDEE008D597F /* ProfileData.swift in Sources */,
-				5BDE794E2884322E00923579 /* ProfileDetailsVC.swift in Sources */,
+				5BE78EB728AE8376006C01F0 /* TherapeuticProtocolsVC.swift in Sources */,
+				5BDE794E2884322E00923579 /* ProfileWalletVC.swift in Sources */,
 				5BDE793B2881615900923579 /* InfermedicaAPIFunctions.swift in Sources */,
 				5B8AF0B9287E1D6200C32DB1 /* TabBarController.swift in Sources */,
 				5BDE794328841A5D00923579 /* HealthWalletVC.swift in Sources */,
@@ -445,27 +492,32 @@
 				5B55FD2E28A6BE4C0054BF1E /* SignupVC.swift in Sources */,
 				5BBC5D7028857CF600F0A2AF /* Extensions.swift in Sources */,
 				5BBC5D8F2887FF9000F0A2AF /* ECheckupVC.swift in Sources */,
-				5BDE79452884318B00923579 /* BloodDetailsVC.swift in Sources */,
+				5BDE79452884318B00923579 /* BloodWalletVC.swift in Sources */,
 				5BBBF2B0287C6B6900B47AF6 /* HomeVC.swift in Sources */,
-				5BDE79522884327800923579 /* SymptomDetailsVC.swift in Sources */,
+				5BE78EBA28B24EA5006C01F0 /* ConditionDetailsVC.swift in Sources */,
+				5BDE79522884327800923579 /* SymptomWalletVC.swift in Sources */,
 				5BDE794C2884321E00923579 /* BodyDetailsVC.swift in Sources */,
 				5B55FD3228A8F2A10054BF1E /* SettingsVC.swift in Sources */,
-				5BDE79542884328E00923579 /* ProtocolsDetailsVC.swift in Sources */,
+				5BDE79542884328E00923579 /* ProtocolsWalletVC.swift in Sources */,
 				5BBC5D93289A71A700F0A2AF /* BiomarkersData.swift in Sources */,
-				5B860A29289BF32C008D597F /* AllergyDetailsVC.swift in Sources */,
+				5B860A29289BF32C008D597F /* AllergyWalletVC.swift in Sources */,
 				5BDE793F288161FA00923579 /* DrugBankAPIFunctions.swift in Sources */,
 				5BBBF2AC287C6B6900B47AF6 /* AppDelegate.swift in Sources */,
 				5B860A27289BF30E008D597F /* ImmunizationDetailsVC.swift in Sources */,
 				5B55FD3628A916880054BF1E /* Auth.swift in Sources */,
+				5BFC909928BBD17800B9D1CE /* SearchProtocolsVC.swift in Sources */,
 				5BDE79502884324900923579 /* GeneticDetailsVC.swift in Sources */,
 				5B5B9114287EEAC100178C15 /* AddProtocolVC.swift in Sources */,
 				5BC09B0528856DB0008FAC9E /* Fonts.swift in Sources */,
+				5BE78EB528AE6620006C01F0 /* BiogenesisAPIFunctions.swift in Sources */,
 				5BBBF2AE287C6B6900B47AF6 /* SceneDelegate.swift in Sources */,
 				39A95AE23871B2859EA8E6B1 /* AmplifyModels.swift in Sources */,
 				5B55FD3028A7FEF30054BF1E /* Therapeutics+Extensions.swift in Sources */,
 				5AA00FE48104C20974DA5A08 /* Profile+Schema.swift in Sources */,
 				E346D582EEC7FC56001FB9AD /* Profile.swift in Sources */,
 				5B61382828AD0F590095D620 /* DBManager.swift in Sources */,
+				5BE78EBC28B272C5006C01F0 /* ProtocolDetailsVC.swift in Sources */,
+				5BFC909F28BBD38C00B9D1CE /* SymptomsVC.swift in Sources */,
 				4814D8E5478725657C53205D /* Symptoms+Schema.swift in Sources */,
 				F072CC741761F8FCC28A56EC /* Symptoms.swift in Sources */,
 				CD990DC7020A92A85B9B3B7C /* Therapeutics+Schema.swift in Sources */,

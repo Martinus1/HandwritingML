@@ -1,0 +1,175 @@
+# this is an auto generated file. This will be overwritten
+query GetProfile($id: ID!) {
+  getProfile(id: $id) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListProfiles(
+  $filter: ModelProfileFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listProfiles(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      userId
+      createdAt
+      data
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncProfiles(
+  $filter: ModelProfileFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncProfiles(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      userId
+      createdAt
+      data
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetTherapeutics($id: ID!) {
+  getTherapeutics(id: $id) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListTherapeutics(
+  $filter: ModelTherapeuticsFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listTherapeutics(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      userId
+      createdAt
+      data
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncTherapeutics(
+  $filter: ModelTherapeuticsFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncTherapeutics(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      userId
+      createdAt
+      data
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetSymptoms($id: ID!) {
+  getSymptoms(id: $id) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListSymptoms(
+  $filter: ModelSymptomsFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listSymptoms(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      userId
+      createdAt
+      data
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncSymptoms(
+  $filter: ModelSymptomsFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncSymptoms(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      userId
+      createdAt
+      data
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}

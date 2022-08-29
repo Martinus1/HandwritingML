@@ -1,6 +1,6 @@
 {
   "identityPoolName": "testAuthIdentityPool",
-  "allowUnauthenticatedIdentities": true,
+  "allowUnauthenticatedIdentities": false,
   "resourceNameTruncated": "biogenc5be5662",
   "userPoolName": "BioGenesis",
   "autoVerifiedAttributes": [

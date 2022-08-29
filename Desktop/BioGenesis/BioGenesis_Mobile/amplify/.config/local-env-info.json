@@ -1,5 +1,5 @@
 {
   "projectPath": "/Users/martin/Desktop/BioGenesis/BioGenesis_Mobile",
-  "envName": "staging",
-  "defaultEditor": "xcode"
+  "defaultEditor": "xcode",
+  "envName": "production"
 }

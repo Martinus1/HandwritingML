@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        Auth.configureAmplify()
+        //TODO: AWS AMPLIFY
+//        Auth.configureAmplify()
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -33,12 +34,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
         
-        
-        Auth.fetchCurrentAuthSession { signedIn in
-            DispatchQueue.main.async {
-                Switcher.updateRootViewController(isSignedIn: signedIn)
-            }
-        }
+        //TODO: AWS AMPLIFY
+//        Auth.fetchCurrentAuthSession { signedIn in
+//            DispatchQueue.main.async {
+//                Switcher.updateRootViewController(isSignedIn: signedIn)
+//            }
+//        }
         
         
         return true

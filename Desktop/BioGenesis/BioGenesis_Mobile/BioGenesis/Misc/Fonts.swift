@@ -37,7 +37,7 @@ extension UIFont {
     }
     
     static func paragraph4() -> UIFont? {
-        return UIFont(name: "Avenir", size: 10)
+        return UIFont(name: "Avenir-Heavy", size: 10)
     }
 }
 

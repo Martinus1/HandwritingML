@@ -8,6 +8,6 @@
     "unauthRoleName": {
         "Ref": "UnauthRoleName"
     },
-    "S3DeploymentBucket": "amplify-biogenesis-staging-132545-deployment",
+    "S3DeploymentBucket": "amplify-biogenesis-production-142939-deployment",
     "S3DeploymentRootKey": "amplify-appsync-files/d03035313f98644af2e8fcbcf855bff46856359c"
 }

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/biogenesisAPI": {
+      "name": "/biogenesisAPI",
+      "lambdaFunction": "biogenesisLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

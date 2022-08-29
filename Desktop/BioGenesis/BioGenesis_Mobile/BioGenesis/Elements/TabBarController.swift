@@ -19,6 +19,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
         
         guard let tabItems = tabBar.items else { return }
+        tabBar.backgroundColor = .white
 //        tabItems[0].titlePositionAdjustment = UIOffset(horizontal: -4, vertical: 0)
 //        tabItems[1].titlePositionAdjustment = UIOffset(horizontal: -30, vertical: 0)
 //        tabItems[2].titlePositionAdjustment = UIOffset(horizontal: 30, vertical: 0)
@@ -50,8 +51,7 @@ class MyTabBar: UITabBar, UIAdaptivePresentationControllerDelegate {
         let divider = UIView()
         divider.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: 1)
         divider.backgroundColor = colorPalette[1]
-        addSubview(divider)
-        
+//        addSubview(divider)
     }
 
 }

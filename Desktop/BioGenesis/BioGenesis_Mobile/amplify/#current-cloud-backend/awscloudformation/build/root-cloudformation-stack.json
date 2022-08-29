@@ -152,34 +152,13 @@
         }
       }
     },
-    "APIGatewayAuthStack": {
-      "Type": "AWS::CloudFormation::Stack",
-      "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json",
-        "Parameters": {
-          "authRoleName": {
-            "Ref": "AuthRoleName"
-          },
-          "unauthRoleName": {
-            "Ref": "UnauthRoleName"
-          },
-          "env": "staging",
-          "biogenesisapi": {
-            "Fn::GetAtt": [
-              "apibiogenesisapi",
-              "Outputs.ApiId"
-            ]
-          }
-        }
-      }
-    },
     "authBioGenesis": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/auth/BioGenesis-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-production-142939-deployment/amplify-cfn-templates/auth/BioGenesis-cloudformation-template.json",
         "Parameters": {
           "identityPoolName": "testAuthIdentityPool",
-          "allowUnauthenticatedIdentities": true,
+          "allowUnauthenticatedIdentities": false,
           "resourceNameTruncated": "biogenc5be5662",
           "userPoolName": "BioGenesis",
           "autoVerifiedAttributes": "email",
@@ -227,14 +206,14 @@
           },
           "breakCircularDependency": true,
           "dependsOn": "",
-          "env": "staging"
+          "env": "production"
         }
       }
     },
     "apiBioGenesis": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-production-142939-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "Parameters": {
           "AppSyncApiName": "BioGenesis",
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
@@ -245,41 +224,41 @@
           "unauthRoleName": {
             "Ref": "UnauthRoleName"
           },
-          "S3DeploymentBucket": "amplify-biogenesis-staging-132545-deployment",
+          "S3DeploymentBucket": "amplify-biogenesis-production-142939-deployment",
           "S3DeploymentRootKey": "amplify-appsync-files/d03035313f98644af2e8fcbcf855bff46856359c",
-          "env": "staging"
+          "env": "production"
         }
       }
     },
-    "apibiogenesisapi": {
+    "apiBiogenesisRestApi": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/api/biogenesisapi-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-production-142939-deployment/amplify-cfn-templates/api/BiogenesisRestApi-cloudformation-template.json",
         "Parameters": {
-          "functionbiogenesis040d2885Name": {
+          "functionbiogenesisLambdaName": {
             "Fn::GetAtt": [
-              "functionbiogenesis040d2885",
+              "functionbiogenesisLambda",
               "Outputs.Name"
             ]
           },
-          "functionbiogenesis040d2885Arn": {
+          "functionbiogenesisLambdaArn": {
             "Fn::GetAtt": [
-              "functionbiogenesis040d2885",
+              "functionbiogenesisLambda",
               "Outputs.Arn"
             ]
           },
-          "env": "staging"
+          "env": "production"
         }
       }
     },
-    "functionbiogenesis040d2885": {
+    "functionbiogenesisLambda": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/function/biogenesis040d2885-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-production-142939-deployment/amplify-cfn-templates/function/biogenesisLambda-cloudformation-template.json",
         "Parameters": {
-          "deploymentBucketName": "amplify-biogenesis-staging-132545-deployment",
-          "s3Key": "amplify-builds/biogenesis040d2885-304b66614c4e792b636a-build.zip",
-          "env": "staging"
+          "deploymentBucketName": "amplify-biogenesis-production-142939-deployment",
+          "s3Key": "amplify-builds/biogenesisLambda-4e704c3358757a34636a-build.zip",
+          "env": "production"
         }
       }
     },

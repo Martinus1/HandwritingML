@@ -16,6 +16,36 @@
       "auth": {
         "BioGenesis": {},
         "true": {}
+      },
+      "function": {
+        "biogenesisLambda": {
+          "deploymentBucketName": "amplify-biogenesis-staging-132545-deployment",
+          "s3Key": "amplify-builds/biogenesisLambda-4e704c3358757a34636a-build.zip"
+        }
+      }
+    }
+  },
+  "production": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-biogenesis-production-142939-authRole",
+      "UnauthRoleArn": "arn:aws:iam::292141579157:role/amplify-biogenesis-production-142939-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::292141579157:role/amplify-biogenesis-production-142939-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-biogenesis-production-142939-deployment",
+      "UnauthRoleName": "amplify-biogenesis-production-142939-unauthRole",
+      "StackName": "amplify-biogenesis-production-142939",
+      "StackId": "arn:aws:cloudformation:us-west-1:292141579157:stack/amplify-biogenesis-production-142939/15075a10-1ee9-11ed-896c-021ce694bd39",
+      "AmplifyAppId": "d3ta2ayzxnwvxk"
+    },
+    "categories": {
+      "auth": {
+        "BioGenesis": {}
+      },
+      "function": {
+        "biogenesisLambda": {
+          "deploymentBucketName": "amplify-biogenesis-production-142939-deployment",
+          "s3Key": "amplify-builds/biogenesisLambda-4e704c3358757a34636a-build.zip"
+        }
       }
     }
   }

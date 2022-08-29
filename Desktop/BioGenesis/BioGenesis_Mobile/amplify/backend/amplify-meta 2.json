@@ -1,0 +1,92 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-biogenesis-staging-132545-authRole",
+      "UnauthRoleArn": "arn:aws:iam::292141579157:role/amplify-biogenesis-staging-132545-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::292141579157:role/amplify-biogenesis-staging-132545-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-biogenesis-staging-132545-deployment",
+      "UnauthRoleName": "amplify-biogenesis-staging-132545-unauthRole",
+      "StackName": "amplify-biogenesis-staging-132545",
+      "StackId": "arn:aws:cloudformation:us-west-1:292141579157:stack/amplify-biogenesis-staging-132545/45af6640-1a42-11ed-9f4c-0636fee40fa3",
+      "AmplifyAppId": "d3ta2ayzxnwvxk"
+    }
+  },
+  "auth": {
+    "BioGenesis": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "mfaConfiguration": "OPTIONAL",
+        "mfaTypes": [
+          "TOTP"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/auth/BioGenesis-cloudformation-template.json",
+        "logicalId": "authBioGenesis"
+      },
+      "lastPushTimeStamp": "2022-08-13T15:27:34.745Z",
+      "output": {
+        "UserPoolId": "us-west-1_y0R0xKyT1",
+        "AppClientIDWeb": "1j50nvn0fvvnlhssa8730ukblg",
+        "AppClientID": "1hsri7mskrukffukkivkdlm22d",
+        "IdentityPoolId": "us-west-1:aa99fc59-ece1-4265-bf43-60e5ec7beaa9",
+        "UserPoolArn": "arn:aws:cognito-idp:us-west-1:292141579157:userpool/us-west-1_y0R0xKyT1",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "BioGenesis"
+      },
+      "lastPushDirHash": "HkMHs/r5sOsBxOKSNN3TlzMyNN4="
+    }
+  },
+  "api": {
+    "BioGenesis": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "bd4w6nbjljcsllrensd4pxnjwy",
+        "GraphQLAPIEndpointOutput": "https://mwrgd4bsefhkfcptcmw7onm4by.appsync-api.us-west-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-6idm7fpmsvcgnjmjieirlfon34"
+      },
+      "lastPushTimeStamp": "2022-08-13T15:27:34.747Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiBioGenesis"
+      }
+    }
+  }
+}

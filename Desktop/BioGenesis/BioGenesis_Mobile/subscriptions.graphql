@@ -1,0 +1,109 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateProfile {
+  onCreateProfile {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateProfile {
+  onUpdateProfile {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteProfile {
+  onDeleteProfile {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateTherapeutics {
+  onCreateTherapeutics {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateTherapeutics {
+  onUpdateTherapeutics {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteTherapeutics {
+  onDeleteTherapeutics {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateSymptoms {
+  onCreateSymptoms {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateSymptoms {
+  onUpdateSymptoms {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteSymptoms {
+  onDeleteSymptoms {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}

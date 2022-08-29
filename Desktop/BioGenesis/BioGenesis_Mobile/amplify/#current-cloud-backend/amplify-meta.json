@@ -1,16 +1,15 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-biogenesis-staging-132545-authRole",
-      "UnauthRoleArn": "arn:aws:iam::292141579157:role/amplify-biogenesis-staging-132545-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::292141579157:role/amplify-biogenesis-staging-132545-authRole",
+      "AuthRoleName": "amplify-biogenesis-production-142939-authRole",
+      "UnauthRoleArn": "arn:aws:iam::292141579157:role/amplify-biogenesis-production-142939-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::292141579157:role/amplify-biogenesis-production-142939-authRole",
       "Region": "us-west-1",
-      "DeploymentBucketName": "amplify-biogenesis-staging-132545-deployment",
-      "UnauthRoleName": "amplify-biogenesis-staging-132545-unauthRole",
-      "StackName": "amplify-biogenesis-staging-132545",
-      "StackId": "arn:aws:cloudformation:us-west-1:292141579157:stack/amplify-biogenesis-staging-132545/45af6640-1a42-11ed-9f4c-0636fee40fa3",
-      "AmplifyAppId": "d3ta2ayzxnwvxk",
-      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+      "DeploymentBucketName": "amplify-biogenesis-production-142939-deployment",
+      "UnauthRoleName": "amplify-biogenesis-production-142939-unauthRole",
+      "StackName": "amplify-biogenesis-production-142939",
+      "StackId": "arn:aws:cloudformation:us-west-1:292141579157:stack/amplify-biogenesis-production-142939/15075a10-1ee9-11ed-896c-021ce694bd39",
+      "AmplifyAppId": "d3ta2ayzxnwvxk"
     }
   },
   "auth": {
@@ -42,21 +41,21 @@
           "EMAIL"
         ]
       },
-      "output": {
-        "UserPoolId": "us-west-1_y0R0xKyT1",
-        "AppClientIDWeb": "1j50nvn0fvvnlhssa8730ukblg",
-        "AppClientID": "1hsri7mskrukffukkivkdlm22d",
-        "IdentityPoolId": "us-west-1:aa99fc59-ece1-4265-bf43-60e5ec7beaa9",
-        "UserPoolArn": "arn:aws:cognito-idp:us-west-1:292141579157:userpool/us-west-1_y0R0xKyT1",
-        "IdentityPoolName": "testAuthIdentityPool__staging",
-        "UserPoolName": "BioGenesis"
-      },
-      "lastPushTimeStamp": "2022-08-17T13:50:03.224Z",
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/auth/BioGenesis-cloudformation-template.json",
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-production-142939-deployment/amplify-cfn-templates/auth/BioGenesis-cloudformation-template.json",
         "logicalId": "authBioGenesis"
       },
-      "lastPushDirHash": "99NBMsqTmJptcTRqz4M9tCFN9T0="
+      "lastPushTimeStamp": "2022-08-18T11:42:33.768Z",
+      "output": {
+        "UserPoolId": "us-west-1_35SwPMPpx",
+        "AppClientIDWeb": "68ir9koe89eh3e9mso9idc7qnv",
+        "AppClientID": "ts8r9kopebj6kg0b3fhjml6jr",
+        "IdentityPoolId": "us-west-1:3508d9e8-9a86-4142-ab21-3593179df005",
+        "UserPoolArn": "arn:aws:cognito-idp:us-west-1:292141579157:userpool/us-west-1_35SwPMPpx",
+        "IdentityPoolName": "testAuthIdentityPool__production",
+        "UserPoolName": "BioGenesis"
+      },
+      "lastPushDirHash": "HkMHs/r5sOsBxOKSNN3TlzMyNN4="
     }
   },
   "api": {
@@ -79,68 +78,68 @@
             }
           ]
         },
-        "GraphQLAPIIdOutput": "bd4w6nbjljcsllrensd4pxnjwy",
-        "GraphQLAPIEndpointOutput": "https://mwrgd4bsefhkfcptcmw7onm4by.appsync-api.us-west-1.amazonaws.com/graphql",
-        "GraphQLAPIKeyOutput": "da2-6idm7fpmsvcgnjmjieirlfon34"
+        "GraphQLAPIIdOutput": "ht3t3uiywjbdjmdiyiwxecbvey",
+        "GraphQLAPIEndpointOutput": "https://mgpne2ar5rfgdink5rxuxj7xma.appsync-api.us-west-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-ev2uqy6wxffbflaruurrygo26y"
       },
-      "lastPushTimeStamp": "2022-08-17T13:50:02.166Z",
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-production-142939-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiBioGenesis"
       },
+      "lastPushTimeStamp": "2022-08-18T11:42:33.768Z",
       "lastPushDirHash": "vL67ouemoaaEYjx02HddHdU5gFs="
     },
-    "biogenesisapi": {
+    "BiogenesisRestApi": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "biogenesis040d2885",
+          "resourceName": "biogenesisLambda",
           "attributes": [
             "Name",
             "Arn"
           ]
         }
       ],
-      "output": {
-        "ApiName": "biogenesisapi",
-        "RootUrl": "https://ynlw3lzps4.execute-api.us-west-1.amazonaws.com/staging",
-        "ApiId": "ynlw3lzps4"
-      },
-      "lastPushTimeStamp": "2022-08-17T13:50:03.224Z",
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/api/biogenesisapi-cloudformation-template.json",
-        "logicalId": "apibiogenesisapi"
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-production-142939-deployment/amplify-cfn-templates/api/BiogenesisRestApi-cloudformation-template.json",
+        "logicalId": "apiBiogenesisRestApi"
       },
-      "lastPushDirHash": "Jpo6UKjPTai/BcNFonLgnS7TVsg="
+      "lastPushTimeStamp": "2022-08-18T11:42:33.768Z",
+      "output": {
+        "ApiName": "BiogenesisRestApi",
+        "RootUrl": "https://9v8fmful5l.execute-api.us-west-1.amazonaws.com/production",
+        "ApiId": "9v8fmful5l"
+      },
+      "lastPushDirHash": "6hJXSatnMfxn9C6jpm8FU304nXs="
     }
   },
   "function": {
-    "biogenesis040d2885": {
+    "biogenesisLambda": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda",
-      "lastBuildTimeStamp": "2022-08-17T13:48:30.301Z",
+      "lastBuildTimeStamp": "2022-08-18T11:32:40.806Z",
       "lastBuildType": "PROD",
-      "lastPackageTimeStamp": "2022-08-17T13:48:31.163Z",
-      "distZipFilename": "biogenesis040d2885-304b66614c4e792b636a-build.zip",
+      "lastPackageTimeStamp": "2022-08-18T11:32:41.746Z",
+      "distZipFilename": "biogenesisLambda-4e704c3358757a34636a-build.zip",
       "s3Bucket": {
-        "deploymentBucketName": "amplify-biogenesis-staging-132545-deployment",
-        "s3Key": "amplify-builds/biogenesis040d2885-304b66614c4e792b636a-build.zip"
+        "deploymentBucketName": "amplify-biogenesis-production-142939-deployment",
+        "s3Key": "amplify-builds/biogenesisLambda-4e704c3358757a34636a-build.zip"
       },
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-staging-132545-deployment/amplify-cfn-templates/function/biogenesis040d2885-cloudformation-template.json",
-        "logicalId": "functionbiogenesis040d2885"
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-biogenesis-production-142939-deployment/amplify-cfn-templates/function/biogenesisLambda-cloudformation-template.json",
+        "logicalId": "functionbiogenesisLambda"
       },
-      "lastPushTimeStamp": "2022-08-17T13:50:03.224Z",
+      "lastPushTimeStamp": "2022-08-18T11:42:33.768Z",
       "output": {
         "Region": "us-west-1",
-        "Arn": "arn:aws:lambda:us-west-1:292141579157:function:biogenesis040d2885-staging",
-        "Name": "biogenesis040d2885-staging",
-        "LambdaExecutionRole": "biogenesisLambdaRole5e9528a1-staging"
+        "Arn": "arn:aws:lambda:us-west-1:292141579157:function:biogenesisLambda-production",
+        "Name": "biogenesisLambda-production",
+        "LambdaExecutionRole": "biogenesisLambdaRole762780c8-production"
       },
-      "lastPushDirHash": "Qr7QqlRKOW9wL6kn8dr8caH0inw="
+      "lastPushDirHash": "FBk6/dCbMATv2A4ILV4uMpW7tFk="
     }
   }
 }

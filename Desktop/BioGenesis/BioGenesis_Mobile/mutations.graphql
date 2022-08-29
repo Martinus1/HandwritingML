@@ -1,0 +1,136 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateProfile(
+  $input: CreateProfileInput!
+  $condition: ModelProfileConditionInput
+) {
+  createProfile(input: $input, condition: $condition) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateProfile(
+  $input: UpdateProfileInput!
+  $condition: ModelProfileConditionInput
+) {
+  updateProfile(input: $input, condition: $condition) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteProfile(
+  $input: DeleteProfileInput!
+  $condition: ModelProfileConditionInput
+) {
+  deleteProfile(input: $input, condition: $condition) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateTherapeutics(
+  $input: CreateTherapeuticsInput!
+  $condition: ModelTherapeuticsConditionInput
+) {
+  createTherapeutics(input: $input, condition: $condition) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateTherapeutics(
+  $input: UpdateTherapeuticsInput!
+  $condition: ModelTherapeuticsConditionInput
+) {
+  updateTherapeutics(input: $input, condition: $condition) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteTherapeutics(
+  $input: DeleteTherapeuticsInput!
+  $condition: ModelTherapeuticsConditionInput
+) {
+  deleteTherapeutics(input: $input, condition: $condition) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateSymptoms(
+  $input: CreateSymptomsInput!
+  $condition: ModelSymptomsConditionInput
+) {
+  createSymptoms(input: $input, condition: $condition) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateSymptoms(
+  $input: UpdateSymptomsInput!
+  $condition: ModelSymptomsConditionInput
+) {
+  updateSymptoms(input: $input, condition: $condition) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteSymptoms(
+  $input: DeleteSymptomsInput!
+  $condition: ModelSymptomsConditionInput
+) {
+  deleteSymptoms(input: $input, condition: $condition) {
+    id
+    userId
+    createdAt
+    data
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}

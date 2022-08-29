@@ -16,14 +16,14 @@ export type AmplifyDependentResourcesAttributes = {
             "GraphQLAPIIdOutput": "string",
             "GraphQLAPIEndpointOutput": "string"
         },
-        "biogenesisapi": {
+        "BiogenesisRestApi": {
             "RootUrl": "string",
             "ApiName": "string",
             "ApiId": "string"
         }
     },
     "function": {
-        "biogenesis040d2885": {
+        "biogenesisLambda": {
             "Name": "string",
             "Arn": "string",
             "Region": "string",

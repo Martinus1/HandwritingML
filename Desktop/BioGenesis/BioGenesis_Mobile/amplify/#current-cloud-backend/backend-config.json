@@ -52,13 +52,13 @@
         }
       }
     },
-    "biogenesisapi": {
+    "BiogenesisRestApi": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "biogenesis040d2885",
+          "resourceName": "biogenesisLambda",
           "attributes": [
             "Name",
             "Arn"
@@ -68,7 +68,7 @@
     }
   },
   "function": {
-    "biogenesis040d2885": {
+    "biogenesisLambda": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
