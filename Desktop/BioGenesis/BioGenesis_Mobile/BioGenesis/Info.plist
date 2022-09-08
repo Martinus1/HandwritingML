@@ -4,7 +4,18 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Unica77TrialTT-Regular.tff</string>
+		<string>Graphik-Regular.otf</string>
+		<string>Graphik-Medium.otf</string>
+		<string>Graphik-Super.otf</string>
+		<string>Graphik-Black.otf</string>
+		<string>Graphik-Bold.otf</string>
+		<string>Graphik-Semibold.otf</string>
+		<string>Graphik-Light.otf</string>
+		<string>Graphik-Thin.otf</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDarkContent</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

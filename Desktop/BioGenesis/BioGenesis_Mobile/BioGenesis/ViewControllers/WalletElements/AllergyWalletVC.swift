@@ -13,6 +13,11 @@ class AllergyWalletVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        view.backgroundColor = backgroundColorMain
+        // scrollView.backgroundColor = backgroundColorMain
     }
     
+    func setupScrollView() {
+        
+    }
 }

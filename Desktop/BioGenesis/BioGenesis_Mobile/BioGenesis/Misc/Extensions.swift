@@ -5,7 +5,7 @@
 //  Created by Martin on 18/07/2022.
 //
 
-import Foundation
+import UIKit
 
 extension Date {
     func get(_ components: Calendar.Component..., calendar: Calendar = Calendar.current) -> DateComponents {
@@ -45,5 +45,59 @@ extension Calendar {
         let numberOfDays = dateComponents([.day], from: fromDate, to: toDate) // <3>
         
         return numberOfDays.day!
+    }
+}
+
+extension UIColor {
+    static var random: UIColor {
+        return UIColor(
+            red: .random(in: 0...1),
+            green: .random(in: 0...1),
+            blue: .random(in: 0...1),
+            alpha: 1.0
+        )
+    }
+}
+
+extension UIImage {
+
+    func withInset(_ insets: UIEdgeInsets) -> UIImage? {
+        let cgSize = CGSize(width: self.size.width + insets.left * self.scale + insets.right * self.scale,
+                            height: self.size.height + insets.top * self.scale + insets.bottom * self.scale)
+
+        UIGraphicsBeginImageContextWithOptions(cgSize, false, self.scale)
+        defer { UIGraphicsEndImageContext() }
+
+        let origin = CGPoint(x: insets.left * self.scale, y: insets.top * self.scale)
+        self.draw(at: origin)
+
+        return UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(self.renderingMode)
+    }
+}
+
+
+extension UIApplication {
+    var keyWindowInConnectedScenes: UIWindow? {
+        return windows.first(where: { $0.isKeyWindow })
+    }
+}
+
+extension UIView {
+    var safeAreaBottom: CGFloat {
+        if #available(iOS 11, *) {
+            if let window = UIApplication.shared.keyWindowInConnectedScenes {
+                return window.safeAreaInsets.bottom
+            }
+        }
+        return 0
+    }
+
+    var safeAreaTop: CGFloat {
+        if #available(iOS 11, *) {
+            if let window = UIApplication.shared.keyWindowInConnectedScenes {
+                return window.safeAreaInsets.top
+            }
+        }
+        return 0
     }
 }

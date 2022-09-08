@@ -6,89 +6,183 @@
 //
 
 import UIKit
-import JTAppleCalendar
 
 class HomeVC: UIViewController {
     
-    @IBOutlet weak var scrollView: UIScrollView!
+    var scrollView = UIScrollView()
     
-    //TopView Elemetns: calendar, primary buttons located on the top of the screen
-    @IBOutlet weak var topInformationView: UIView!
-    @IBOutlet weak var topView: UIView!
-    @IBOutlet weak var weekCalendarView: JTACMonthView!
-    
+    var topView = CustomTopBar()
+    var calendarView: UICollectionView!
     //MARK: Local Elements
-    let dateTopLabel = UILabel()
+    let selectedDateLabel = UILabel()
     
     let symptomHighlights = ["Headache", "Caugh", "Nausea"]
+    
+    var cellId = "DateCell"
+    
+    var currentDate = 0
+    var selectedDate = 0
+    var calendarArray = NSArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        weekCalendarView.scrollingMode = .none
-        weekCalendarView.scrollDirection = .horizontal
-        weekCalendarView.sectionInset.left = 0
-        weekCalendarView.sectionInset.right = 0
+        view.backgroundColor = backgroundColorMain
         
-        view.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
-        
-        setupTopView()
+        setupBaseElements()
+        setupCalendar()
         setupScrollView()
         
-        weekCalendarView.selectDates([Date()])
-        weekCalendarView.scrollToDate(Date()) {}
     }
     
-    func setupTopView() {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.calendarArray = arrayOfDates()
+        let layoutMargins: CGFloat = self.calendarView.layoutMargins.left + self.calendarView.layoutMargins.right
+        let sideInset = (self.view.frame.width / 2) - layoutMargins
+        self.calendarView.contentInset = UIEdgeInsets(top: 10, left: sideInset, bottom: 0 , right: sideInset)
+        self.calendarView.selectItem(at: IndexPath(row: calendarArray.count - 1, section: 0), animated: false, scrollPosition: .centeredHorizontally)
+    }
+    
+    func setupBaseElements() {
         
-        //MARK: Date Top Label
-        dateTopLabel.text = "Thu, Jul 14"
-        dateTopLabel.frame = CGRect(x: 0, y: 0, width: topInformationView.frame.width, height: topInformationView.frame.height - 13)
-        ///Font setting does not work
-        dateTopLabel.font = .header1()
-        dateTopLabel.textAlignment = .center
-        topInformationView.addSubview(dateTopLabel)
-        topInformationView.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
-        topView.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
-        weekCalendarView.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
+        topView.title = "Home"
+        topView.height = largeTabBarHeight
+        self.view.addSubview(topView)
         
-        //MARK: Divider
-//        let topViewLine = UIView()
-//        topViewLine.frame = CGRect(x: 0, y: topView.frame.height - 1, width: screenSize.width, height: 1)
-//        topViewLine.backgroundColor = .black
-//        topView.addSubview(topViewLine)
+        scrollView.frame = CGRect(x: 0, y: topView.frame.height, width: screenSize.width, height: screenSize.height - topView.frame.height)
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
+        view.addSubview(scrollView)
+        
+        //MARK: Divider Selector
+        let topSelectorDivider = UIView()
+        topSelectorDivider.frame = CGRect(x: screenSize.width / 3, y: topView.frame.height - 3, width: (screenSize.width / 3), height: 3)
+        topSelectorDivider.backgroundColor = .black
+        topView.addSubview(topSelectorDivider)
+    }
+    
+    func addTitle(title: String, yPosition: CGFloat, height: CGFloat) {
+        let titleLabel = UILabel()
+        titleLabel.frame = CGRect(x: 12, y: yPosition, width: screenSize.width - 24, height: height)
+        titleLabel.text = title
+        titleLabel.textColor = .black
+        titleLabel.textAlignment = .left
+        titleLabel.font = .header2()
+        scrollView.addSubview(titleLabel)
+        
+    }
+    
+    func addPregnancyProgressBox(yPosition: CGFloat, title: String, subtitle: String, height: CGFloat) {
+        let pregnancyBox = UIView()
+        pregnancyBox.frame = CGRect(x: 12, y: yPosition, width: screenSize.width - 24, height: height)
+        pregnancyBox.backgroundColor = .white
+        pregnancyBox.layer.cornerRadius = cornerRadius
+        scrollView.addSubview(pregnancyBox)
+        
+        let titleLabel = UILabel()
+        titleLabel.font = .header2()
+        titleLabel.frame = CGRect(x: 12, y: 12, width: pregnancyBox.frame.width - 24, height: 15)
+        titleLabel.textColor = .black
+        titleLabel.text = title
+        pregnancyBox.addSubview(titleLabel)
+        
+        let subtitleLabel = UILabel()
+        subtitleLabel.font = .paragraph3()
+        subtitleLabel.frame = CGRect(x: 12, y: titleLabel.frame.maxY + 4, width: pregnancyBox.frame.width - 24, height: 12)
+        subtitleLabel.textColor = .black
+        subtitleLabel.text = subtitle
+        pregnancyBox.addSubview(subtitleLabel)
+        
+        let fetusImage = UIImageView()
+        fetusImage.frame = CGRect(x: 12, y: subtitleLabel.frame.maxY + 12, width: pregnancyBox.frame.width - 24, height: height - subtitleLabel.frame.maxY - 50)
+        fetusImage.image = UIImage(named: "fetus_week_5")
+        fetusImage.contentMode = .scaleAspectFit
+        pregnancyBox.addSubview(fetusImage)
+        
+        let progressBarSkeeleton = UIView()
+        let progressBarSkeeletonWidth: CGFloat = pregnancyBox.frame.width - 24
+        let progressBarSkeeletonHeight: CGFloat = 8
+        progressBarSkeeleton.backgroundColor = grayTextColor
+        progressBarSkeeleton.frame = CGRect(x: 12 , y: height - 12 - progressBarSkeeletonHeight, width: progressBarSkeeletonWidth, height: progressBarSkeeletonHeight)
+        progressBarSkeeleton.layer.cornerRadius = progressBarSkeeletonHeight / 2
+        progressBarSkeeleton.clipsToBounds = true
+        pregnancyBox.addSubview(progressBarSkeeleton)
+        
+        let progressBar = UIView()
+        progressBar.backgroundColor = mainColor
+        progressBar.frame = CGRect(x: 0 , y: 0, width: (20 / 100) * progressBarSkeeletonWidth, height: progressBarSkeeletonHeight)
+        progressBar.layer.cornerRadius = progressBarSkeeletonHeight / 2
+        progressBarSkeeleton.addSubview(progressBar)
+        
+    }
+    
+    
+    func setupCalendar() {
+        // MARK: Instantiate the layout of calendar collection view
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.itemSize = CGSize(width: 60, height: 30)
+        layout.scrollDirection = .horizontal
+        
+        let calendarViewHeight: CGFloat = 30
+        
+        calendarView = UICollectionView(frame: CGRect(x: 0, y: topView.frame.height - calendarViewHeight - 12, width: screenSize.width, height: calendarViewHeight), collectionViewLayout: layout)
+        calendarView.dataSource = self
+        calendarView.delegate = self
+        calendarView.register(HorizontalCalendarCell.self, forCellWithReuseIdentifier: cellId)
+        calendarView.showsVerticalScrollIndicator = false
+        calendarView.showsHorizontalScrollIndicator = false
+        calendarView.backgroundColor = .clear
+        topView.addSubview(calendarView)
+        
+        calendarView.delegate = self
+        calendarView.dataSource = self
     }
     
     func setupScrollView() {
         
-        scrollView.showsVerticalScrollIndicator = false
-        scrollView.showsHorizontalScrollIndicator = false
-        
         //MARK: Variables
         var yPosition: CGFloat = 50
-        let spacing: CGFloat = 16
+        let titleHeight: CGFloat = 20
         
-        setupConditionBox(yPositionMain: yPosition)
-        yPosition += 80 + 24
+        addTitle(title: "Pregnancy", yPosition: yPosition, height: titleHeight)
+        yPosition += titleHeight + 12
         
-        //MARK: Symptoms
-        setupSymptomsBox(yPositionMain: yPosition)
-        yPosition += CGFloat(130 * symptomHighlights.count)
+        addPregnancyProgressBox(yPosition: yPosition, title: "Due on 29th of May", subtitle: "First Trimester, 5th week", height: 200)
+        yPosition += 200 + 24
+  
+        addTitle(title: "Highlights", yPosition: yPosition, height: titleHeight)
+        yPosition += titleHeight + 12
+        
+        setupBloodTestBox(height: 150, yPositionMain: yPosition)
+        yPosition += 150 + 24
+        
+        addTitle(title: "Risk Factors", yPosition: yPosition, height: titleHeight)
+        yPosition += titleHeight + 12
+        
+        
+        let risks = ["Hypertension", "Flu", "Cold", "Ulcers"]
+        
+        for risk in risks {
+            conditionAtRisk(yPosition: yPosition, height: 35, name: risk, riskValue: 80)
+            
+            yPosition += 35 + 12
+        }
+        
+        yPosition += 12
         
         scrollView.contentSize = CGSize(width: screenSize.width, height: yPosition + 90)
+        
     }
     
-    //Returns: yPosition adding Value
-    func setupHighlightsBox() {
-        let highlightsBox = UIView()
-    
-    }
     
     func setupConditionBox(yPositionMain: CGFloat) {
         let conditionBox = UIButton()
         conditionBox.frame = CGRect(x: 12, y: yPositionMain, width: screenSize.width - 24, height: 80)
         conditionBox.backgroundColor = .white
-        conditionBox.layer.cornerRadius = 8
+        conditionBox.layer.cornerRadius = cornerRadius
         conditionBox.addTarget(self, action: #selector(conditionPressed(_:)), for: .touchUpInside)
         scrollView.addSubview(conditionBox)
         
@@ -107,133 +201,78 @@ class HomeVC: UIViewController {
         conditionBox.addSubview(conditionRisk)
     }
     
-    //Returns: yPosition
-    func setupProtocolsBox(yPositionMain: CGFloat) {
+    func setupBloodTestBox(height: CGFloat, yPositionMain: CGFloat) {
         
-        var yPositionProtocols: CGFloat = 12
+        let bloodTestBox = UIButton()
+        bloodTestBox.frame = CGRect(x: 12, y: yPositionMain, width: screenSize.width - 24, height: 150)
+        bloodTestBox.backgroundColor = mainColor
+        bloodTestBox.layer.cornerRadius = cornerRadius
+        bloodTestBox.addTarget(self, action: #selector(labworkBtnPressed(_:)), for: .touchUpInside)
+        scrollView.addSubview(bloodTestBox)
         
-        let protocolsBox = UIView()
-        protocolsBox.frame = CGRect(x: 0, y: yPositionMain, width: screenSize.width, height: 240)
-        scrollView.addSubview(protocolsBox)
+        var yPosition: CGFloat = 12
         
-        //MARK: Protocols Title Label
-        let protocolsTitle = UILabel()
-        protocolsTitle.frame = CGRect(x: 12, y: yPositionProtocols, width: screenSize.width - 24, height: 20)
-        protocolsTitle.text = "Protocols"
-        protocolsTitle.font = .header3()
-        protocolsTitle.textColor = .black
-        protocolsBox.addSubview(protocolsTitle)
+        let titleLabel = UILabel()
+        titleLabel.frame = CGRect(x: 12, y: yPosition, width: bloodTestBox.frame.width - 24, height: 20)
+        titleLabel.text = "Blood Test Results"
+        titleLabel.font = .header3()
+        titleLabel.textColor = .white
+        bloodTestBox.addSubview(titleLabel)
         
-        yPositionProtocols += 20 + 8
+        yPosition += titleLabel.frame.height + 2
+                              
+        let subtitileLabel = UILabel()
+        subtitileLabel.frame = CGRect(x: 12, y: yPosition, width: bloodTestBox.frame.width - 24, height: 20)
+        subtitileLabel.text = "31 biomarkers tested"
+        subtitileLabel.font = .paragraph2()
+        subtitileLabel.textColor = .white
+        bloodTestBox.addSubview(subtitileLabel)
         
-        //MARK: Individual Protocols
-        //TODO: Account for other days than today
-        for _ in 0...2 {
-            
-            let boxHeight: CGFloat = 60
-            
-            let toggleButtonWH: CGFloat = 32
-            let toggleButtonY: CGFloat = (boxHeight - toggleButtonWH) / 2
-            
-            let individualProtocolBox = UIView()
-            individualProtocolBox.frame = CGRect(x: 0, y: yPositionProtocols, width: screenSize.width, height: boxHeight)
-            protocolsBox.addSubview(individualProtocolBox)
-            
-            let protocolName = UILabel()
-            protocolName.frame = CGRect(x: 12, y: toggleButtonY, width: 150, height: 12)
-            protocolName.text = "Vitamin D"
-            protocolName.font = .paragraph1()
-            protocolName.textColor = .black
-            individualProtocolBox.addSubview(protocolName)
-            
-            let protocolValue = UILabel()
-            protocolValue.frame = CGRect(x: 50, y: toggleButtonY + toggleButtonWH - 12, width: 150, height: 12)
-            protocolValue.text = "1000 iu"
-            protocolValue.font = .paragraph3()
-            protocolValue.textColor = #colorLiteral(red: 0.6941176471, green: 0.6941176471, blue: 0.6941176471, alpha: 1)
-            individualProtocolBox.addSubview(protocolValue)
-            
-            let protocolTime = UILabel()
-            protocolTime.frame = CGRect(x: 12, y: toggleButtonY + toggleButtonWH - 12, width: 70, height: 12)
-            protocolTime.text = "3PM"
-            protocolTime.font = .paragraph3()
-            protocolTime.textColor = #colorLiteral(red: 0.6941176471, green: 0.6941176471, blue: 0.6941176471, alpha: 1)
-            individualProtocolBox.addSubview(protocolTime)
-            
-            let protocolToggleButton = UIButton()
-            protocolToggleButton.frame = CGRect(x: individualProtocolBox.frame.width - toggleButtonWH - 24, y: toggleButtonY, width: toggleButtonWH, height: toggleButtonWH)
-            protocolToggleButton.layer.cornerRadius = protocolToggleButton.frame.height / 2
-            protocolToggleButton.layer.borderWidth = 1
-            protocolToggleButton.layer.borderColor = dividerColor.cgColor
-            protocolToggleButton.setImage(UIImage(named: "protocol_incomplete"), for: .normal)
-            protocolToggleButton.addTarget(self, action: #selector(toggleProtocolBtnPressed(_:)), for: .touchUpInside)
-            protocolToggleButton.tag = 0
-            individualProtocolBox.addSubview(protocolToggleButton)
-            
-            yPositionProtocols += 60
-        }
+        let seeReportBox = UIView()
+        seeReportBox.frame = CGRect(x: 12, y: height - 35 - 12, width: bloodTestBox.frame.width - 24, height: 35)
+        seeReportBox.backgroundColor = .black.withAlphaComponent(0.25)
+        seeReportBox.layer.cornerRadius = 10
+        bloodTestBox.addSubview(seeReportBox)
         
-        let addProtocolButton = UIButton()
-        addProtocolButton.setTitleColor(.black, for: .normal)
-        addProtocolButton.setTitle("Add Protocol", for: .normal)
-        addProtocolButton.titleLabel?.font = .header2()
-        addProtocolButton.frame = CGRect(x: (screenSize.width / 2) - 70, y: yPositionProtocols, width: 140, height: 40)
-        addProtocolButton.addTarget(self, action: #selector(addProtocolBtnPressed(_:)), for: .touchUpInside)
-        protocolsBox.addSubview(addProtocolButton)
+        let seeReportBoxTitle = UILabel()
+        seeReportBoxTitle.frame = CGRect(x: 12, y: 0, width: bloodTestBox.frame.width - 24, height: seeReportBox.frame.height)
+        seeReportBoxTitle.text = "See report"
+        seeReportBoxTitle.font = .paragraph3()
+        seeReportBoxTitle.textAlignment = .center
+        seeReportBoxTitle.textColor = .white
+        seeReportBox.addSubview(seeReportBoxTitle)
         
     }
     
-    //Returns: yPosition
-    func setupSymptomsBox(yPositionMain: CGFloat) {
+    func conditionAtRisk(yPosition: CGFloat, height: CGFloat, name: String, riskValue: CGFloat) {
         
-        var yPositionSymptoms: CGFloat = yPositionMain
+        let riskBox = UIView()
+        riskBox.frame = CGRect(x: 12, y: yPosition, width: screenSize.width - 24, height: height)
+        riskBox.backgroundColor = .white
+        riskBox.layer.cornerRadius = cornerRadius
+        scrollView.addSubview(riskBox)
         
-        //MARK: Symptom Title Label
-        let symptomsTitle = UILabel()
-        symptomsTitle.frame = CGRect(x: 12, y: yPositionSymptoms, width: screenSize.width - 24, height: 20)
-        symptomsTitle.text = "Symptoms"
-        symptomsTitle.font = .header3()
-        symptomsTitle.textColor = .black
-        scrollView.addSubview(symptomsTitle)
+        let conditionName = UILabel()
+        conditionName.frame = CGRect(x: 24, y: 0, width: riskBox.frame.width / 2, height: riskBox.frame.height)
+        conditionName.text = name
+        conditionName.font = .paragraph4()
+        conditionName.textAlignment = .left
+        conditionName.textColor = .black
+        riskBox.addSubview(conditionName)
         
-        //MARK: Add Symptoms
-        let addSymptomButton = UIButton()
-        addSymptomButton.setTitleColor(.black, for: .normal)
-        addSymptomButton.setTitle("+", for: .normal)
-        addSymptomButton.titleLabel?.font = .header1()
-        addSymptomButton.titleLabel?.textAlignment = .center
-        addSymptomButton.frame = CGRect(x: screenSize.width - 32, y: yPositionSymptoms, width: 20, height: 20)
-        addSymptomButton.addTarget(self, action: #selector(addSymptomBtnPressed(_:)), for: .touchUpInside)
-        scrollView.addSubview(addSymptomButton)
-    
-        yPositionSymptoms += 20 + 12
+        let riskValueSkeleton = UIView()
+        let riskValueSkeletonWidth: CGFloat = (riskBox.frame.width / 1.8) + 12
+        riskValueSkeleton.backgroundColor = grayTextColor
+        riskValueSkeleton.frame = CGRect(x: riskBox.frame.width - riskValueSkeletonWidth - 12 , y: (riskBox.frame.height / 2) - 5, width: riskValueSkeletonWidth, height: 7)
+        riskValueSkeleton.layer.cornerRadius = riskValueSkeleton.frame.height / 2
+        riskValueSkeleton.clipsToBounds = true
+        riskBox.addSubview(riskValueSkeleton)
         
-        for symptomName in symptomHighlights {
-            let symptomLogBox = UIView()
-            symptomLogBox.frame = CGRect(x: 12, y: yPositionSymptoms, width: screenSize.width - 24, height: 130)
-            symptomLogBox.backgroundColor = .white
-            symptomLogBox.layer.cornerRadius =  10
-            scrollView.addSubview(symptomLogBox)
-            
-            let symptomTitle = UILabel()
-            symptomTitle.frame = CGRect(x: 12, y: 24, width: screenSize.width - 24, height: 20)
-            symptomTitle.text = symptomName
-            symptomTitle.textAlignment = .left
-            symptomTitle.font = .header3()
-            symptomTitle.textColor = .black
-            symptomLogBox.addSubview(symptomTitle)
-            
-            let logSymptomButton = UIButton()
-            logSymptomButton.frame = CGRect(x: 12, y: symptomLogBox.frame.height - 35 - 12, width: symptomLogBox.frame.width - 24, height: 35)
-            logSymptomButton.backgroundColor = .black
-            logSymptomButton.setTitle("Log Symptom", for: .normal)
-            logSymptomButton.titleLabel?.font = .paragraph2()
-            logSymptomButton.titleLabel?.textColor = .white
-            logSymptomButton.layer.cornerRadius = 17.5
-            symptomLogBox.addSubview(logSymptomButton)
-            
-            yPositionSymptoms += 130 + 12
-        }
+        let riskValueBar = UIView()
+        riskValueBar.backgroundColor = mainColor
+        riskValueBar.frame = CGRect(x: 0 , y: 0, width: (riskValue / 100) * riskValueSkeletonWidth, height: 7)
+        riskValueBar.layer.cornerRadius = riskValueSkeleton.frame.height / 2
+        riskValueSkeleton.addSubview(riskValueBar)
         
     }
     
@@ -272,139 +311,93 @@ class HomeVC: UIViewController {
         }
     }
     
+    @IBAction func labworkBtnPressed(_ sender: UIButton) {
+    
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "LabworkResultsVC")
+        present(vc, animated: true, completion: nil)
+    }
+    
     
     // -------------------------
     // Week Calendar Cell
     // Configuration & Functions
     // -------------------------
     
-    var isDeselecting: Bool = false
-    
-    func configureCell(view: JTACDayCell?, cellState: CellState) {
-        guard let cell = view as? WeekCalendarCell  else { return }
-        
-        let dateFormatter = DateFormatter()
-
-        dateFormatter.dateFormat = "d"
-
-        handleCellConfiguration(cell: cell, cellState: cellState)
-        
-        if cellState.date <= Date() {
-           cell.isHidden = false
-        } else {
-           cell.isHidden = true
-        }
-        
-        cell.dayNumberLabel.text = dateFormatter.string(from: cellState.date)
-        //cell.dayNumberLabel.font = .unicaRegular(size: 12)
-        
-        cell.outlineBox.layer.cornerRadius =  cell.outlineBox.frame.width / 2
-//        cell.outlineBox.layer.borderWidth = 1
-//        cell.outlineBox.layer.borderColor = dividerColor.cgColor
-        
-        cell.dateIndicatorBox.layer.cornerRadius =  cell.dateIndicatorBox.frame.width / 2
-        
-        dateFormatter.dateFormat = "EEEEE"
-        cell.daySymbolLabel.text = dateFormatter.string(from: cellState.date)
-        //cell.daySymbolLabel.font = .unicaRegular(size: 8)
-        
-        
-    }
-    
-    func handleCellConfiguration(cell: JTACDayCell?, cellState: CellState) {
-        handleCellSelection(view: cell, cellState: cellState)
-    }
-    
-    func handleCellSelection(view: JTACDayCell?, cellState: CellState) {
-        guard let cell = view as? WeekCalendarCell else { return }
-        
-        cell.dateIndicatorBox.layer.cornerRadius = cell.dateIndicatorBox.frame.width / 2
-        
-        if cellState.isSelected {
-            //                if justLaunched == true {
-            //                    monthLbl.text = dateFormatter.string(from: cellState.date)
-            //                }
-            //                loadDay(date: cellState.date)
-            //                selectedDate = cellState.date
-            cell.daySymbolLabel.textColor = .white
-            cell.dateIndicatorBox.backgroundColor = .black
-        } else {
-            cell.daySymbolLabel.textColor = .black
-            cell.dateIndicatorBox.backgroundColor = .clear
-        }
-        
-    }
-    
-    func calendar(_ calendar: JTACMonthView, didSelectDate date: Date, cell: JTACDayCell?, cellState: CellState, indexPath: IndexPath) {
-         configureCell(view: cell, cellState: cellState)
-        
-        let dateFormatter = DateFormatter()
-        
-        dateFormatter.dateFormat = "EEE, MMM d"
-        
-        if cellState.date.get(.year) != Date().get(.year) {
-            dateFormatter.dateFormat = "EEE, MMM d, yyyy"
-        }
-        
-        let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: Date())!
-        if Calendar.current.isDate(cellState.date, inSameDayAs: Date()) {
-            dateTopLabel.text = "Today"
-        } else if Calendar.current.isDate(cellState.date, inSameDayAs: yesterday) {
-            dateTopLabel.text = "Yesterday"
-        } else {
-            dateTopLabel.text = dateFormatter.string(from: cellState.date)
-        }
-     }
-    
-    func calendar(_ calendar: JTACMonthView, didDeselectDate date: Date, cell: JTACDayCell?, cellState: CellState, indexPath: IndexPath) {
-        isDeselecting = true
-        configureCell(view: cell, cellState: cellState)
-        isDeselecting = false
-        
-     }
-
-
 }
 
-extension HomeVC: JTACMonthViewDataSource {
-    func configureCalendar(_ calendar: JTACMonthView) -> ConfigurationParameters {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en")
-        formatter.dateFormat = "yyyy MM dd"
-        let startDate = formatter.date(from: "2020 01 01")!
-        let endDate = Date()
-        
-        return ConfigurationParameters(startDate: startDate,
-                                       endDate: endDate,
-                                       numberOfRows: 1,
-                                       generateInDates: .off,
-                                       generateOutDates: .off,
-                                       hasStrictBoundaries: false)
-    }
-}
 
-extension HomeVC: JTACMonthViewDelegate {
 
-    func calendar(_ calendar: JTACMonthView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTACDayCell {
-        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "WeekCalendarCell", for: indexPath) as! WeekCalendarCell
-        self.calendar(calendar, willDisplay: cell, forItemAt: date, cellState: cellState, indexPath: indexPath)
-
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en")
-        formatter.dateFormat = "yyyy MM dd"
-        let startDate = formatter.date(from: "2020 01 01")!
-        let endDate = Date()
+extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    //MARK: - Collection View Delegate and Data Source
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! HorizontalCalendarCell
+        cell.dateLabel.text = self.calendarArray[indexPath.row] as? String
+        cell.backgroundColor = .clear
         return cell
     }
     
-//    func calendar(_ calendar: JTACMonthView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
-//        if let index = daysInWeek.firstIndex(of: "Monday") {
-//            weekCalendarView.selectDates([weekCalendarView.visibleDates().monthDates[index].date])
-//        }
-//
-//    }
-    
-    func calendar(_ calendar: JTACMonthView, willDisplay cell: JTACDayCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
-        configureCell(view: cell, cellState: cellState)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedDateLabel.text = self.calendarArray[indexPath.row] as? String
+        
+        let centeredIndexPath = IndexPath.init(item: selectedDate, section: 0)
+        calendarView.scrollToItem(at: centeredIndexPath, at: .centeredHorizontally, animated: true)
+        
+        if indexPath == centeredIndexPath {
+            calendarView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        }
     }
+    
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if calendarView == scrollView {
+            setSelectedItemFromScrollView(scrollView)
+        }
+    }
+    
+    func setSelectedItemFromScrollView(_ scrollView: UIScrollView) {
+        if calendarView == scrollView {
+
+            let center = CGPoint(x: (calendarView.frame.size.width / 2) + scrollView.contentOffset.x, y: (calendarView.frame.size.height / 2) + scrollView.contentOffset.y)
+            let index = calendarView.indexPathForItem(at: center)
+
+            if index != nil {
+                calendarView.scrollToItem(at: index!, at: .centeredHorizontally, animated: true)
+                self.calendarView.selectItem(at: index, animated: false, scrollPosition: [])
+//                self.collectionView(self.calendarView, didSelectItemAt: index!)
+
+                self.selectedDate = (index?.row)!
+                self.selectedDateLabel.text = self.calendarArray[(index?.row)!] as! String?
+            }
+        }
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        if calendarView == scrollView && !decelerate  {
+            setSelectedItemFromScrollView(scrollView)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.width / 2.6
+        let height = 30.0
+        return CGSize(width: width, height: height)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return calendarArray.count
+    }
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        //MARK: Spacing Between individual cells - Calendar Dates
+        return 0
+    }
+    
 }

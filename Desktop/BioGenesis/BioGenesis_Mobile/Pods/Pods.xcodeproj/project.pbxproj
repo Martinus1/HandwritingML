@@ -7,445 +7,233 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0230DCCD0AB407DAF3016451583642E5 /* RCPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF8D00C6B2F0145D7FB78DD44805153 /* RCPackage.m */; };
-		04B35D5E8E3BDB76AA389EED57EC1116 /* RCPurchaseOwnershipType.h in Headers */ = {isa = PBXBuildFile; fileRef = 864AA35565EBC1EE0A6604D485ADF249 /* RCPurchaseOwnershipType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053039E63AC6F1E670D36130D6E02608 /* PurchasesCoreSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5C143CD42F128E45336EAC88E15BF4 /* PurchasesCoreSwift-dummy.m */; };
-		0566194A10D04FB93EC9CA4B2BC70F4F /* RCPurchaserInfoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AEEB8597812190E1520E9E8ADFA0FA5 /* RCPurchaserInfoManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		07047CE53D94EC10F506F21E664CB34E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1000410AABAC8444B7B26CD6F6BDB0 /* StoreKit.framework */; };
-		08A5557E3BD7E9B7BA665A9269C5B5B7 /* NSDate+RCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B7B935FB0FBEA0463468B9E68E4D701 /* NSDate+RCExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		09CF559639BB069216683CB824182AB7 /* RCPurchasesErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4EBC1579B06AB053DC60E5E80E05FF /* RCPurchasesErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09E0562C816CF7C9D41ABB405F579EFC /* ProductsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9801F4856C387BF63F63959B4D5CE191 /* ProductsManager.swift */; };
-		0A3A2668F99B31B2183EB1913246D005 /* RCLoggerBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E786C2B46D1F83238A2E7B26141194 /* RCLoggerBridge.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0ADD82A236EF73D01F39C547E79C1B05 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1000410AABAC8444B7B26CD6F6BDB0 /* StoreKit.framework */; };
-		0BD2E89A7AAA05D5A538A5914B58ABB9 /* RCAttributionNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = E481BEDBE68A4D58471D716AF3A6A41F /* RCAttributionNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C92157532BED99A62518A7B5722FC6B /* RCInMemoryCachedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E3BCA0D95DD6317D9A27826150FDD8 /* RCInMemoryCachedObject.m */; };
-		0E26F9A5D8C6BA0EE5D2ECF868C22376 /* JTACInteractionMonthFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423CB8961E0225B90C1F7525B83F19FF /* JTACInteractionMonthFunctions.swift */; };
-		103799F164613DFCF9B6413D265E1F0B /* RCHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9CF998DFD87680208C52D08494FE7 /* RCHTTPRequest.m */; };
-		143C34EB9F90159828CD83EDB573A327 /* RCSubscriberAttributesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C06F622FB84061785F16D89F2FB1D393 /* RCSubscriberAttributesManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		18371F1B9EBCFFB030D8C25E35DFF03B /* RCOfferingsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 809A088D1F854CB4B6E434EB3DD5782A /* RCOfferingsFactory.m */; };
-		19CEBEF508C5835E67A402ED6FB98BBB /* AttributionDataMigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BECD6038204DD8F304F3A866A6974 /* AttributionDataMigrator.swift */; };
-		19F3FBF0DEA56AE7B7A790B9FB038667 /* RCPurchases.m in Sources */ = {isa = PBXBuildFile; fileRef = 744278EC9FEF0001E95E3852F22F0C24 /* RCPurchases.m */; };
-		1C43299521B1C61C8F4B2E42340273D5 /* NSError+RCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD5C01F45742F10485486AC03BDCBD /* NSError+RCExtensions.m */; };
-		1C5673308B21F172DC1CA769B3EB15B2 /* JTACYearViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BF4FD4476611B21FA772EA70007DC7 /* JTACYearViewProtocols.swift */; };
-		1D48E5B0A4642EC6F0470FF4FF310D91 /* IntroEligibilityCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0D702C0B732D597C0DAE22FC97D59 /* IntroEligibilityCalculator.swift */; };
-		1F2AADAA96CCF383E1B02992207FB1C4 /* RCHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 452AE602601F59B64E782307EA67FE48 /* RCHTTPClient.m */; };
-		1F47E2F1CF2A4B8B6DC2C78AED914739 /* RCPurchaserInfo+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 206CD49CDA4F3B75007879FDB7C6AA72 /* RCPurchaserInfo+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1FC76FA7A66B7AE3D037D0C9EB384B93 /* ASN1ObjectIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5F4B233FD247E075D4FAF2AD818C94 /* ASN1ObjectIdentifier.swift */; };
-		2293D8CF2B6D6FFF0186C7F9578BDF74 /* PurchasesCoreSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B51404464C4EB6D4C594037AEB68841 /* PurchasesCoreSwift.framework */; };
-		2381899139C3681D5BA64C95CC946D48 /* RCAttributionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D577DC28F63F9B8D871F3F7893131 /* RCAttributionData.m */; };
-		24C36B6B0BA909BB0171F53D30DAC20C /* ETagAndResponseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071B874D4E5D2D65EA1CCB079A409FF8 /* ETagAndResponseWrapper.swift */; };
-		2692D9AC8E9DC5E6B4105D9F5410E2A7 /* RCISOPeriodFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 749B58483A16645A55E3B9223F86243C /* RCISOPeriodFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2703B7F6A15DEBFB65601CC622975A31 /* ASN1ContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA183C7B8C0CFF6CFCBC3E7622288F7 /* ASN1ContainerBuilder.swift */; };
-		273648D3E441D182BD03EC3934938E19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */; };
-		27B95A43786C28321FF555D5A49D151B /* RCStoreKitWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5B6343367E740C1C398FFE33EBC59 /* RCStoreKitWrapper.m */; };
-		2812B721BED6BE953ECD68150FBE6CD3 /* RCHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CE37AF398CC57BE1BA14860D9DF4A4EB /* RCHTTPClient.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2AAABB893962BFB924DA818C212BEA9D /* RCEntitlementInfos.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2E268B8E421A97A2C6F4B424231AD3 /* RCEntitlementInfos.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B43850C62F142CDDCD7A651E75D6216 /* TransactionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23A9BD5B37F84B5BF3B664014DA257C /* TransactionsFactory.swift */; };
-		2BB7923E64D65806DE3F1EB60A18D290 /* RCEntitlementInfos.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA60ED8A112FE6C9104758E2446F5B1 /* RCEntitlementInfos.m */; };
-		2BE3A5E73EF8B82A7B81502AF9E80ED7 /* AppleReceiptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00021ABE658DACF6063F788268F603 /* AppleReceiptBuilder.swift */; };
-		2C085DFB5D84D7B24B0308D647B448F7 /* RCStoreKitRequestFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 6193AC30BD0DF9A7835513B2DC97E226 /* RCStoreKitRequestFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2D4ABC9716A57AB626AC73C724E75996 /* DangerousSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCBF4E781F4A615073F54941B004366 /* DangerousSettings.swift */; };
-		307EF710FC757851790A8D99262E4A92 /* RCOffering.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E3CD9F528CE77104D3B2A64AB7B147 /* RCOffering.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		318384A5C87B8A677871B5B17E207E1C /* JTACMonthDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BD4921B7CFCB54FB1383084C55F5D /* JTACMonthDelegateProtocol.swift */; };
-		34EE163A3015801CD5ABC19CF0028DCF /* JTACYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C0C33969C8EDBFE06C5D1F26EBF4C /* JTACYearView.swift */; };
-		34F240432D7B3EC5208EC30CEC62366F /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C75027C7DD73EAA927504AAC037734 /* JTAppleCalendar-dummy.m */; };
-		3586C894A8F9D6899B58FF1160FBE210 /* NSLocale+RCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADCD8B2149D3F888191E559C2CB4FF9 /* NSLocale+RCExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3681BAE224B6948C9D2CC09C5A9F18F6 /* Pods-BioGenesis-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A1CE7E0DAB62276AC9482C7E11C669 /* Pods-BioGenesis-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36A01BD66C9502F0410902A348C4B265 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB48CFAAFB23EEB5DBD9274A562336E /* Strings.swift */; };
-		3715E0C19BA84157E64EADC3047E5272 /* JTACInteractionYearFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1CAB052DA0D4EB01126733E6B86DF /* JTACInteractionYearFunctions.swift */; };
-		37279E4FA065F5A2333B50D4B662F558 /* PurchasesCoreSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0962F19015317EE5F45954986A3B75 /* PurchasesCoreSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A714A6754BBA07F03B2F22001DA0B88 /* RCIdentityManager+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FE38DEF3F5BA08B07B1100C985CA3BA /* RCIdentityManager+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3AEF8A82708368D2A79B1E51FC5A9BE8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA241C496179F2C219155D6B5710488 /* Transaction.swift */; };
-		3B87A484460CF9B35E12B49012648B95 /* SpecialSubscriberAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B49DE47DC096F24FEC293E5BBF98B0 /* SpecialSubscriberAttributes.swift */; };
-		3BA811B685EEDC0EDF87ADEC3F95C1CB /* RCStoreKitWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = DB76C838C7D3B217E2A1EAD1E9570C6A /* RCStoreKitWrapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3BF79DD81978E3BC329CDDF1BF39909F /* IdentityStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241E483E15A49F64638CB3FDDE77E87A /* IdentityStrings.swift */; };
-		3C2D6CE127D127A954E72531D832B0C1 /* RCOfferings.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FFF8D60C7525076F048436EAF4BF83 /* RCOfferings.m */; };
-		3D454C4CF8E6466965C1A3D386C2C458 /* RCProductInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E34482ACFEAFDF9C78876BA3AC515F0 /* RCProductInfo.m */; };
-		4033174A407D22B70BD1BD036FDA196C /* RCPurchaserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B514529EFC08F3FBC568AE43B2900AF /* RCPurchaserInfo.m */; };
-		410E98660E092C183D9DDDE255557FD8 /* RCISOPeriodFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD214776ED311F6AE4E39BDC344DF88E /* RCISOPeriodFormatter.m */; };
-		464B578C5212326009A5D0E593586BAF /* RCOfferingsFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 02D2D2DCF145FAA28A1D22AD85AFCBD0 /* RCOfferingsFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4751A8CC9CDFC0C41E1E542013940FDA /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE0BA8912BEC698C20071A36AF86F4 /* DictionaryExtensions.swift */; };
-		47B1FF7E2CB8DC8786B73B01EA61F6AB /* RCPurchases+SubscriberAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5C852E88E14D8299D5E2A0A3AAEDE /* RCPurchases+SubscriberAttributes.m */; };
-		482C07C72501CA699D1BCBF96208C278 /* RCAttributionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F91F2F63EF39F17BF3E32F8742BE6C6 /* RCAttributionFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4879D4123D4E107F9B6CA79FC3ACF702 /* ReceiptParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24701D814DB3EB70C17789DC73ADEEC0 /* ReceiptParser.swift */; };
-		48F80ACF4FEC3B84A3DCB2DF48368C33 /* RCHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E1626B852CC39B5F4E28B648DAFD380A /* RCHTTPRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4A1B1BF5F301CBCB7C1DCAF0CA0929D8 /* RCAttributionPoster.h in Headers */ = {isa = PBXBuildFile; fileRef = 9851D0E638508523B3686529DF7FD6E2 /* RCAttributionPoster.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4DEA50523AF2386FE2B241C5722D07BC /* JTACScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8985DAA1815013E817203665F1CECB /* JTACScrollViewDelegates.swift */; };
-		4E37CC804F64488B9827DD4CB3F4FF66 /* RCAttributionTypeFactory+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 016CC51FADF300D4EB3643326BCA4FF5 /* RCAttributionTypeFactory+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4E87E227877FC7BB5E936FCCD70D6E87 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0814F041956C1F61FE3522562BCD1462 /* Logger.swift */; };
-		50674FB357AE5C0A5DD5364B0E9C4B65 /* OperationDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C803EF6318AA80B9B6262C561CDC3F /* OperationDispatcher.swift */; };
-		53EF3C49D20A0BED0271FD0475137774 /* RCIntroEligibility+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 4228BF86960CD824BD9CB4E5EB8118C7 /* RCIntroEligibility+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		58FCC8624A5E78C000C9EBE2C59A6302 /* ReceiptParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D53A75B2778949973FFC7C8D7F7A42 /* ReceiptParsingError.swift */; };
-		590400BC5D398B94E806F26CFDC91C41 /* JTACMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058C54936F6F03C096B98B0B9C90E95 /* JTACMonthView.swift */; };
-		5C1FCFD5C527A5605E1F9A30070BEF93 /* RCPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FC14AA2FB9956AF6559D7204020831E /* RCPackage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CAF6E85D9983E1603DA329414CAC7DD /* JTACMonthLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C370B33D88C33B0171D1D9FC8089D3 /* JTACMonthLayout.swift */; };
-		5CDB6A8CCF1E486299D91B6D55C5B939 /* JTACCollectionYearViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5710A8BE18ABAFA056195BC41162D58 /* JTACCollectionYearViewDelegates.swift */; };
-		5D80681BBD9FF7C615BF86BFA1914522 /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED93C49C3C578DAD605472E70D5451B /* GlobalFunctionsAndExtensions.swift */; };
-		5ECB9F417ECC6EF74BBE8F4217FC9525 /* ETagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87EAF230A38CDD2CE0961C23D88AB38 /* ETagManager.swift */; };
-		61767315E6CFA7EC7354C266CB6AF591 /* LogIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F27CD2EE845A669EF2C6FBCC2B04E92 /* LogIntent.swift */; };
-		630C3DEFE8976FF95A8339906AD5CC47 /* NSData+RCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 803B734FF9756204697056D9D957DB18 /* NSData+RCExtensions.m */; };
-		6474B540AF4C6401D26DC0E28702C3D4 /* JTACDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED28ADF5CBF68948EEA10699876EE7A6 /* JTACDayCell.swift */; };
-		64AC61118AF6E39FB0035540BFA8D7E0 /* NSLocale+RCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27118D3871518BA6403BA603614252C2 /* NSLocale+RCExtensions.m */; };
-		6A12E218BF7C93C60DC620F75C26734C /* JTACMonthActionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3434184826C11EA2B6297447BB507C26 /* JTACMonthActionFunctions.swift */; };
-		6A29F2D6851ABB9EA15521CAD91E03AB /* ArraySlice_UInt8+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641CE949698C6F9C0B1C59A973EC2CB5 /* ArraySlice_UInt8+Extensions.swift */; };
-		6B23F5AB49A66DCDCCE1B21F9A856CB2 /* RCIdentityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C239778CB1CCBAEFD1D33BE2F988E89 /* RCIdentityManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6B55D57A3483647D8012EC01334EC8F7 /* JTACMonthLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43AB9EDA7F8A6034D04AE27E62D877 /* JTACMonthLayoutProtocol.swift */; };
-		6D6EDCC7D7202EADE3088A678BDB2F5E /* RCOfferings.h in Headers */ = {isa = PBXBuildFile; fileRef = D8EBC807BBA31C26FA0C83074949172A /* RCOfferings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		704D62A0764E09E128682AC304D49406 /* RCPromotionalOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C1E112A4E2C1104FE5E54407425DED /* RCPromotionalOffer.m */; };
-		70BDEA2E1DF03B586F48B5E27DA8056C /* RCDateProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A218D0CB5B9F39B7C7145BDB6554D0 /* RCDateProvider.m */; };
-		713494AC3797A5CCE4928EEF1B617552 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84520A3DD74AE363E37055022A1D9DDA /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		728CAA84B0161D41A04B372E517BBD34 /* RCProductInfoExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 10943FF2EA4E267062EC9E40B19BA29D /* RCProductInfoExtractor.m */; };
-		7291EB0A6F29A7B25C01496116F7F4CA /* Purchases.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A91B677553CBA8C0E07A5A61ED4B78 /* Purchases.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		745450A4D5C013C2554E3CCBBCA316B1 /* Purchases-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF28366DE4CE1863CAB1CC22B2E5D63 /* Purchases-dummy.m */; };
-		76C08815BF82C14A6836F9A21B205B09 /* NSDictionary+RCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8173D1F6BB78F4BA1538D84F462C11 /* NSDictionary+RCExtensions.m */; };
-		774ACCC4BD83A35155BCC7929A1F2CBE /* RCPurchaserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE8C72EDB1A2104591AB6787C827C48 /* RCPurchaserInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77E53E173970C24379557CDEFD475EAE /* RCPurchasesErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF7E7B03F768632874DF06A616BF38 /* RCPurchasesErrorUtils.m */; };
-		78A6D3233AA56A7CDE83FCFC91C71711 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */; };
-		7997D1523380A9D7B9516FC708F88C36 /* RCIntroEligibility.m in Sources */ = {isa = PBXBuildFile; fileRef = A93BCB0FCE23F7BE6C302E2D00A6B18D /* RCIntroEligibility.m */; };
-		7A5857FA70DC1656C7DDA451DFEE09DF /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0DB2FCE7DB2B069F0F9952F1BC8F8 /* CalendarEnums.swift */; };
-		7A7C27D30895A3EF7A01DD7E1D88BC8C /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61778A7B0112D97AA4E79425FFF642EF /* HTTPResponse.swift */; };
-		7AD3BC61901379788FE24B955271B194 /* RCPurchaserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23672089433DB32C4F6AFA73F0ABB5D3 /* RCPurchaserInfoManager.m */; };
-		7B353E9A3750EC0936BDA3685D837C14 /* RCPurchaserInfoManager+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = A45070F644F842B7FE33CAF1B9CCBE44 /* RCPurchaserInfoManager+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7C07C634D3DF4C7D1795C59755827ACC /* AttributionNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07AC5F4A7D0BECC7D1C82F010134BA3 /* AttributionNetwork.swift */; };
-		7EB322AEBE02421192C2F6924C6E78F2 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BF46C29D62EF4F6EFA2F43A993A98F /* DateExtensions.swift */; };
-		80EB8958EEB0B0DBB5701477C1049419 /* ASN1Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73B4E5366844A4D0AE464EFF2DE57C /* ASN1Container.swift */; };
-		80FC057D1D6361A4ABCF3FF28739A9B2 /* RCIdentityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FC9B1B053D9A3695D45CCDBC485915 /* RCIdentityManager.m */; };
-		8216226E4609BF60E655FF96E4DF2A62 /* JTACMonthQueryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB227AAC4F5A42FB12D812B0EC9051FE /* JTACMonthQueryFunctions.swift */; };
-		82ABD8119BCAAC7E4C975AB44B1DF851 /* JTACMonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B1EF3C29C2D13A96F84E2267AACD7 /* JTACMonthCell.swift */; };
-		82CC618B9FAB2DBA02C9F521A771E3D5 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1036897D9B84E5BA61CBF3958FDC8F /* InAppPurchase.swift */; };
-		8338DEFE734E10FE2055E168B176BB4D /* NSError+RCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2075737BEEB0828AAEE3C315F2631131 /* NSError+RCExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8411099B302D729ECB43C1938C19D7C7 /* RCSubscriberAttribute+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = A4290354744202456185EFF632079FE0 /* RCSubscriberAttribute+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		86459E3C578286A4CC6519A9FE88FD71 /* JTACCollectionMonthViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2B7243329FFF2FD32433B97BB85D8 /* JTACCollectionMonthViewDelegates.swift */; };
-		88BD14A313603D2CFB9B85E38DECE848 /* ISO3601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA70726C3A8666DC5D2983B51F1AEB /* ISO3601DateFormatter.swift */; };
-		8B0F20896984B93A751A4BBC81C8B83D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */; };
-		8C53537A7C874EFF8211967EED2BB48F /* RCBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D54FF0296F37DE71FC2A5E7CC08DDAF /* RCBackend.m */; };
-		8CFB704B579ED10FF4AC70ED5098A179 /* UInt8+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330EF08BFCBC68A5D4DCDA3A10028AF6 /* UInt8+Extensions.swift */; };
-		8DBCD7E99622711FE2B9AB05E180B997 /* RCOfferings+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = A5790FBA847B6F400238E62980AAF9E3 /* RCOfferings+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		91089FF5417C09081F6B45786961D3EC /* RCPurchases.h in Headers */ = {isa = PBXBuildFile; fileRef = F321A5E0C1B587A918B058D5400EC3AC /* RCPurchases.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94BD2EB5AE63998A9BAA20887CC1BD01 /* RCDeviceCache+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 3462C312665C33CC7ABEAD3CF5E82A9F /* RCDeviceCache+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		95CF69A431E9C19595F087C32EA342D7 /* RCDeviceCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 882DDCD1AC266E8D1E65FAE0C8ED0BF7 /* RCDeviceCache.m */; };
-		95E8E6BD7809FC2643B7863ED39F0B26 /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33937FEED04611E0F2BCDFD4996CDE /* CalendarStructs.swift */; };
-		96DDEB32AD31DE0A46E3B4EB93AF1410 /* Purchases-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC372241B2E5FE46892F4A0FAB4CF7CD /* Purchases-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97964662AA025D062BD65F255AF4CD95 /* RCAttributionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA94869E04F96380764C9495185690 /* RCAttributionFetcher.m */; };
-		97C133E3BE45BD0F9584768A6800D85D /* RCTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = B280A239ABB985EE55DC3F13AEC864DB /* RCTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98CBFCE16D2AA4722E6EC48A009D7FF5 /* RCAttributionTypeFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 078D8D3FF9E1590418852BFA93DB5D1D /* RCAttributionTypeFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		99660F8E8EE5FCD4F6076976226309FB /* NSDate+RCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAC27B5AA2ED13FD98F075ACE7ADF5 /* NSDate+RCExtensions.m */; };
-		996B2400B9513CACFFBAAE396CCC05FC /* RCSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D2F0CBC540F287D5563F05E6C18DED /* RCSystemInfo.m */; };
-		9A9A710881C64DE296499B4505C91AA4 /* ReceiptStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D21DCDA4A1046FDB1A5AEBAC53A64A /* ReceiptStrings.swift */; };
-		9CF7CBA3C098B8B7FED7CA39D4A5E1DC /* AppleReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80A30AC0F05CD24142BF27CE461B58 /* AppleReceipt.swift */; };
-		A09A802375949BE022C76596E0EDA71A /* HTTPStatusCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53C4DEEEFEF12B3DE46BDFBB1406A31 /* HTTPStatusCodes.swift */; };
-		A53406C5CE32985EF111C3400ACF6E3C /* RCBackend.h in Headers */ = {isa = PBXBuildFile; fileRef = E71D024C8A18231F3F479A1668A20D0D /* RCBackend.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A5AD50B23C32E8BAEAA6C4C72FABD0D1 /* RCPromotionalOffer+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FAFAE6849B5B1BB9F83F62B3E41BDB8 /* RCPromotionalOffer+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A71A29A0ED7D7F7E4C18601430D66474 /* OfferingStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70760C74CCF11B1302DE66D9AEF4C243 /* OfferingStrings.swift */; };
-		AB740150916A7AC01D0FDD781C569A5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */; };
-		AC5AC1B2E7CC96287E53F3F1234D5D85 /* RCStoreKitRequestFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF4D48B1B48D6BBE6DA852F281A03C /* RCStoreKitRequestFetcher.m */; };
-		B19DCC4BCF710D2A1D09F37259B5B26A /* RCSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = FC908D33A64A7857A63B9A9BBE009520 /* RCSystemInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B36601E66EF160B05245CD34F411AA3E /* Pods-BioGenesis-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E6CF2CC9F4FA18ED20FFF3D095EA10 /* Pods-BioGenesis-dummy.m */; };
-		B4FA08EEBC6A9EDDD6AA7982F2081BC8 /* RCLogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7040511027AA44F25524C716F3B78645 /* RCLogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5582FA69C3ED5E70DC1257080DA2D3D /* PurchaseStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69BF71A8F21D069932F02ABBB084509 /* PurchaseStrings.swift */; };
-		B5CE0B26FC2305594A3B4C23B08C5993 /* RCLoggerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 91876026C2BEF270293216B8BDDAA5AE /* RCLoggerBridge.m */; };
-		B6EBBC72939240945FD16BC5BA8CFC93 /* RCPurchases+SubscriberAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FF85D287AF80292621B5D6FF1E9A12 /* RCPurchases+SubscriberAttributes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B7A7B1E784F3D28B50D0B36AF58E04B2 /* AttributionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D160728C999B08D9E0C5A52A38B530B /* AttributionKey.swift */; };
-		B7F3721E90BAF98D1C6F9D30333A87A9 /* JTACMonthReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D791E8F1239CCA9A3041080A6344CE /* JTACMonthReusableView.swift */; };
-		BA00167EC0B42D098C69F5C6E7A07BD4 /* RCInMemoryCachedObject+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE1E3CF68D0020BA266647131374428 /* RCInMemoryCachedObject+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BC089C3C3FDD4EE70E7B67AAD87BBDFB /* RCReceiptFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BBCA335EC77D93CC7666B5D7C66362 /* RCReceiptFetcher.m */; };
-		BEA433425892DECCA310828601A11276 /* NSDictionary+RCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 403F56EC16E1C430172CBC264DF31BDE /* NSDictionary+RCExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C39E03BA46FBCD6C70FFD51AB162E200 /* RCAttributionData.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DF4B09D54F8F5CBB4865D5C3FF1BFC /* RCAttributionData.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C7CADEA812C4C30A1AC67B55A26A1102 /* RCPurchasesErrorUtils+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = C762153BF465214790ED9A286A9B34CD /* RCPurchasesErrorUtils+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CA3B460DDAF5A6FF1EC7E5F0B38D2A13 /* RCEntitlementInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D57EBFD51A79741192263F0C46365EB /* RCEntitlementInfo.m */; };
-		CC7ED8226E76F900421F8FC43BACC55E /* RCEntitlementInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A33453B48292A25C774D2D631C4C75D0 /* RCEntitlementInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD77CD50F4CA74148A2502A953E21247 /* ProductsRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEEC994DC0C81A97ABC00D99C931370 /* ProductsRequestFactory.swift */; };
-		D15A2D50D9BB7631D7DAA958E2FE6F94 /* RCProductInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A47A195244599A565317A3EADE4D728 /* RCProductInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D18A9D795ACC6AD572914E6873C7A07F /* RCOffering.m in Sources */ = {isa = PBXBuildFile; fileRef = A63E4B94EF3B0DCB633FAA6DCAF70873 /* RCOffering.m */; };
-		D1D8E8AC31B87DBD8926FA894AE3C032 /* NetworkStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D473DCB39B87D34871E03DF26332D45D /* NetworkStrings.swift */; };
-		D2CFCA366056D9F91FA3CF63DADBAB3E /* RCPurchases+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = C768F22BB1D5B9B8A56F46B0D6B9F284 /* RCPurchases+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D407A92C27700D9CF5467960FCC7421A /* RCDateProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAF90C20C814146B47FFBB9B02C7E5B /* RCDateProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D46E142AE282DF43F2CCF38A93115085 /* JTACVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4071A9C4AE1794BB408A6D20A1693D54 /* JTACVariables.swift */; };
-		D5BEF5A52A8ADAB31A094AF802EEA619 /* RCEntitlementInfo+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E54B97D149E95F171CE7798C9C2223 /* RCEntitlementInfo+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D692FD061FBA4D9A927A462F3219A930 /* RCDeviceCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FE472BCEE4FE0307C6AC18A1936A62BF /* RCDeviceCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D6B80FFF3D3C37658D3C3CA1B2BE0AD1 /* JTACMonthViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C26ABC840F18118E5C9F335D437CE37 /* JTACMonthViewProtocols.swift */; };
-		DA494B20C4207AE8F311C0587CED706F /* ConfigureStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AD24FA24CBEDD40C60506AAC75D1E0 /* ConfigureStrings.swift */; };
-		DA70BFDC230F0996C0D7AA61235BAF32 /* PurchaserInfoStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB9A89E92890FA3353B92831621CB3 /* PurchaserInfoStrings.swift */; };
-		DBA18634741BB229E4862BB1E53AD3CD /* InAppPurchaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D35B20ADBC51B719AFBBB90BACA17A /* InAppPurchaseBuilder.swift */; };
-		DDD61C009F4AB0632CD4A529DD62E842 /* RCPromotionalOffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D44C65DAF82E9A51F392D270FCF68D3 /* RCPromotionalOffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DF0FE98619168A163F383AC3CE92345C /* RestoreStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C8C2827C1360D45568AF9CEB96E976 /* RestoreStrings.swift */; };
-		DF5ECDC054A4E16C3706806FD3067B93 /* RCAttributionPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4DFAB4BCDEFA926E8BCE1BF6C0216C /* RCAttributionPoster.m */; };
-		E282383667819FE0378D624646B811F8 /* RCPackage+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2943B3A3D6A0317CFFF78C1AC90840FA /* RCPackage+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E3092DBF1361A12E3F7680D4FEA9D009 /* AttributionStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5243FAC49A2CCE65FA6A6CFAE252333 /* AttributionStrings.swift */; };
-		E325FC62BDFA6273BDB88E7A59610E50 /* JTACMonthLayoutVerticalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C553FA351F51C31FA4C2A095870DF8FB /* JTACMonthLayoutVerticalCalendar.swift */; };
-		E65C573E9E6D4734D4F0CAA1B223B57F /* RCAttributionTypeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD83B868797F95D9A1E2FD977CE8D00 /* RCAttributionTypeFactory.m */; };
-		E66EC903A77057852F8DD6EDC697CC2F /* RCSubscriberAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 7382C99601D78FAA49BB47760B2E76F2 /* RCSubscriberAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E6946A573BCC5CA0FC2B2C7CDD3911BE /* RCReceiptRefreshPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 23112183EACEEA07E6EB6D7A2A9C0236 /* RCReceiptRefreshPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E7F99883D83E44FD05C28CE855CB7140 /* RCIntroEligibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FDB2411982798D9490B89F44CD78E4 /* RCIntroEligibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7FC1492ACEEDA165F9256C6A801F42E /* RCOffering+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C5F34775DEF8B2363EDC01A616F08C /* RCOffering+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E85C680D55CCF8B8437B41FCF178FDB1 /* ASN1ObjectIdentifierBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A6A32E59D47D41BE6175B3A85A7C7 /* ASN1ObjectIdentifierBuilder.swift */; };
-		E8B0E392B4AE5F0C6EFD396C60C2FBCF /* RCLogUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C5A977958F96F2C4305C19DA89AA5D /* RCLogUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EAA8288DA97B76EAED5D938AE3E56756 /* RCReceiptFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 69416C1390E26311384184FF897C5A89 /* RCReceiptFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EB37949C795305AE1460F1C494B7F727 /* RCInMemoryCachedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8D8C1E8124467C8A06F5B6B2A1777D /* RCInMemoryCachedObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ED47C5F2EFD2E26DBFE122C19E67FCEE /* RCPurchasesErrorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A86F19B0A5D723DBB5B641D3D2ED7BB /* RCPurchasesErrorUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDEEE3B56F59D4AEBFE1DAC49529FCC2 /* RCSubscriberAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 626FFF131BD2819044C2AADE21543132 /* RCSubscriberAttribute.m */; };
-		EF038D94205FE4BBE2FE27F081AC39D7 /* NSData+RCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ADE01526339570E162C9E0708AA016C /* NSData+RCExtensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F28B39E2400C1B96B00E1ABD2859C1A3 /* RCProductInfoExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = B472459ADA715C036BF9341746A18806 /* RCProductInfoExtractor.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F392E27B979D9E53E32083DDCDCFD973 /* RCSubscriberAttributesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F431B393B83A75C8045A98F959FA7DA5 /* RCSubscriberAttributesManager.m */; };
-		F53C7E8B7A1773D29A2D19D7F40840B8 /* RCCrossPlatformSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F7CDD3E2C3A569CC1D087F6241E7CF7 /* RCCrossPlatformSupport.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FC7F069C8450D347FE3491A5D859E70A /* RCEntitlementInfos+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FE011114DDF975396E0B42E323C1B5C /* RCEntitlementInfos+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FED6B10E22DE46438C0FCB946741D71E /* JTACMonthLayoutHorizontalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095924A0405B781CF85281549AF32A12 /* JTACMonthLayoutHorizontalCalendar.swift */; };
+		022C443B103C1212789C2CD34B62660E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95568154064CE960195D45B95A17D3E7 /* CoreMedia.framework */; };
+		085AFCB4D71063724F278021DA822198 /* CAMediaTimingFunction+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA39D7B72EED3054F4E2F1175529391 /* CAMediaTimingFunction+Hero.swift */; };
+		0B3A9B0F3496EEA3E2E0DE59E6DB49DC /* Hero-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 065E266F17F983325A12A9AF74C6D786 /* Hero-dummy.m */; };
+		0DDD24DFD337E152787B013BA4DCCD23 /* DispatchQueue+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3930C59D32B24012AD82BB19EFB33C /* DispatchQueue+Hero.swift */; };
+		0E26F9A5D8C6BA0EE5D2ECF868C22376 /* JTACInteractionMonthFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA27CCA34B9449C6E4BDF1A4676DBEF /* JTACInteractionMonthFunctions.swift */; };
+		0F3D8947B1E6926316A24BE91FEA2CF8 /* HeroModifier+HeroStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8FBE35A08DDB993DDBE63358504F74 /* HeroModifier+HeroStringConvertible.swift */; };
+		1C5673308B21F172DC1CA769B3EB15B2 /* JTACYearViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5925C74E2182B52CC9302F56AA46C237 /* JTACYearViewProtocols.swift */; };
+		2253F9883DE686852CC6DA6E3EFAF08B /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAA8CA7696BE50B8462585D7C1D35AF /* SwiftSupport.swift */; };
+		2505D7C1BD283BA7A830422E794ED894 /* HeroTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11956AA4C6BD0497927E67366A92D6F6 /* HeroTransition.swift */; };
+		273648D3E441D182BD03EC3934938E19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */; };
+		2F3427251D6056AA646ADED026182ADB /* HeroViewPropertyViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF82E04231436AECBE86AD60078461BC /* HeroViewPropertyViewContext.swift */; };
+		305A936F60547735F12FDD914EF1353A /* SourcePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB9B98700716BA4ED709667E7A40E1 /* SourcePreprocessor.swift */; };
+		318384A5C87B8A677871B5B17E207E1C /* JTACMonthDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7177FFA0B9EB46DE97F91A42F9767 /* JTACMonthDelegateProtocol.swift */; };
+		32B5846E4ADF469791BF1B7F9A1CAC5E /* CALayer+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D07AB0047DF090D0E99539A5AC9ED4 /* CALayer+Hero.swift */; };
+		32C3EA12C84BD849278FD9BF7C494500 /* HeroTransition+UINavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67D3695BC095921710BB5595F54CA7A /* HeroTransition+UINavigationControllerDelegate.swift */; };
+		34401EE6A3FF48CE7D4E0152208ECF93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD9AC0426072933256DCBD071CD50BA /* UIKit.framework */; };
+		34EE163A3015801CD5ABC19CF0028DCF /* JTACYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F105AE62FD4AE2CC6FFC7B1FE5FAD4 /* JTACYearView.swift */; };
+		34F240432D7B3EC5208EC30CEC62366F /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C434CFC9D5D4311BD1BD43D302AE769 /* JTAppleCalendar-dummy.m */; };
+		367E21EEFB329A9FD356A6185D082603 /* BasePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CD793BE26968491358F4A6AA16B7AD /* BasePreprocessor.swift */; };
+		36F163200D6A41005B555B38013A214A /* CascadePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53DA5D206FFC4FF67159F6D3C15CDB0 /* CascadePreprocessor.swift */; };
+		3715E0C19BA84157E64EADC3047E5272 /* JTACInteractionYearFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AF10546A5B12737AF95FFBF363A45 /* JTACInteractionYearFunctions.swift */; };
+		3955A815007C657E4F5C73F4AA8D17DA /* Locale+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD56D3306439C3333642E7BC5C1404F /* Locale+Hero.swift */; };
+		397098FDB2057B6D501A3876652017F6 /* UIView+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CE67F9597EC37712D82FE2C7C9714 /* UIView+Hero.swift */; };
+		4060F0F631FE2C10931BF78EC656009C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */; };
+		4326332FE57AB8AAE9A0CC8FD7FA397D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */; };
+		4DEA50523AF2386FE2B241C5722D07BC /* JTACScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D1840CC2889F36551BBCD9F036EF8 /* JTACScrollViewDelegates.swift */; };
+		4F7F8AE43DF1AB79674EB6510C6E44E5 /* Hero-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BDD831E3878F1D66453D8F1FA6271E /* Hero-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		507BA0125ABD719B27A9CA86184465CD /* HeroTransition+Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BF3043951A9CF0293F3EFE8DDF09AF /* HeroTransition+Complete.swift */; };
+		52F1DFEC50925F25DAE919FAEFBFC00B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C830FF7C3F0EB792F7F0D41B08BE65 /* QuartzCore.framework */; };
+		590400BC5D398B94E806F26CFDC91C41 /* JTACMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45803DAE70949053E99475F365D1F9C /* JTACMonthView.swift */; };
+		5CAF6E85D9983E1603DA329414CAC7DD /* JTACMonthLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA3D40CA90D38F6E57C55296C6ADB52 /* JTACMonthLayout.swift */; };
+		5CDB6A8CCF1E486299D91B6D55C5B939 /* JTACCollectionYearViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6AAEC3CA05CE5053EE761E204429B3 /* JTACCollectionYearViewDelegates.swift */; };
+		5D80681BBD9FF7C615BF86BFA1914522 /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD4DEDCD087F1C842E80311EAF8E6F /* GlobalFunctionsAndExtensions.swift */; };
+		5ED12CA47F6B502F4CAD49243ED32071 /* HeroViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75401F082864F37A9A05F6D87ABC8925 /* HeroViewControllerDelegate.swift */; };
+		6474B540AF4C6401D26DC0E28702C3D4 /* JTACDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA79EFBE1C42506F6B0C7858D1FD93 /* JTACDayCell.swift */; };
+		65858CE46D9F7ED57E1D0EF948A1AC56 /* HeroCoreAnimationViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12032A75B910232870611A7B29A88D17 /* HeroCoreAnimationViewContext.swift */; };
+		67C04D3CB7D0F8B5E255C6E4702EAB6C /* HeroStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE53992A37D2B313A2C15E9B10A225 /* HeroStringConvertible.swift */; };
+		6913F6CC524C0C872DB868D8E5D0AE7A /* HeroTransition+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A747C1A58B0E60D7E6EAFC685BA4B8 /* HeroTransition+UIViewControllerTransitioningDelegate.swift */; };
+		6A12E218BF7C93C60DC620F75C26734C /* JTACMonthActionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926F82F10E29858D16644669E2FDDF22 /* JTACMonthActionFunctions.swift */; };
+		6B55D57A3483647D8012EC01334EC8F7 /* JTACMonthLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE7B544E91F663296CD331F7D774E5C /* JTACMonthLayoutProtocol.swift */; };
+		6C004F5A1FAA0DF5F23465E08793A464 /* HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644545AAD28274F4A1C9D90B866C248 /* HeroModifier.swift */; };
+		6C6B0014D75DEB7FA52A3C0B7607DE71 /* UIColor+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A4DCEB72EFC956CC6BCF201A168F7B /* UIColor+HexString.swift */; };
+		6D268D7513384B45CABF1F91F6AB2A54 /* HeroTransition+CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F04E9D99C176D5CDE49A08B761DF36 /* HeroTransition+CustomTransition.swift */; };
+		71193BF5EEB2F6A8663EAE65B38DA8BD /* HeroTransition+Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321B05709B2CF35C880B46D4A7EF63A /* HeroTransition+Start.swift */; };
+		713494AC3797A5CCE4928EEF1B617552 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 273BBD801D96964E2421D315EC8347A8 /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7281DE987651950A7318A09DF2E24372 /* CG+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B6E4B53E9D88EF5418116A07C6AC31 /* CG+Hero.swift */; };
+		72B8E4F7D996DC27939C24B1F2979050 /* HeroTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC557CB2E13640C0B66F9AE8D6F4F96 /* HeroTransitionState.swift */; };
+		7A4BD208A1ADA3DED29A48D1884C3FD8 /* HeroPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59252972DB0C0B326200845FD1C7E3BF /* HeroPlugin.swift */; };
+		7A5857FA70DC1656C7DDA451DFEE09DF /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4291EA55D6638F57F6A5CF4966C8FB5 /* CalendarEnums.swift */; };
+		7B20370B4F50DAE25801E3D2CECEE4EE /* HeroTransition+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFEA5369170F7FC08DFEF1E80D43FF /* HeroTransition+Animate.swift */; };
+		8216226E4609BF60E655FF96E4DF2A62 /* JTACMonthQueryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F36316D6241576BD400479BBC6DE17 /* JTACMonthQueryFunctions.swift */; };
+		82ABD8119BCAAC7E4C975AB44B1DF851 /* JTACMonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA942C0CBAE87DC463E1EBE85CE409 /* JTACMonthCell.swift */; };
+		86459E3C578286A4CC6519A9FE88FD71 /* JTACCollectionMonthViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4860CB2C524A681FD531F1F3A50BF1A /* JTACCollectionMonthViewDelegates.swift */; };
+		88B20356E23CBE86F045C102F134E70E /* HeroTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACDC208D0A3D7F53CB69216C80DAD7 /* HeroTypes.swift */; };
+		8A5B336427C590583A112105E5077D17 /* Pods-BioGenesis-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A1CE7E0DAB62276AC9482C7E11C669 /* Pods-BioGenesis-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B15A63206BA4D4BF7610B34767E44F1 /* HeroCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA241FDB457BD8C4421DE65AAC7924D /* HeroCompatible.swift */; };
+		8C02DB25E8B4AB8D32C214FDD87D0036 /* DefaultAnimationPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E1015CA49A977348CFD79233DE59D5 /* DefaultAnimationPreprocessor.swift */; };
+		920F1920947C76839AF08A50BFFEEE68 /* HeroDefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3F17C6604D151147D345A5547816C /* HeroDefaultAnimator.swift */; };
+		949F0A0B188D9E6BD51E98FBC85A5CEE /* ConditionalPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414322DE4D7E5599004160C1A895442 /* ConditionalPreprocessor.swift */; };
+		95E8E6BD7809FC2643B7863ED39F0B26 /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BE1C7088B2C147083CB45CD2614FB /* CalendarStructs.swift */; };
+		9931D7F27562160A85E60EDD493AFE58 /* HeroDebugPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77D87BA1A6ADB4E4F211405479AE7FF /* HeroDebugPlugin.swift */; };
+		9A598F468DDF8EE38280C42D25C041EB /* Nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F056ABBD8DA8596BEDE06B1EED32FEE9 /* Nodes.swift */; };
+		9B320D5DBA6AC2F1AC191F128CDF757C /* UIKit+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABDB76053791A844DF753EFF71C937F /* UIKit+Hero.swift */; };
+		A327A2ED9C9432138D6955F8B0A16D33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C1F7D15DF1E2C8B980BC1B49D38419 /* CoreGraphics.framework */; };
+		A91BEEBFC32225594801B58F9771093F /* HeroTransition+UITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99446F902BF23D7935A0D98E583E32D3 /* HeroTransition+UITabBarControllerDelegate.swift */; };
+		B008A5800728427905BC1E4DBAD293D5 /* Pods-BioGenesis-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E6CF2CC9F4FA18ED20FFF3D095EA10 /* Pods-BioGenesis-dummy.m */; };
+		B785A596F623450D4CD33C0C1B271995 /* HeroTargetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E15283B2896E464B824579D88EAC0 /* HeroTargetState.swift */; };
+		B7F3721E90BAF98D1C6F9D30333A87A9 /* JTACMonthReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E0776A6E1328F96490D48268A6706 /* JTACMonthReusableView.swift */; };
+		BC69EB4B3E8CF10764DC844B51EE197F /* HeroDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1B9DFC753183D5E4CA99A89BE0A94 /* HeroDebugView.swift */; };
+		BD15BCF3D66ED66F5960860173087846 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862029A1C4AD2467C440ACE19BC10B30 /* IgnoreSubviewModifiersPreprocessor.swift */; };
+		CF7D20E7415AB9E45EA225CC45D271DF /* HeroModifier+Advanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874CB895ED33ED0D27CCFC19E1D21FF /* HeroModifier+Advanced.swift */; };
+		D0E4CB8767D190C3F33DA2C33A0259E5 /* MatchPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2580B2F49E9C04E59C4A5C82C45AC8 /* MatchPreprocessor.swift */; };
+		D2EC7E0F3B7433FDB0687651D9F8886F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311D78A0E81FA8FFEB8ADFB1023EDF /* Parser.swift */; };
+		D46E142AE282DF43F2CCF38A93115085 /* JTACVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619A8ABF897EF25133AED099CEA87A5 /* JTACVariables.swift */; };
+		D6B80FFF3D3C37658D3C3CA1B2BE0AD1 /* JTACMonthViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDFA09C42B644AAAADE4CC69341F60 /* JTACMonthViewProtocols.swift */; };
+		DA9C90BFAEEC54AA49BF99201BECAE49 /* HeroAnimatorViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCC8354E25BC755DC9652FB4145F3B /* HeroAnimatorViewContext.swift */; };
+		DFCEF4119773B01B6687F843B041E617 /* Array+HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D210A37390DC6A7F0038C6C84ABB7D /* Array+HeroModifier.swift */; };
+		E325FC62BDFA6273BDB88E7A59610E50 /* JTACMonthLayoutVerticalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B3511374EEB155F0C53155F3455762 /* JTACMonthLayoutVerticalCalendar.swift */; };
+		E8803B092DB99C9F66CBC0748F2CFA56 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650F73B93BBF60983C975FECBDC8688 /* Regex.swift */; };
+		EAF7DC77ED4BAF2CA4107DDC6740CC0E /* HeroProgressRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B308E5D68BF9C71ACEDEE34882D027F /* HeroProgressRunner.swift */; };
+		ED4FE4311465D22B9C4E7C2D920FE8DA /* HeroContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E018E5202BA30365BBC4323250B9D3 /* HeroContext.swift */; };
+		F1169703761EADA60A08EEFE95E64D8E /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E164491A6FC9912C49D19EA7EC88CB6 /* Lexer.swift */; };
+		FB10926EC4C14B61466E4128D8188F8F /* HeroTransition+Interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BB5F8FAC0AB3BC7004B37A1DA0416 /* HeroTransition+Interactive.swift */; };
+		FE027DE3BA18004EAB675CAFB5AF28ED /* UIViewController+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF9F401416FB6764B3C77F0BF111ACA /* UIViewController+Hero.swift */; };
+		FED6B10E22DE46438C0FCB946741D71E /* JTACMonthLayoutHorizontalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5C442922E01A84337FCA2822485917 /* JTACMonthLayoutHorizontalCalendar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		513AF302EFB40DA0BBCDEA59F58911EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2BC2CC6A5EB8F91429DC14E6BDC342DF;
-			remoteInfo = PurchasesCoreSwift;
-		};
-		676036DEA879D68C3E1B8C021737CA23 /* PBXContainerItemProxy */ = {
+		DDD05D8954AF0E11764DAF063AC60979 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 421B6ABF460857FE6CA2905EFB5A4F74;
 			remoteInfo = JTAppleCalendar;
 		};
-		BF09335D2C157CDC48F1AF2FEC91DCA2 /* PBXContainerItemProxy */ = {
+		FCC142841E3AF272730B7A80D7988D3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 19EF5509BA60F0CD4916B9F24A2F7886;
-			remoteInfo = Purchases;
-		};
-		CC101351B59F718B1B84F96709B76A55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2BC2CC6A5EB8F91429DC14E6BDC342DF;
-			remoteInfo = PurchasesCoreSwift;
+			remoteGlobalIDString = B3893AEA4D7DBB9A086E889FC469132D;
+			remoteInfo = Hero;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		016CC51FADF300D4EB3643326BCA4FF5 /* RCAttributionTypeFactory+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCAttributionTypeFactory+Protected.h"; path = "Purchases/ProtectedExtensions/RCAttributionTypeFactory+Protected.h"; sourceTree = "<group>"; };
-		01EF7E7B03F768632874DF06A616BF38 /* RCPurchasesErrorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPurchasesErrorUtils.m; path = Purchases/Public/RCPurchasesErrorUtils.m; sourceTree = "<group>"; };
-		02D2D2DCF145FAA28A1D22AD85AFCBD0 /* RCOfferingsFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCOfferingsFactory.h; path = Purchases/Purchasing/RCOfferingsFactory.h; sourceTree = "<group>"; };
-		05E3CD9F528CE77104D3B2A64AB7B147 /* RCOffering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCOffering.h; path = Purchases/Public/RCOffering.h; sourceTree = "<group>"; };
+		01C3F17C6604D151147D345A5547816C /* HeroDefaultAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDefaultAnimator.swift; path = Sources/Animator/HeroDefaultAnimator.swift; sourceTree = "<group>"; };
 		05E6CF2CC9F4FA18ED20FFF3D095EA10 /* Pods-BioGenesis-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BioGenesis-dummy.m"; sourceTree = "<group>"; };
-		071B874D4E5D2D65EA1CCB079A409FF8 /* ETagAndResponseWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ETagAndResponseWrapper.swift; path = PurchasesCoreSwift/Networking/ETagAndResponseWrapper.swift; sourceTree = "<group>"; };
-		078D8D3FF9E1590418852BFA93DB5D1D /* RCAttributionTypeFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCAttributionTypeFactory.h; path = Purchases/Attribution/RCAttributionTypeFactory.h; sourceTree = "<group>"; };
-		07FDB2411982798D9490B89F44CD78E4 /* RCIntroEligibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCIntroEligibility.h; path = Purchases/Public/RCIntroEligibility.h; sourceTree = "<group>"; };
-		0814F041956C1F61FE3522562BCD1462 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = PurchasesCoreSwift/Logging/Logger.swift; sourceTree = "<group>"; };
-		095924A0405B781CF85281549AF32A12 /* JTACMonthLayoutHorizontalCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutHorizontalCalendar.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutHorizontalCalendar.swift; sourceTree = "<group>"; };
-		0CB48CFAAFB23EEB5DBD9274A562336E /* Strings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = PurchasesCoreSwift/Logging/Strings/Strings.swift; sourceTree = "<group>"; };
-		0F27CD2EE845A669EF2C6FBCC2B04E92 /* LogIntent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogIntent.swift; path = PurchasesCoreSwift/Logging/LogIntent.swift; sourceTree = "<group>"; };
-		0FAF90C20C814146B47FFBB9B02C7E5B /* RCDateProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCDateProvider.h; path = Purchases/Misc/RCDateProvider.h; sourceTree = "<group>"; };
-		0FD83B868797F95D9A1E2FD977CE8D00 /* RCAttributionTypeFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCAttributionTypeFactory.m; path = Purchases/Attribution/RCAttributionTypeFactory.m; sourceTree = "<group>"; };
-		10943FF2EA4E267062EC9E40B19BA29D /* RCProductInfoExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCProductInfoExtractor.m; path = Purchases/Purchasing/RCProductInfoExtractor.m; sourceTree = "<group>"; };
-		12AE0BA8912BEC698C20071A36AF86F4 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryExtensions.swift; path = PurchasesCoreSwift/Misc/DictionaryExtensions.swift; sourceTree = "<group>"; };
-		18FA94869E04F96380764C9495185690 /* RCAttributionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCAttributionFetcher.m; path = Purchases/Attribution/RCAttributionFetcher.m; sourceTree = "<group>"; };
-		19B11FC5C4D1C120BFB2D17D1850CE04 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
-		19C2EDEA80AAB2CDEAAA95E340AB0516 /* JTAppleCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JTAppleCalendar-Info.plist"; sourceTree = "<group>"; };
-		1A8985DAA1815013E817203665F1CECB /* JTACScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACScrollViewDelegates.swift; path = Sources/JTAppleCalendar/JTACScrollViewDelegates.swift; sourceTree = "<group>"; };
-		1C239778CB1CCBAEFD1D33BE2F988E89 /* RCIdentityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCIdentityManager.h; path = Purchases/Identity/RCIdentityManager.h; sourceTree = "<group>"; };
-		1D57EBFD51A79741192263F0C46365EB /* RCEntitlementInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCEntitlementInfo.m; path = Purchases/Public/RCEntitlementInfo.m; sourceTree = "<group>"; };
-		1DB0A149785E33CB87093FC22C7BE4D4 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
-		206CD49CDA4F3B75007879FDB7C6AA72 /* RCPurchaserInfo+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPurchaserInfo+Protected.h"; path = "Purchases/ProtectedExtensions/RCPurchaserInfo+Protected.h"; sourceTree = "<group>"; };
-		2075737BEEB0828AAEE3C315F2631131 /* NSError+RCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+RCExtensions.h"; path = "Purchases/FoundationExtensions/NSError+RCExtensions.h"; sourceTree = "<group>"; };
-		22A218D0CB5B9F39B7C7145BDB6554D0 /* RCDateProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCDateProvider.m; path = Purchases/Misc/RCDateProvider.m; sourceTree = "<group>"; };
-		23112183EACEEA07E6EB6D7A2A9C0236 /* RCReceiptRefreshPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCReceiptRefreshPolicy.h; path = Purchases/Purchasing/RCReceiptRefreshPolicy.h; sourceTree = "<group>"; };
-		23672089433DB32C4F6AFA73F0ABB5D3 /* RCPurchaserInfoManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPurchaserInfoManager.m; path = Purchases/Identity/RCPurchaserInfoManager.m; sourceTree = "<group>"; };
-		23C75027C7DD73EAA927504AAC037734 /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
-		241E483E15A49F64638CB3FDDE77E87A /* IdentityStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentityStrings.swift; path = PurchasesCoreSwift/Logging/Strings/IdentityStrings.swift; sourceTree = "<group>"; };
-		24701D814DB3EB70C17789DC73ADEEC0 /* ReceiptParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiptParser.swift; path = PurchasesCoreSwift/LocalReceiptParsing/ReceiptParser.swift; sourceTree = "<group>"; };
-		27118D3871518BA6403BA603614252C2 /* NSLocale+RCExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLocale+RCExtensions.m"; path = "Purchases/FoundationExtensions/NSLocale+RCExtensions.m"; sourceTree = "<group>"; };
-		2943B3A3D6A0317CFFF78C1AC90840FA /* RCPackage+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPackage+Protected.h"; path = "Purchases/ProtectedExtensions/RCPackage+Protected.h"; sourceTree = "<group>"; };
-		2AA5B6343367E740C1C398FFE33EBC59 /* RCStoreKitWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCStoreKitWrapper.m; path = Purchases/Purchasing/RCStoreKitWrapper.m; sourceTree = "<group>"; };
-		2B4DFAB4BCDEFA926E8BCE1BF6C0216C /* RCAttributionPoster.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCAttributionPoster.m; path = Purchases/Attribution/RCAttributionPoster.m; sourceTree = "<group>"; };
-		2B7B935FB0FBEA0463468B9E68E4D701 /* NSDate+RCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+RCExtensions.h"; path = "Purchases/FoundationExtensions/NSDate+RCExtensions.h"; sourceTree = "<group>"; };
-		2FCF4D48B1B48D6BBE6DA852F281A03C /* RCStoreKitRequestFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCStoreKitRequestFetcher.m; path = Purchases/Purchasing/RCStoreKitRequestFetcher.m; sourceTree = "<group>"; };
-		32A91B677553CBA8C0E07A5A61ED4B78 /* Purchases.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Purchases.h; path = Purchases/Public/Purchases.h; sourceTree = "<group>"; };
-		330EF08BFCBC68A5D4DCDA3A10028AF6 /* UInt8+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt8+Extensions.swift"; path = "PurchasesCoreSwift/LocalReceiptParsing/DataConverters/UInt8+Extensions.swift"; sourceTree = "<group>"; };
-		33FC9B1B053D9A3695D45CCDBC485915 /* RCIdentityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCIdentityManager.m; path = Purchases/Identity/RCIdentityManager.m; sourceTree = "<group>"; };
-		3434184826C11EA2B6297447BB507C26 /* JTACMonthActionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthActionFunctions.swift; path = Sources/JTAppleCalendar/JTACMonthActionFunctions.swift; sourceTree = "<group>"; };
-		3462C312665C33CC7ABEAD3CF5E82A9F /* RCDeviceCache+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCDeviceCache+Protected.h"; path = "Purchases/ProtectedExtensions/RCDeviceCache+Protected.h"; sourceTree = "<group>"; };
-		34C5A977958F96F2C4305C19DA89AA5D /* RCLogUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCLogUtils.h; path = Purchases/Logging/RCLogUtils.h; sourceTree = "<group>"; };
-		37AD5C01F45742F10485486AC03BDCBD /* NSError+RCExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+RCExtensions.m"; path = "Purchases/FoundationExtensions/NSError+RCExtensions.m"; sourceTree = "<group>"; };
-		38FF85D287AF80292621B5D6FF1E9A12 /* RCPurchases+SubscriberAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPurchases+SubscriberAttributes.h"; path = "Purchases/SubscriberAttributes/RCPurchases+SubscriberAttributes.h"; sourceTree = "<group>"; };
-		3AA60ED8A112FE6C9104758E2446F5B1 /* RCEntitlementInfos.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCEntitlementInfos.m; path = Purchases/Public/RCEntitlementInfos.m; sourceTree = "<group>"; };
-		3BE8C72EDB1A2104591AB6787C827C48 /* RCPurchaserInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPurchaserInfo.h; path = Purchases/Public/RCPurchaserInfo.h; sourceTree = "<group>"; };
-		3BF28366DE4CE1863CAB1CC22B2E5D63 /* Purchases-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Purchases-dummy.m"; sourceTree = "<group>"; };
-		3CCBF4E781F4A615073F54941B004366 /* DangerousSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DangerousSettings.swift; path = PurchasesCoreSwift/Misc/DangerousSettings.swift; sourceTree = "<group>"; };
-		3D54FF0296F37DE71FC2A5E7CC08DDAF /* RCBackend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCBackend.m; path = Purchases/Networking/RCBackend.m; sourceTree = "<group>"; };
-		3DDAC27B5AA2ED13FD98F075ACE7ADF5 /* NSDate+RCExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+RCExtensions.m"; path = "Purchases/FoundationExtensions/NSDate+RCExtensions.m"; sourceTree = "<group>"; };
-		3F8B1EF3C29C2D13A96F84E2267AACD7 /* JTACMonthCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthCell.swift; path = Sources/JTAppleCalendar/JTACMonthCell.swift; sourceTree = "<group>"; };
-		403F56EC16E1C430172CBC264DF31BDE /* NSDictionary+RCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RCExtensions.h"; path = "Purchases/FoundationExtensions/NSDictionary+RCExtensions.h"; sourceTree = "<group>"; };
-		4071A9C4AE1794BB408A6D20A1693D54 /* JTACVariables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACVariables.swift; path = Sources/JTAppleCalendar/JTACVariables.swift; sourceTree = "<group>"; };
-		4228BF86960CD824BD9CB4E5EB8118C7 /* RCIntroEligibility+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCIntroEligibility+Protected.h"; path = "Purchases/ProtectedExtensions/RCIntroEligibility+Protected.h"; sourceTree = "<group>"; };
-		423CB8961E0225B90C1F7525B83F19FF /* JTACInteractionMonthFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACInteractionMonthFunctions.swift; path = Sources/JTAppleCalendar/JTACInteractionMonthFunctions.swift; sourceTree = "<group>"; };
-		44B49DE47DC096F24FEC293E5BBF98B0 /* SpecialSubscriberAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpecialSubscriberAttributes.swift; path = PurchasesCoreSwift/SubscriberAttributes/SpecialSubscriberAttributes.swift; sourceTree = "<group>"; };
-		452AE602601F59B64E782307EA67FE48 /* RCHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCHTTPClient.m; path = Purchases/Networking/RCHTTPClient.m; sourceTree = "<group>"; };
-		469BECD6038204DD8F304F3A866A6974 /* AttributionDataMigrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributionDataMigrator.swift; path = PurchasesCoreSwift/SubscriberAttributes/AttributionDataMigrator.swift; sourceTree = "<group>"; };
-		49AB9A89E92890FA3353B92831621CB3 /* PurchaserInfoStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaserInfoStrings.swift; path = PurchasesCoreSwift/Logging/Strings/PurchaserInfoStrings.swift; sourceTree = "<group>"; };
+		065E266F17F983325A12A9AF74C6D786 /* Hero-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hero-dummy.m"; sourceTree = "<group>"; };
+		083A2705D13AAC310767281E69E54BF9 /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
+		09B6E4B53E9D88EF5418116A07C6AC31 /* CG+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CG+Hero.swift"; path = "Sources/Extensions/CG+Hero.swift"; sourceTree = "<group>"; };
+		0B7E15283B2896E464B824579D88EAC0 /* HeroTargetState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroTargetState.swift; path = Sources/HeroTargetState.swift; sourceTree = "<group>"; };
+		11956AA4C6BD0497927E67366A92D6F6 /* HeroTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroTransition.swift; path = Sources/Transition/HeroTransition.swift; sourceTree = "<group>"; };
+		11EDFA09C42B644AAAADE4CC69341F60 /* JTACMonthViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthViewProtocols.swift; path = Sources/JTAppleCalendar/JTACMonthViewProtocols.swift; sourceTree = "<group>"; };
+		12032A75B910232870611A7B29A88D17 /* HeroCoreAnimationViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroCoreAnimationViewContext.swift; path = Sources/Animator/HeroCoreAnimationViewContext.swift; sourceTree = "<group>"; };
+		13E778F4B833EE5D7ABE882406A8215E /* Hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hero.framework; path = Hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1556F5138C6182F533372D1B073BF515 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
+		1619A8ABF897EF25133AED099CEA87A5 /* JTACVariables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACVariables.swift; path = Sources/JTAppleCalendar/JTACVariables.swift; sourceTree = "<group>"; };
+		233BE1C7088B2C147083CB45CD2614FB /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/JTAppleCalendar/CalendarStructs.swift; sourceTree = "<group>"; };
+		273BBD801D96964E2421D315EC8347A8 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
+		27A4DCEB72EFC956CC6BCF201A168F7B /* UIColor+HexString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+HexString.swift"; path = "Sources/Extensions/UIColor+HexString.swift"; sourceTree = "<group>"; };
+		31F105AE62FD4AE2CC6FFC7B1FE5FAD4 /* JTACYearView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACYearView.swift; path = Sources/JTAppleCalendar/JTACYearView.swift; sourceTree = "<group>"; };
+		3414322DE4D7E5599004160C1A895442 /* ConditionalPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConditionalPreprocessor.swift; path = Sources/Preprocessors/ConditionalPreprocessor.swift; sourceTree = "<group>"; };
+		39B3511374EEB155F0C53155F3455762 /* JTACMonthLayoutVerticalCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutVerticalCalendar.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutVerticalCalendar.swift; sourceTree = "<group>"; };
+		41FB9B98700716BA4ED709667E7A40E1 /* SourcePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourcePreprocessor.swift; path = Sources/Preprocessors/SourcePreprocessor.swift; sourceTree = "<group>"; };
+		4644545AAD28274F4A1C9D90B866C248 /* HeroModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroModifier.swift; path = Sources/HeroModifier.swift; sourceTree = "<group>"; };
+		47C1F7D15DF1E2C8B980BC1B49D38419 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4874CB895ED33ED0D27CCFC19E1D21FF /* HeroModifier+Advanced.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroModifier+Advanced.swift"; path = "Sources/HeroModifier+Advanced.swift"; sourceTree = "<group>"; };
 		49ED865056298CECD0E6764AAFBAC147 /* Pods-BioGenesis-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BioGenesis-acknowledgements.plist"; sourceTree = "<group>"; };
-		4A2E268B8E421A97A2C6F4B424231AD3 /* RCEntitlementInfos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCEntitlementInfos.h; path = Purchases/Public/RCEntitlementInfos.h; sourceTree = "<group>"; };
-		4A47A195244599A565317A3EADE4D728 /* RCProductInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCProductInfo.h; path = Purchases/Purchasing/RCProductInfo.h; sourceTree = "<group>"; };
 		4ADF1115DD3D724333AC299348E5E223 /* Pods-BioGenesis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BioGenesis.debug.xcconfig"; sourceTree = "<group>"; };
-		4CB1CAB052DA0D4EB01126733E6B86DF /* JTACInteractionYearFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACInteractionYearFunctions.swift; path = Sources/JTAppleCalendar/JTACInteractionYearFunctions.swift; sourceTree = "<group>"; };
-		4D1036897D9B84E5BA61CBF3958FDC8F /* InAppPurchase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppPurchase.swift; path = PurchasesCoreSwift/LocalReceiptParsing/BasicTypes/InAppPurchase.swift; sourceTree = "<group>"; };
-		4F91F2F63EF39F17BF3E32F8742BE6C6 /* RCAttributionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCAttributionFetcher.h; path = Purchases/Attribution/RCAttributionFetcher.h; sourceTree = "<group>"; };
-		584BD4921B7CFCB54FB1383084C55F5D /* JTACMonthDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthDelegateProtocol.swift; path = Sources/JTAppleCalendar/JTACMonthDelegateProtocol.swift; sourceTree = "<group>"; };
-		5A4EBC1579B06AB053DC60E5E80E05FF /* RCPurchasesErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPurchasesErrors.h; path = Purchases/Public/RCPurchasesErrors.h; sourceTree = "<group>"; };
-		5A73B4E5366844A4D0AE464EFF2DE57C /* ASN1Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1Container.swift; path = PurchasesCoreSwift/LocalReceiptParsing/BasicTypes/ASN1Container.swift; sourceTree = "<group>"; };
-		5ADCD8B2149D3F888191E559C2CB4FF9 /* NSLocale+RCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLocale+RCExtensions.h"; path = "Purchases/FoundationExtensions/NSLocale+RCExtensions.h"; sourceTree = "<group>"; };
-		5B43AB9EDA7F8A6034D04AE27E62D877 /* JTACMonthLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutProtocol.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutProtocol.swift; sourceTree = "<group>"; };
-		5C26ABC840F18118E5C9F335D437CE37 /* JTACMonthViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthViewProtocols.swift; path = Sources/JTAppleCalendar/JTACMonthViewProtocols.swift; sourceTree = "<group>"; };
-		5D44C65DAF82E9A51F392D270FCF68D3 /* RCPromotionalOffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPromotionalOffer.h; path = Purchases/Purchasing/RCPromotionalOffer.h; sourceTree = "<group>"; };
-		5EB5C852E88E14D8299D5E2A0A3AAEDE /* RCPurchases+SubscriberAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RCPurchases+SubscriberAttributes.m"; path = "Purchases/SubscriberAttributes/RCPurchases+SubscriberAttributes.m"; sourceTree = "<group>"; };
-		5F9C0C33969C8EDBFE06C5D1F26EBF4C /* JTACYearView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACYearView.swift; path = Sources/JTAppleCalendar/JTACYearView.swift; sourceTree = "<group>"; };
-		61778A7B0112D97AA4E79425FFF642EF /* HTTPResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPResponse.swift; path = PurchasesCoreSwift/Networking/HTTPResponse.swift; sourceTree = "<group>"; };
-		6193AC30BD0DF9A7835513B2DC97E226 /* RCStoreKitRequestFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCStoreKitRequestFetcher.h; path = Purchases/Purchasing/RCStoreKitRequestFetcher.h; sourceTree = "<group>"; };
-		626FFF131BD2819044C2AADE21543132 /* RCSubscriberAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCSubscriberAttribute.m; path = Purchases/SubscriberAttributes/RCSubscriberAttribute.m; sourceTree = "<group>"; };
-		641CE949698C6F9C0B1C59A973EC2CB5 /* ArraySlice_UInt8+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArraySlice_UInt8+Extensions.swift"; path = "PurchasesCoreSwift/LocalReceiptParsing/DataConverters/ArraySlice_UInt8+Extensions.swift"; sourceTree = "<group>"; };
-		65D21DCDA4A1046FDB1A5AEBAC53A64A /* ReceiptStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiptStrings.swift; path = PurchasesCoreSwift/Logging/Strings/ReceiptStrings.swift; sourceTree = "<group>"; };
-		69416C1390E26311384184FF897C5A89 /* RCReceiptFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCReceiptFetcher.h; path = Purchases/Purchasing/RCReceiptFetcher.h; sourceTree = "<group>"; };
-		6AA183C7B8C0CFF6CFCBC3E7622288F7 /* ASN1ContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1ContainerBuilder.swift; path = PurchasesCoreSwift/LocalReceiptParsing/Builders/ASN1ContainerBuilder.swift; sourceTree = "<group>"; };
-		6AB2B7243329FFF2FD32433B97BB85D8 /* JTACCollectionMonthViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACCollectionMonthViewDelegates.swift; path = Sources/JTAppleCalendar/JTACCollectionMonthViewDelegates.swift; sourceTree = "<group>"; };
-		6B514529EFC08F3FBC568AE43B2900AF /* RCPurchaserInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPurchaserInfo.m; path = Purchases/Public/RCPurchaserInfo.m; sourceTree = "<group>"; };
-		6D160728C999B08D9E0C5A52A38B530B /* AttributionKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributionKey.swift; path = PurchasesCoreSwift/SubscriberAttributes/AttributionKey.swift; sourceTree = "<group>"; };
-		6EEEC994DC0C81A97ABC00D99C931370 /* ProductsRequestFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsRequestFactory.swift; path = PurchasesCoreSwift/Purchasing/ProductsRequestFactory.swift; sourceTree = "<group>"; };
-		6FAFAE6849B5B1BB9F83F62B3E41BDB8 /* RCPromotionalOffer+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPromotionalOffer+Protected.h"; path = "Purchases/ProtectedExtensions/RCPromotionalOffer+Protected.h"; sourceTree = "<group>"; };
-		6FE38DEF3F5BA08B07B1100C985CA3BA /* RCIdentityManager+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCIdentityManager+Protected.h"; path = "Purchases/ProtectedExtensions/RCIdentityManager+Protected.h"; sourceTree = "<group>"; };
-		7040511027AA44F25524C716F3B78645 /* RCLogLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCLogLevel.h; path = Purchases/Public/RCLogLevel.h; sourceTree = "<group>"; };
-		70760C74CCF11B1302DE66D9AEF4C243 /* OfferingStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OfferingStrings.swift; path = PurchasesCoreSwift/Logging/Strings/OfferingStrings.swift; sourceTree = "<group>"; };
-		70AD24FA24CBEDD40C60506AAC75D1E0 /* ConfigureStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfigureStrings.swift; path = PurchasesCoreSwift/Logging/Strings/ConfigureStrings.swift; sourceTree = "<group>"; };
-		726913B39FF7BE27961733DCC52AD56B /* Purchases.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Purchases.modulemap; sourceTree = "<group>"; };
+		4BB1B9DFC753183D5E4CA99A89BE0A94 /* HeroDebugView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDebugView.swift; path = "Sources/Debug Plugin/HeroDebugView.swift"; sourceTree = "<group>"; };
+		4C434CFC9D5D4311BD1BD43D302AE769 /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
+		4DF9F401416FB6764B3C77F0BF111ACA /* UIViewController+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Hero.swift"; path = "Sources/Extensions/UIViewController+Hero.swift"; sourceTree = "<group>"; };
+		4E164491A6FC9912C49D19EA7EC88CB6 /* Lexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lexer.swift; path = Sources/Parser/Lexer.swift; sourceTree = "<group>"; };
+		4F8FBE35A08DDB993DDBE63358504F74 /* HeroModifier+HeroStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroModifier+HeroStringConvertible.swift"; path = "Sources/HeroModifier+HeroStringConvertible.swift"; sourceTree = "<group>"; };
+		50E1015CA49A977348CFD79233DE59D5 /* DefaultAnimationPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAnimationPreprocessor.swift; path = Sources/Preprocessors/DefaultAnimationPreprocessor.swift; sourceTree = "<group>"; };
+		51E018E5202BA30365BBC4323250B9D3 /* HeroContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroContext.swift; path = Sources/HeroContext.swift; sourceTree = "<group>"; };
+		59252972DB0C0B326200845FD1C7E3BF /* HeroPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroPlugin.swift; path = Sources/HeroPlugin.swift; sourceTree = "<group>"; };
+		5925C74E2182B52CC9302F56AA46C237 /* JTACYearViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACYearViewProtocols.swift; path = Sources/JTAppleCalendar/JTACYearViewProtocols.swift; sourceTree = "<group>"; };
+		5ABDB76053791A844DF753EFF71C937F /* UIKit+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Hero.swift"; path = "Sources/Extensions/UIKit+Hero.swift"; sourceTree = "<group>"; };
+		632CE67F9597EC37712D82FE2C7C9714 /* UIView+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Hero.swift"; path = "Sources/Extensions/UIView+Hero.swift"; sourceTree = "<group>"; };
+		64ACDC208D0A3D7F53CB69216C80DAD7 /* HeroTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroTypes.swift; path = Sources/HeroTypes.swift; sourceTree = "<group>"; };
+		69A747C1A58B0E60D7E6EAFC685BA4B8 /* HeroTransition+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+UIViewControllerTransitioningDelegate.swift"; path = "Sources/Transition/HeroTransition+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
+		6B308E5D68BF9C71ACEDEE34882D027F /* HeroProgressRunner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroProgressRunner.swift; path = Sources/Transition/HeroProgressRunner.swift; sourceTree = "<group>"; };
+		6BA7177FFA0B9EB46DE97F91A42F9767 /* JTACMonthDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthDelegateProtocol.swift; path = Sources/JTAppleCalendar/JTACMonthDelegateProtocol.swift; sourceTree = "<group>"; };
+		713F486193ED67772865937BE36C61E5 /* Hero-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Hero-Info.plist"; sourceTree = "<group>"; };
+		72BF3043951A9CF0293F3EFE8DDF09AF /* HeroTransition+Complete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+Complete.swift"; path = "Sources/Transition/HeroTransition+Complete.swift"; sourceTree = "<group>"; };
 		737C2B95702E353414C6CFFA60C1E592 /* Pods_BioGenesis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BioGenesis.framework; path = "Pods-BioGenesis.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7382C99601D78FAA49BB47760B2E76F2 /* RCSubscriberAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCSubscriberAttribute.h; path = Purchases/SubscriberAttributes/RCSubscriberAttribute.h; sourceTree = "<group>"; };
-		744278EC9FEF0001E95E3852F22F0C24 /* RCPurchases.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPurchases.m; path = Purchases/Public/RCPurchases.m; sourceTree = "<group>"; };
-		749B58483A16645A55E3B9223F86243C /* RCISOPeriodFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCISOPeriodFormatter.h; path = Purchases/Misc/RCISOPeriodFormatter.h; sourceTree = "<group>"; };
-		76C370B33D88C33B0171D1D9FC8089D3 /* JTACMonthLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayout.swift; path = Sources/JTAppleCalendar/JTACMonthLayout.swift; sourceTree = "<group>"; };
-		7A86F19B0A5D723DBB5B641D3D2ED7BB /* RCPurchasesErrorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPurchasesErrorUtils.h; path = Purchases/Public/RCPurchasesErrorUtils.h; sourceTree = "<group>"; };
-		7AFA70726C3A8666DC5D2983B51F1AEB /* ISO3601DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO3601DateFormatter.swift; path = PurchasesCoreSwift/LocalReceiptParsing/DataConverters/ISO3601DateFormatter.swift; sourceTree = "<group>"; };
-		7B049E56E9ECDF58B080CFDB864BBC64 /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
-		7B51404464C4EB6D4C594037AEB68841 /* PurchasesCoreSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PurchasesCoreSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BB9CF998DFD87680208C52D08494FE7 /* RCHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCHTTPRequest.m; path = Purchases/Networking/RCHTTPRequest.m; sourceTree = "<group>"; };
-		7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73F36316D6241576BD400479BBC6DE17 /* JTACMonthQueryFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthQueryFunctions.swift; path = Sources/JTAppleCalendar/JTACMonthQueryFunctions.swift; sourceTree = "<group>"; };
+		75401F082864F37A9A05F6D87ABC8925 /* HeroViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroViewControllerDelegate.swift; path = Sources/HeroViewControllerDelegate.swift; sourceTree = "<group>"; };
+		76AA79EFBE1C42506F6B0C7858D1FD93 /* JTACDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACDayCell.swift; path = Sources/JTAppleCalendar/JTACDayCell.swift; sourceTree = "<group>"; };
+		76CD4DEDCD087F1C842E80311EAF8E6F /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/JTAppleCalendar/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
 		7DFB62811C94070EB4165644F671B73F /* Pods-BioGenesis-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BioGenesis-frameworks.sh"; sourceTree = "<group>"; };
-		7E5F4B233FD247E075D4FAF2AD818C94 /* ASN1ObjectIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1ObjectIdentifier.swift; path = PurchasesCoreSwift/LocalReceiptParsing/BasicTypes/ASN1ObjectIdentifier.swift; sourceTree = "<group>"; };
-		7F7CDD3E2C3A569CC1D087F6241E7CF7 /* RCCrossPlatformSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCCrossPlatformSupport.h; path = Purchases/Misc/RCCrossPlatformSupport.h; sourceTree = "<group>"; };
-		7FC14AA2FB9956AF6559D7204020831E /* RCPackage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPackage.h; path = Purchases/Public/RCPackage.h; sourceTree = "<group>"; };
-		803B734FF9756204697056D9D957DB18 /* NSData+RCExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+RCExtensions.m"; path = "Purchases/FoundationExtensions/NSData+RCExtensions.m"; sourceTree = "<group>"; };
-		809A088D1F854CB4B6E434EB3DD5782A /* RCOfferingsFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCOfferingsFactory.m; path = Purchases/Purchasing/RCOfferingsFactory.m; sourceTree = "<group>"; };
-		824D577DC28F63F9B8D871F3F7893131 /* RCAttributionData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCAttributionData.m; path = Purchases/Attribution/RCAttributionData.m; sourceTree = "<group>"; };
-		83C5F34775DEF8B2363EDC01A616F08C /* RCOffering+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCOffering+Protected.h"; path = "Purchases/ProtectedExtensions/RCOffering+Protected.h"; sourceTree = "<group>"; };
-		84520A3DD74AE363E37055022A1D9DDA /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
 		84DEF79E3CDFC8E3D014DBC4CD6D649A /* Pods-BioGenesis-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BioGenesis-Info.plist"; sourceTree = "<group>"; };
-		85D791E8F1239CCA9A3041080A6344CE /* JTACMonthReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthReusableView.swift; path = Sources/JTAppleCalendar/JTACMonthReusableView.swift; sourceTree = "<group>"; };
-		85DF4B09D54F8F5CBB4865D5C3FF1BFC /* RCAttributionData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCAttributionData.h; path = Purchases/Attribution/RCAttributionData.h; sourceTree = "<group>"; };
-		864AA35565EBC1EE0A6604D485ADF249 /* RCPurchaseOwnershipType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPurchaseOwnershipType.h; path = Purchases/Public/RCPurchaseOwnershipType.h; sourceTree = "<group>"; };
-		86C8C2827C1360D45568AF9CEB96E976 /* RestoreStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestoreStrings.swift; path = PurchasesCoreSwift/Logging/Strings/RestoreStrings.swift; sourceTree = "<group>"; };
-		882DDCD1AC266E8D1E65FAE0C8ED0BF7 /* RCDeviceCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCDeviceCache.m; path = Purchases/Caching/RCDeviceCache.m; sourceTree = "<group>"; };
-		8A00021ABE658DACF6063F788268F603 /* AppleReceiptBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleReceiptBuilder.swift; path = PurchasesCoreSwift/LocalReceiptParsing/Builders/AppleReceiptBuilder.swift; sourceTree = "<group>"; };
-		8AEEB8597812190E1520E9E8ADFA0FA5 /* RCPurchaserInfoManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPurchaserInfoManager.h; path = Purchases/Identity/RCPurchaserInfoManager.h; sourceTree = "<group>"; };
-		91876026C2BEF270293216B8BDDAA5AE /* RCLoggerBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCLoggerBridge.m; path = Purchases/Logging/RCLoggerBridge.m; sourceTree = "<group>"; };
-		94FFF8D60C7525076F048436EAF4BF83 /* RCOfferings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCOfferings.m; path = Purchases/Public/RCOfferings.m; sourceTree = "<group>"; };
-		97BF4FD4476611B21FA772EA70007DC7 /* JTACYearViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACYearViewProtocols.swift; path = Sources/JTAppleCalendar/JTACYearViewProtocols.swift; sourceTree = "<group>"; };
-		9801F4856C387BF63F63959B4D5CE191 /* ProductsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsManager.swift; path = PurchasesCoreSwift/Purchasing/ProductsManager.swift; sourceTree = "<group>"; };
-		9851D0E638508523B3686529DF7FD6E2 /* RCAttributionPoster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCAttributionPoster.h; path = Purchases/Attribution/RCAttributionPoster.h; sourceTree = "<group>"; };
-		9ADE01526339570E162C9E0708AA016C /* NSData+RCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+RCExtensions.h"; path = "Purchases/FoundationExtensions/NSData+RCExtensions.h"; sourceTree = "<group>"; };
+		862029A1C4AD2467C440ACE19BC10B30 /* IgnoreSubviewModifiersPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IgnoreSubviewModifiersPreprocessor.swift; path = Sources/Preprocessors/IgnoreSubviewModifiersPreprocessor.swift; sourceTree = "<group>"; };
+		86D210A37390DC6A7F0038C6C84ABB7D /* Array+HeroModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+HeroModifier.swift"; path = "Sources/Extensions/Array+HeroModifier.swift"; sourceTree = "<group>"; };
+		8AAA8CA7696BE50B8462585D7C1D35AF /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = Sources/SwiftSupport.swift; sourceTree = "<group>"; };
+		8D6AAEC3CA05CE5053EE761E204429B3 /* JTACCollectionYearViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACCollectionYearViewDelegates.swift; path = Sources/JTAppleCalendar/JTACCollectionYearViewDelegates.swift; sourceTree = "<group>"; };
+		8E5C442922E01A84337FCA2822485917 /* JTACMonthLayoutHorizontalCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutHorizontalCalendar.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutHorizontalCalendar.swift; sourceTree = "<group>"; };
+		92311D78A0E81FA8FFEB8ADFB1023EDF /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser/Parser.swift; sourceTree = "<group>"; };
+		926F82F10E29858D16644669E2FDDF22 /* JTACMonthActionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthActionFunctions.swift; path = Sources/JTAppleCalendar/JTACMonthActionFunctions.swift; sourceTree = "<group>"; };
+		9321B05709B2CF35C880B46D4A7EF63A /* HeroTransition+Start.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+Start.swift"; path = "Sources/Transition/HeroTransition+Start.swift"; sourceTree = "<group>"; };
+		95568154064CE960195D45B95A17D3E7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		99446F902BF23D7935A0D98E583E32D3 /* HeroTransition+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+UITabBarControllerDelegate.swift"; path = "Sources/Transition/HeroTransition+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E34482ACFEAFDF9C78876BA3AC515F0 /* RCProductInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCProductInfo.m; path = Purchases/Purchasing/RCProductInfo.m; sourceTree = "<group>"; };
-		9E8173D1F6BB78F4BA1538D84F462C11 /* NSDictionary+RCExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+RCExtensions.m"; path = "Purchases/FoundationExtensions/NSDictionary+RCExtensions.m"; sourceTree = "<group>"; };
-		9EF8D00C6B2F0145D7FB78DD44805153 /* RCPackage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPackage.m; path = Purchases/Public/RCPackage.m; sourceTree = "<group>"; };
-		9FE011114DDF975396E0B42E323C1B5C /* RCEntitlementInfos+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCEntitlementInfos+Protected.h"; path = "Purchases/ProtectedExtensions/RCEntitlementInfos+Protected.h"; sourceTree = "<group>"; };
+		9DD56D3306439C3333642E7BC5C1404F /* Locale+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Locale+Hero.swift"; path = "Sources/Extensions/Locale+Hero.swift"; sourceTree = "<group>"; };
+		9F0D1840CC2889F36551BBCD9F036EF8 /* JTACScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACScrollViewDelegates.swift; path = Sources/JTAppleCalendar/JTACScrollViewDelegates.swift; sourceTree = "<group>"; };
+		9FC557CB2E13640C0B66F9AE8D6F4F96 /* HeroTransitionState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroTransitionState.swift; path = Sources/Transition/HeroTransitionState.swift; sourceTree = "<group>"; };
 		A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTAppleCalendar.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0D53A75B2778949973FFC7C8D7F7A42 /* ReceiptParsingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiptParsingError.swift; path = PurchasesCoreSwift/LocalReceiptParsing/ReceiptParsingError.swift; sourceTree = "<group>"; };
-		A33453B48292A25C774D2D631C4C75D0 /* RCEntitlementInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCEntitlementInfo.h; path = Purchases/Public/RCEntitlementInfo.h; sourceTree = "<group>"; };
-		A4290354744202456185EFF632079FE0 /* RCSubscriberAttribute+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCSubscriberAttribute+Protected.h"; path = "Purchases/ProtectedExtensions/RCSubscriberAttribute+Protected.h"; sourceTree = "<group>"; };
-		A45070F644F842B7FE33CAF1B9CCBE44 /* RCPurchaserInfoManager+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPurchaserInfoManager+Protected.h"; path = "Purchases/ProtectedExtensions/RCPurchaserInfoManager+Protected.h"; sourceTree = "<group>"; };
-		A5790FBA847B6F400238E62980AAF9E3 /* RCOfferings+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCOfferings+Protected.h"; path = "Purchases/ProtectedExtensions/RCOfferings+Protected.h"; sourceTree = "<group>"; };
-		A5E786C2B46D1F83238A2E7B26141194 /* RCLoggerBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCLoggerBridge.h; path = Purchases/Logging/RCLoggerBridge.h; sourceTree = "<group>"; };
-		A63E4B94EF3B0DCB633FAA6DCAF70873 /* RCOffering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCOffering.m; path = Purchases/Public/RCOffering.m; sourceTree = "<group>"; };
-		A8744BFCBA0EFF3EFCB22EF6E0408B42 /* PurchasesCoreSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PurchasesCoreSwift.framework; path = PurchasesCoreSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A93BCB0FCE23F7BE6C302E2D00A6B18D /* RCIntroEligibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCIntroEligibility.m; path = Purchases/Public/RCIntroEligibility.m; sourceTree = "<group>"; };
-		AA5C143CD42F128E45336EAC88E15BF4 /* PurchasesCoreSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PurchasesCoreSwift-dummy.m"; sourceTree = "<group>"; };
-		AB80A30AC0F05CD24142BF27CE461B58 /* AppleReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleReceipt.swift; path = PurchasesCoreSwift/LocalReceiptParsing/BasicTypes/AppleReceipt.swift; sourceTree = "<group>"; };
-		AFD6990E34A9A4B4A445B63BDD19AEC4 /* PurchasesCoreSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PurchasesCoreSwift.modulemap; sourceTree = "<group>"; };
-		B058C54936F6F03C096B98B0B9C90E95 /* JTACMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthView.swift; path = Sources/JTAppleCalendar/JTACMonthView.swift; sourceTree = "<group>"; };
-		B07AC5F4A7D0BECC7D1C82F010134BA3 /* AttributionNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributionNetwork.swift; path = PurchasesCoreSwift/SubscriberAttributes/AttributionNetwork.swift; sourceTree = "<group>"; };
-		B280A239ABB985EE55DC3F13AEC864DB /* RCTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTransaction.h; path = Purchases/Public/RCTransaction.h; sourceTree = "<group>"; };
-		B472459ADA715C036BF9341746A18806 /* RCProductInfoExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCProductInfoExtractor.h; path = Purchases/Purchasing/RCProductInfoExtractor.h; sourceTree = "<group>"; };
-		B93A6A32E59D47D41BE6175B3A85A7C7 /* ASN1ObjectIdentifierBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1ObjectIdentifierBuilder.swift; path = PurchasesCoreSwift/LocalReceiptParsing/Builders/ASN1ObjectIdentifierBuilder.swift; sourceTree = "<group>"; };
-		BC372241B2E5FE46892F4A0FAB4CF7CD /* Purchases-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Purchases-umbrella.h"; sourceTree = "<group>"; };
-		BC8D8C1E8124467C8A06F5B6B2A1777D /* RCInMemoryCachedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCInMemoryCachedObject.h; path = Purchases/Caching/RCInMemoryCachedObject.h; sourceTree = "<group>"; };
-		BE1000410AABAC8444B7B26CD6F6BDB0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
-		C0596510AF5DB2699BB4A13852DD91C0 /* Purchases-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Purchases-Info.plist"; sourceTree = "<group>"; };
-		C06F622FB84061785F16D89F2FB1D393 /* RCSubscriberAttributesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCSubscriberAttributesManager.h; path = Purchases/SubscriberAttributes/RCSubscriberAttributesManager.h; sourceTree = "<group>"; };
-		C08F3BE256632EFC6C5EDAF9FB17379A /* Purchases-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Purchases-prefix.pch"; sourceTree = "<group>"; };
+		A4291EA55D6638F57F6A5CF4966C8FB5 /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/JTAppleCalendar/CalendarEnums.swift; sourceTree = "<group>"; };
+		A4CD793BE26968491358F4A6AA16B7AD /* BasePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasePreprocessor.swift; path = Sources/Preprocessors/BasePreprocessor.swift; sourceTree = "<group>"; };
+		A67D3695BC095921710BB5595F54CA7A /* HeroTransition+UINavigationControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+UINavigationControllerDelegate.swift"; path = "Sources/Transition/HeroTransition+UINavigationControllerDelegate.swift"; sourceTree = "<group>"; };
+		A94AF10546A5B12737AF95FFBF363A45 /* JTACInteractionYearFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACInteractionYearFunctions.swift; path = Sources/JTAppleCalendar/JTACInteractionYearFunctions.swift; sourceTree = "<group>"; };
+		AC2BB5F8FAC0AB3BC7004B37A1DA0416 /* HeroTransition+Interactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+Interactive.swift"; path = "Sources/Transition/HeroTransition+Interactive.swift"; sourceTree = "<group>"; };
+		AC3930C59D32B24012AD82BB19EFB33C /* DispatchQueue+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Hero.swift"; path = "Sources/Extensions/DispatchQueue+Hero.swift"; sourceTree = "<group>"; };
+		B1EFEA5369170F7FC08DFEF1E80D43FF /* HeroTransition+Animate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+Animate.swift"; path = "Sources/Transition/HeroTransition+Animate.swift"; sourceTree = "<group>"; };
+		B77D87BA1A6ADB4E4F211405479AE7FF /* HeroDebugPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDebugPlugin.swift; path = "Sources/Debug Plugin/HeroDebugPlugin.swift"; sourceTree = "<group>"; };
+		BDCA964D7DD611357BD59C4D7D3F187E /* Hero.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Hero.modulemap; sourceTree = "<group>"; };
+		BFA3D40CA90D38F6E57C55296C6ADB52 /* JTACMonthLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayout.swift; path = Sources/JTAppleCalendar/JTACMonthLayout.swift; sourceTree = "<group>"; };
 		C0A1CE7E0DAB62276AC9482C7E11C669 /* Pods-BioGenesis-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BioGenesis-umbrella.h"; sourceTree = "<group>"; };
-		C1E3BCA0D95DD6317D9A27826150FDD8 /* RCInMemoryCachedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCInMemoryCachedObject.m; path = Purchases/Caching/RCInMemoryCachedObject.m; sourceTree = "<group>"; };
-		C53C4DEEEFEF12B3DE46BDFBB1406A31 /* HTTPStatusCodes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPStatusCodes.swift; path = PurchasesCoreSwift/Networking/HTTPStatusCodes.swift; sourceTree = "<group>"; };
-		C553FA351F51C31FA4C2A095870DF8FB /* JTACMonthLayoutVerticalCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutVerticalCalendar.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutVerticalCalendar.swift; sourceTree = "<group>"; };
-		C762153BF465214790ED9A286A9B34CD /* RCPurchasesErrorUtils+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPurchasesErrorUtils+Protected.h"; path = "Purchases/ProtectedExtensions/RCPurchasesErrorUtils+Protected.h"; sourceTree = "<group>"; };
-		C768F22BB1D5B9B8A56F46B0D6B9F284 /* RCPurchases+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCPurchases+Protected.h"; path = "Purchases/ProtectedExtensions/RCPurchases+Protected.h"; sourceTree = "<group>"; };
-		CE37AF398CC57BE1BA14860D9DF4A4EB /* RCHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCHTTPClient.h; path = Purchases/Networking/RCHTTPClient.h; sourceTree = "<group>"; };
-		D23A9BD5B37F84B5BF3B664014DA257C /* TransactionsFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionsFactory.swift; path = PurchasesCoreSwift/Purchasing/TransactionsFactory.swift; sourceTree = "<group>"; };
-		D473DCB39B87D34871E03DF26332D45D /* NetworkStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkStrings.swift; path = PurchasesCoreSwift/Logging/Strings/NetworkStrings.swift; sourceTree = "<group>"; };
-		D4D35B20ADBC51B719AFBBB90BACA17A /* InAppPurchaseBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppPurchaseBuilder.swift; path = PurchasesCoreSwift/LocalReceiptParsing/Builders/InAppPurchaseBuilder.swift; sourceTree = "<group>"; };
-		D5710A8BE18ABAFA056195BC41162D58 /* JTACCollectionYearViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACCollectionYearViewDelegates.swift; path = Sources/JTAppleCalendar/JTACCollectionYearViewDelegates.swift; sourceTree = "<group>"; };
+		C0F04E9D99C176D5CDE49A08B761DF36 /* HeroTransition+CustomTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HeroTransition+CustomTransition.swift"; path = "Sources/Transition/HeroTransition+CustomTransition.swift"; sourceTree = "<group>"; };
+		C53DA5D206FFC4FF67159F6D3C15CDB0 /* CascadePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CascadePreprocessor.swift; path = Sources/Preprocessors/CascadePreprocessor.swift; sourceTree = "<group>"; };
+		C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CAA39D7B72EED3054F4E2F1175529391 /* CAMediaTimingFunction+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAMediaTimingFunction+Hero.swift"; path = "Sources/Extensions/CAMediaTimingFunction+Hero.swift"; sourceTree = "<group>"; };
+		CDBA942C0CBAE87DC463E1EBE85CE409 /* JTACMonthCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthCell.swift; path = Sources/JTAppleCalendar/JTACMonthCell.swift; sourceTree = "<group>"; };
+		D2BE53992A37D2B313A2C15E9B10A225 /* HeroStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroStringConvertible.swift; path = Sources/Parser/HeroStringConvertible.swift; sourceTree = "<group>"; };
+		D4860CB2C524A681FD531F1F3A50BF1A /* JTACCollectionMonthViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACCollectionMonthViewDelegates.swift; path = Sources/JTAppleCalendar/JTACCollectionMonthViewDelegates.swift; sourceTree = "<group>"; };
 		D61DBF8540D7277BE9F6F19EF2B34764 /* Pods-BioGenesis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BioGenesis.release.xcconfig"; sourceTree = "<group>"; };
-		D6BBCA335EC77D93CC7666B5D7C66362 /* RCReceiptFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCReceiptFetcher.m; path = Purchases/Purchasing/RCReceiptFetcher.m; sourceTree = "<group>"; };
-		D8BF46C29D62EF4F6EFA2F43A993A98F /* DateExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateExtensions.swift; path = PurchasesCoreSwift/Misc/DateExtensions.swift; sourceTree = "<group>"; };
-		D8EBC807BBA31C26FA0C83074949172A /* RCOfferings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCOfferings.h; path = Purchases/Public/RCOfferings.h; sourceTree = "<group>"; };
-		D934422181CC47AC69B39EEA6BB6C984 /* PurchasesCoreSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PurchasesCoreSwift-Info.plist"; sourceTree = "<group>"; };
-		DB76C838C7D3B217E2A1EAD1E9570C6A /* RCStoreKitWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCStoreKitWrapper.h; path = Purchases/Purchasing/RCStoreKitWrapper.h; sourceTree = "<group>"; };
-		DBA241C496179F2C219155D6B5710488 /* Transaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = PurchasesCoreSwift/Transaction.swift; sourceTree = "<group>"; };
-		DD214776ED311F6AE4E39BDC344DF88E /* RCISOPeriodFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCISOPeriodFormatter.m; path = Purchases/Misc/RCISOPeriodFormatter.m; sourceTree = "<group>"; };
-		DF0ABCCD01A9273EEB00D22AB4DF1C94 /* PurchasesCoreSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PurchasesCoreSwift-prefix.pch"; sourceTree = "<group>"; };
+		DBE7B544E91F663296CD331F7D774E5C /* JTACMonthLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthLayoutProtocol.swift; path = Sources/JTAppleCalendar/JTACMonthLayoutProtocol.swift; sourceTree = "<group>"; };
+		DDA27CCA34B9449C6E4BDF1A4676DBEF /* JTACInteractionMonthFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACInteractionMonthFunctions.swift; path = Sources/JTAppleCalendar/JTACInteractionMonthFunctions.swift; sourceTree = "<group>"; };
+		DFA2D729D313C5EEF4717CBBD5156242 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
 		E08148A970C88F576FCB2C3A7E5304DA /* Pods-BioGenesis-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BioGenesis-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E086AB6DEA468EF94A713B77C0EA26AA /* Purchases.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Purchases.xcconfig; sourceTree = "<group>"; };
-		E1626B852CC39B5F4E28B648DAFD380A /* RCHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCHTTPRequest.h; path = Purchases/Networking/RCHTTPRequest.h; sourceTree = "<group>"; };
-		E481BEDBE68A4D58471D716AF3A6A41F /* RCAttributionNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCAttributionNetwork.h; path = Purchases/Public/RCAttributionNetwork.h; sourceTree = "<group>"; };
-		E4D0D702C0B732D597C0DAE22FC97D59 /* IntroEligibilityCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntroEligibilityCalculator.swift; path = PurchasesCoreSwift/IntroEligibilityCalculator.swift; sourceTree = "<group>"; };
-		E69BF71A8F21D069932F02ABBB084509 /* PurchaseStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseStrings.swift; path = PurchasesCoreSwift/Logging/Strings/PurchaseStrings.swift; sourceTree = "<group>"; };
-		E71D024C8A18231F3F479A1668A20D0D /* RCBackend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCBackend.h; path = Purchases/Networking/RCBackend.h; sourceTree = "<group>"; };
-		E7C1E112A4E2C1104FE5E54407425DED /* RCPromotionalOffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCPromotionalOffer.m; path = Purchases/Purchasing/RCPromotionalOffer.m; sourceTree = "<group>"; };
-		EAE1E3CF68D0020BA266647131374428 /* RCInMemoryCachedObject+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCInMemoryCachedObject+Protected.h"; path = "Purchases/ProtectedExtensions/RCInMemoryCachedObject+Protected.h"; sourceTree = "<group>"; };
-		EB227AAC4F5A42FB12D812B0EC9051FE /* JTACMonthQueryFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthQueryFunctions.swift; path = Sources/JTAppleCalendar/JTACMonthQueryFunctions.swift; sourceTree = "<group>"; };
-		EBB0DB2FCE7DB2B069F0F9952F1BC8F8 /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/JTAppleCalendar/CalendarEnums.swift; sourceTree = "<group>"; };
-		ED28ADF5CBF68948EEA10699876EE7A6 /* JTACDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACDayCell.swift; path = Sources/JTAppleCalendar/JTACDayCell.swift; sourceTree = "<group>"; };
-		EE33937FEED04611E0F2BCDFD4996CDE /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/JTAppleCalendar/CalendarStructs.swift; sourceTree = "<group>"; };
-		F0C803EF6318AA80B9B6262C561CDC3F /* OperationDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationDispatcher.swift; path = PurchasesCoreSwift/Misc/OperationDispatcher.swift; sourceTree = "<group>"; };
-		F1D2F0CBC540F287D5563F05E6C18DED /* RCSystemInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCSystemInfo.m; path = Purchases/Misc/RCSystemInfo.m; sourceTree = "<group>"; };
+		E1BDD831E3878F1D66453D8F1FA6271E /* Hero-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hero-umbrella.h"; sourceTree = "<group>"; };
+		E45803DAE70949053E99475F365D1F9C /* JTACMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthView.swift; path = Sources/JTAppleCalendar/JTACMonthView.swift; sourceTree = "<group>"; };
+		E52231EA3EBAC6BD69D1D444E4B7B377 /* Hero.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hero.xcconfig; sourceTree = "<group>"; };
+		E650F73B93BBF60983C975FECBDC8688 /* Regex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Regex.swift; path = Sources/Parser/Regex.swift; sourceTree = "<group>"; };
+		E7DCC8354E25BC755DC9652FB4145F3B /* HeroAnimatorViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroAnimatorViewContext.swift; path = Sources/Animator/HeroAnimatorViewContext.swift; sourceTree = "<group>"; };
+		E988957BAA4766D26F235674F98B0BC0 /* Hero-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hero-prefix.pch"; sourceTree = "<group>"; };
+		EB2580B2F49E9C04E59C4A5C82C45AC8 /* MatchPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchPreprocessor.swift; path = Sources/Preprocessors/MatchPreprocessor.swift; sourceTree = "<group>"; };
+		EEA241FDB457BD8C4421DE65AAC7924D /* HeroCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroCompatible.swift; path = Sources/HeroCompatible.swift; sourceTree = "<group>"; };
+		EF82E04231436AECBE86AD60078461BC /* HeroViewPropertyViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroViewPropertyViewContext.swift; path = Sources/Animator/HeroViewPropertyViewContext.swift; sourceTree = "<group>"; };
+		F056ABBD8DA8596BEDE06B1EED32FEE9 /* Nodes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Nodes.swift; path = Sources/Parser/Nodes.swift; sourceTree = "<group>"; };
 		F2526B85554904385C4C9E7D6CFA39DE /* Pods-BioGenesis.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BioGenesis.modulemap"; sourceTree = "<group>"; };
-		F321A5E0C1B587A918B058D5400EC3AC /* RCPurchases.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCPurchases.h; path = Purchases/Public/RCPurchases.h; sourceTree = "<group>"; };
-		F3E54B97D149E95F171CE7798C9C2223 /* RCEntitlementInfo+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCEntitlementInfo+Protected.h"; path = "Purchases/ProtectedExtensions/RCEntitlementInfo+Protected.h"; sourceTree = "<group>"; };
-		F431B393B83A75C8045A98F959FA7DA5 /* RCSubscriberAttributesManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCSubscriberAttributesManager.m; path = Purchases/SubscriberAttributes/RCSubscriberAttributesManager.m; sourceTree = "<group>"; };
-		F5243FAC49A2CCE65FA6A6CFAE252333 /* AttributionStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributionStrings.swift; path = PurchasesCoreSwift/Logging/Strings/AttributionStrings.swift; sourceTree = "<group>"; };
-		F87EAF230A38CDD2CE0961C23D88AB38 /* ETagManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ETagManager.swift; path = PurchasesCoreSwift/Networking/ETagManager.swift; sourceTree = "<group>"; };
-		FBA7F9EF3FAEB0BC7D79BB1AFF265A06 /* Purchases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Purchases.framework; path = Purchases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC908D33A64A7857A63B9A9BBE009520 /* RCSystemInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCSystemInfo.h; path = Purchases/Misc/RCSystemInfo.h; sourceTree = "<group>"; };
-		FE472BCEE4FE0307C6AC18A1936A62BF /* RCDeviceCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCDeviceCache.h; path = Purchases/Caching/RCDeviceCache.h; sourceTree = "<group>"; };
-		FED93C49C3C578DAD605472E70D5451B /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/JTAppleCalendar/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
-		FF0962F19015317EE5F45954986A3B75 /* PurchasesCoreSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PurchasesCoreSwift-umbrella.h"; sourceTree = "<group>"; };
-		FF46F6817AF7A71A4D44789D7D4C475A /* PurchasesCoreSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PurchasesCoreSwift.xcconfig; sourceTree = "<group>"; };
+		F3D07AB0047DF090D0E99539A5AC9ED4 /* CALayer+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Hero.swift"; path = "Sources/Extensions/CALayer+Hero.swift"; sourceTree = "<group>"; };
+		F77DF03342E55635C7E9F5C5AAEE0BBE /* JTAppleCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JTAppleCalendar-Info.plist"; sourceTree = "<group>"; };
+		F8C830FF7C3F0EB792F7F0D41B08BE65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FAD9AC0426072933256DCBD071CD50BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FD4E0776A6E1328F96490D48268A6706 /* JTACMonthReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTACMonthReusableView.swift; path = Sources/JTAppleCalendar/JTACMonthReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B436AAB952E5D58342163530AD4809E /* Frameworks */ = {
+		318AFD03FFFF1DF76968FD20CA68AA4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78A6D3233AA56A7CDE83FCFC91C71711 /* Foundation.framework in Frameworks */,
-				0ADD82A236EF73D01F39C547E79C1B05 /* StoreKit.framework in Frameworks */,
+				4326332FE57AB8AAE9A0CC8FD7FA397D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1664A69793FBF6BF777628FE7D17492 /* Frameworks */ = {
+		AC7E4C127E39C69B641065809FD55DFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB740150916A7AC01D0FDD781C569A5A /* Foundation.framework in Frameworks */,
-				2293D8CF2B6D6FFF0186C7F9578BDF74 /* PurchasesCoreSwift.framework in Frameworks */,
-				07047CE53D94EC10F506F21E664CB34E /* StoreKit.framework in Frameworks */,
+				A327A2ED9C9432138D6955F8B0A16D33 /* CoreGraphics.framework in Frameworks */,
+				022C443B103C1212789C2CD34B62660E /* CoreMedia.framework in Frameworks */,
+				4060F0F631FE2C10931BF78EC656009C /* Foundation.framework in Frameworks */,
+				52F1DFEC50925F25DAE919FAEFBFC00B /* QuartzCore.framework in Frameworks */,
+				34401EE6A3FF48CE7D4E0152208ECF93 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,35 +245,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA216C471599B6A394CB6E77BB77349D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B0F20896984B93A751A4BBC81C8B83D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10C71EA43ABFD8031411962C877BCE8F /* Products */ = {
+		0D39BC3929DCAD0351D1B852D060E176 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar.framework */,
-				737C2B95702E353414C6CFFA60C1E592 /* Pods_BioGenesis.framework */,
-				FBA7F9EF3FAEB0BC7D79BB1AFF265A06 /* Purchases.framework */,
-				A8744BFCBA0EFF3EFCB22EF6E0408B42 /* PurchasesCoreSwift.framework */,
+				BDCA964D7DD611357BD59C4D7D3F187E /* Hero.modulemap */,
+				E52231EA3EBAC6BD69D1D444E4B7B377 /* Hero.xcconfig */,
+				065E266F17F983325A12A9AF74C6D786 /* Hero-dummy.m */,
+				713F486193ED67772865937BE36C61E5 /* Hero-Info.plist */,
+				E988957BAA4766D26F235674F98B0BC0 /* Hero-prefix.pch */,
+				E1BDD831E3878F1D66453D8F1FA6271E /* Hero-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Hero";
 			sourceTree = "<group>";
 		};
-		615502CC4B88CFAE6D4E77F46BCC2F18 /* Frameworks */ = {
+		0E607B8C21FA2BA40F9E59C754C98AD3 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7B51404464C4EB6D4C594037AEB68841 /* PurchasesCoreSwift.framework */,
-				DE86B01FC114C3FA41B4914EBC7CC7E1 /* iOS */,
+				47C1F7D15DF1E2C8B980BC1B49D38419 /* CoreGraphics.framework */,
+				95568154064CE960195D45B95A17D3E7 /* CoreMedia.framework */,
+				C6B4A357A9E84FBAC4505EFF2873D26B /* Foundation.framework */,
+				F8C830FF7C3F0EB792F7F0D41B08BE65 /* QuartzCore.framework */,
+				FAD9AC0426072933256DCBD071CD50BA /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		15D4E3B37E9E2D3BDCC8600E3155E7F4 /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				86D210A37390DC6A7F0038C6C84ABB7D /* Array+HeroModifier.swift */,
+				A4CD793BE26968491358F4A6AA16B7AD /* BasePreprocessor.swift */,
+				F3D07AB0047DF090D0E99539A5AC9ED4 /* CALayer+Hero.swift */,
+				CAA39D7B72EED3054F4E2F1175529391 /* CAMediaTimingFunction+Hero.swift */,
+				C53DA5D206FFC4FF67159F6D3C15CDB0 /* CascadePreprocessor.swift */,
+				09B6E4B53E9D88EF5418116A07C6AC31 /* CG+Hero.swift */,
+				3414322DE4D7E5599004160C1A895442 /* ConditionalPreprocessor.swift */,
+				50E1015CA49A977348CFD79233DE59D5 /* DefaultAnimationPreprocessor.swift */,
+				AC3930C59D32B24012AD82BB19EFB33C /* DispatchQueue+Hero.swift */,
+				E7DCC8354E25BC755DC9652FB4145F3B /* HeroAnimatorViewContext.swift */,
+				EEA241FDB457BD8C4421DE65AAC7924D /* HeroCompatible.swift */,
+				51E018E5202BA30365BBC4323250B9D3 /* HeroContext.swift */,
+				12032A75B910232870611A7B29A88D17 /* HeroCoreAnimationViewContext.swift */,
+				B77D87BA1A6ADB4E4F211405479AE7FF /* HeroDebugPlugin.swift */,
+				4BB1B9DFC753183D5E4CA99A89BE0A94 /* HeroDebugView.swift */,
+				01C3F17C6604D151147D345A5547816C /* HeroDefaultAnimator.swift */,
+				4644545AAD28274F4A1C9D90B866C248 /* HeroModifier.swift */,
+				4874CB895ED33ED0D27CCFC19E1D21FF /* HeroModifier+Advanced.swift */,
+				4F8FBE35A08DDB993DDBE63358504F74 /* HeroModifier+HeroStringConvertible.swift */,
+				59252972DB0C0B326200845FD1C7E3BF /* HeroPlugin.swift */,
+				6B308E5D68BF9C71ACEDEE34882D027F /* HeroProgressRunner.swift */,
+				D2BE53992A37D2B313A2C15E9B10A225 /* HeroStringConvertible.swift */,
+				0B7E15283B2896E464B824579D88EAC0 /* HeroTargetState.swift */,
+				11956AA4C6BD0497927E67366A92D6F6 /* HeroTransition.swift */,
+				B1EFEA5369170F7FC08DFEF1E80D43FF /* HeroTransition+Animate.swift */,
+				72BF3043951A9CF0293F3EFE8DDF09AF /* HeroTransition+Complete.swift */,
+				C0F04E9D99C176D5CDE49A08B761DF36 /* HeroTransition+CustomTransition.swift */,
+				AC2BB5F8FAC0AB3BC7004B37A1DA0416 /* HeroTransition+Interactive.swift */,
+				9321B05709B2CF35C880B46D4A7EF63A /* HeroTransition+Start.swift */,
+				A67D3695BC095921710BB5595F54CA7A /* HeroTransition+UINavigationControllerDelegate.swift */,
+				99446F902BF23D7935A0D98E583E32D3 /* HeroTransition+UITabBarControllerDelegate.swift */,
+				69A747C1A58B0E60D7E6EAFC685BA4B8 /* HeroTransition+UIViewControllerTransitioningDelegate.swift */,
+				9FC557CB2E13640C0B66F9AE8D6F4F96 /* HeroTransitionState.swift */,
+				64ACDC208D0A3D7F53CB69216C80DAD7 /* HeroTypes.swift */,
+				75401F082864F37A9A05F6D87ABC8925 /* HeroViewControllerDelegate.swift */,
+				EF82E04231436AECBE86AD60078461BC /* HeroViewPropertyViewContext.swift */,
+				862029A1C4AD2467C440ACE19BC10B30 /* IgnoreSubviewModifiersPreprocessor.swift */,
+				4E164491A6FC9912C49D19EA7EC88CB6 /* Lexer.swift */,
+				9DD56D3306439C3333642E7BC5C1404F /* Locale+Hero.swift */,
+				EB2580B2F49E9C04E59C4A5C82C45AC8 /* MatchPreprocessor.swift */,
+				F056ABBD8DA8596BEDE06B1EED32FEE9 /* Nodes.swift */,
+				92311D78A0E81FA8FFEB8ADFB1023EDF /* Parser.swift */,
+				E650F73B93BBF60983C975FECBDC8688 /* Regex.swift */,
+				41FB9B98700716BA4ED709667E7A40E1 /* SourcePreprocessor.swift */,
+				8AAA8CA7696BE50B8462585D7C1D35AF /* SwiftSupport.swift */,
+				27A4DCEB72EFC956CC6BCF201A168F7B /* UIColor+HexString.swift */,
+				5ABDB76053791A844DF753EFF71C937F /* UIKit+Hero.swift */,
+				632CE67F9597EC37712D82FE2C7C9714 /* UIView+Hero.swift */,
+				4DF9F401416FB6764B3C77F0BF111ACA /* UIViewController+Hero.swift */,
+				0D39BC3929DCAD0351D1B852D060E176 /* Support Files */,
+			);
+			name = Hero;
+			path = Hero;
 			sourceTree = "<group>";
 		};
 		6335A73225F88ECD1FB12BDC0A7E3CA5 /* Targets Support Files */ = {
@@ -494,6 +338,15 @@
 				82DFA0673178DFB59A431D628FDFF650 /* Pods-BioGenesis */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		67F793426F881C30B1BE1705B5CCFBE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15D4E3B37E9E2D3BDCC8600E3155E7F4 /* Hero */,
+				A42BDFEB0A16AE1802D82F451AAF85C3 /* JTAppleCalendar */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		82DFA0673178DFB59A431D628FDFF650 /* Pods-BioGenesis */ = {
@@ -513,271 +366,79 @@
 			path = "Target Support Files/Pods-BioGenesis";
 			sourceTree = "<group>";
 		};
-		8938C326C3237EAB8D2DB4B415CBE6A4 /* Support Files */ = {
+		8411A981350BC700E1FFAC83C5ADDCB3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B049E56E9ECDF58B080CFDB864BBC64 /* JTAppleCalendar.modulemap */,
-				19B11FC5C4D1C120BFB2D17D1850CE04 /* JTAppleCalendar.xcconfig */,
-				23C75027C7DD73EAA927504AAC037734 /* JTAppleCalendar-dummy.m */,
-				19C2EDEA80AAB2CDEAAA95E340AB0516 /* JTAppleCalendar-Info.plist */,
-				1DB0A149785E33CB87093FC22C7BE4D4 /* JTAppleCalendar-prefix.pch */,
-				84520A3DD74AE363E37055022A1D9DDA /* JTAppleCalendar-umbrella.h */,
+				13E778F4B833EE5D7ABE882406A8215E /* Hero.framework */,
+				A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar.framework */,
+				737C2B95702E353414C6CFFA60C1E592 /* Pods_BioGenesis.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/JTAppleCalendar";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		8BA9D812055F5AAB09B1AE5CD44E84DF /* JTAppleCalendar */ = {
+		A42BDFEB0A16AE1802D82F451AAF85C3 /* JTAppleCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				EBB0DB2FCE7DB2B069F0F9952F1BC8F8 /* CalendarEnums.swift */,
-				EE33937FEED04611E0F2BCDFD4996CDE /* CalendarStructs.swift */,
-				FED93C49C3C578DAD605472E70D5451B /* GlobalFunctionsAndExtensions.swift */,
-				6AB2B7243329FFF2FD32433B97BB85D8 /* JTACCollectionMonthViewDelegates.swift */,
-				D5710A8BE18ABAFA056195BC41162D58 /* JTACCollectionYearViewDelegates.swift */,
-				ED28ADF5CBF68948EEA10699876EE7A6 /* JTACDayCell.swift */,
-				423CB8961E0225B90C1F7525B83F19FF /* JTACInteractionMonthFunctions.swift */,
-				4CB1CAB052DA0D4EB01126733E6B86DF /* JTACInteractionYearFunctions.swift */,
-				3434184826C11EA2B6297447BB507C26 /* JTACMonthActionFunctions.swift */,
-				3F8B1EF3C29C2D13A96F84E2267AACD7 /* JTACMonthCell.swift */,
-				584BD4921B7CFCB54FB1383084C55F5D /* JTACMonthDelegateProtocol.swift */,
-				76C370B33D88C33B0171D1D9FC8089D3 /* JTACMonthLayout.swift */,
-				095924A0405B781CF85281549AF32A12 /* JTACMonthLayoutHorizontalCalendar.swift */,
-				5B43AB9EDA7F8A6034D04AE27E62D877 /* JTACMonthLayoutProtocol.swift */,
-				C553FA351F51C31FA4C2A095870DF8FB /* JTACMonthLayoutVerticalCalendar.swift */,
-				EB227AAC4F5A42FB12D812B0EC9051FE /* JTACMonthQueryFunctions.swift */,
-				85D791E8F1239CCA9A3041080A6344CE /* JTACMonthReusableView.swift */,
-				B058C54936F6F03C096B98B0B9C90E95 /* JTACMonthView.swift */,
-				5C26ABC840F18118E5C9F335D437CE37 /* JTACMonthViewProtocols.swift */,
-				1A8985DAA1815013E817203665F1CECB /* JTACScrollViewDelegates.swift */,
-				4071A9C4AE1794BB408A6D20A1693D54 /* JTACVariables.swift */,
-				5F9C0C33969C8EDBFE06C5D1F26EBF4C /* JTACYearView.swift */,
-				97BF4FD4476611B21FA772EA70007DC7 /* JTACYearViewProtocols.swift */,
-				8938C326C3237EAB8D2DB4B415CBE6A4 /* Support Files */,
+				A4291EA55D6638F57F6A5CF4966C8FB5 /* CalendarEnums.swift */,
+				233BE1C7088B2C147083CB45CD2614FB /* CalendarStructs.swift */,
+				76CD4DEDCD087F1C842E80311EAF8E6F /* GlobalFunctionsAndExtensions.swift */,
+				D4860CB2C524A681FD531F1F3A50BF1A /* JTACCollectionMonthViewDelegates.swift */,
+				8D6AAEC3CA05CE5053EE761E204429B3 /* JTACCollectionYearViewDelegates.swift */,
+				76AA79EFBE1C42506F6B0C7858D1FD93 /* JTACDayCell.swift */,
+				DDA27CCA34B9449C6E4BDF1A4676DBEF /* JTACInteractionMonthFunctions.swift */,
+				A94AF10546A5B12737AF95FFBF363A45 /* JTACInteractionYearFunctions.swift */,
+				926F82F10E29858D16644669E2FDDF22 /* JTACMonthActionFunctions.swift */,
+				CDBA942C0CBAE87DC463E1EBE85CE409 /* JTACMonthCell.swift */,
+				6BA7177FFA0B9EB46DE97F91A42F9767 /* JTACMonthDelegateProtocol.swift */,
+				BFA3D40CA90D38F6E57C55296C6ADB52 /* JTACMonthLayout.swift */,
+				8E5C442922E01A84337FCA2822485917 /* JTACMonthLayoutHorizontalCalendar.swift */,
+				DBE7B544E91F663296CD331F7D774E5C /* JTACMonthLayoutProtocol.swift */,
+				39B3511374EEB155F0C53155F3455762 /* JTACMonthLayoutVerticalCalendar.swift */,
+				73F36316D6241576BD400479BBC6DE17 /* JTACMonthQueryFunctions.swift */,
+				FD4E0776A6E1328F96490D48268A6706 /* JTACMonthReusableView.swift */,
+				E45803DAE70949053E99475F365D1F9C /* JTACMonthView.swift */,
+				11EDFA09C42B644AAAADE4CC69341F60 /* JTACMonthViewProtocols.swift */,
+				9F0D1840CC2889F36551BBCD9F036EF8 /* JTACScrollViewDelegates.swift */,
+				1619A8ABF897EF25133AED099CEA87A5 /* JTACVariables.swift */,
+				31F105AE62FD4AE2CC6FFC7B1FE5FAD4 /* JTACYearView.swift */,
+				5925C74E2182B52CC9302F56AA46C237 /* JTACYearViewProtocols.swift */,
+				FA741218F84A0F856C35755BAD36ABA7 /* Support Files */,
 			);
 			name = JTAppleCalendar;
 			path = JTAppleCalendar;
 			sourceTree = "<group>";
 		};
-		BA1BB0BD8F8143F7F2724B050EB7FEA0 /* PurchasesCoreSwift */ = {
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB80A30AC0F05CD24142BF27CE461B58 /* AppleReceipt.swift */,
-				8A00021ABE658DACF6063F788268F603 /* AppleReceiptBuilder.swift */,
-				641CE949698C6F9C0B1C59A973EC2CB5 /* ArraySlice_UInt8+Extensions.swift */,
-				5A73B4E5366844A4D0AE464EFF2DE57C /* ASN1Container.swift */,
-				6AA183C7B8C0CFF6CFCBC3E7622288F7 /* ASN1ContainerBuilder.swift */,
-				7E5F4B233FD247E075D4FAF2AD818C94 /* ASN1ObjectIdentifier.swift */,
-				B93A6A32E59D47D41BE6175B3A85A7C7 /* ASN1ObjectIdentifierBuilder.swift */,
-				469BECD6038204DD8F304F3A866A6974 /* AttributionDataMigrator.swift */,
-				6D160728C999B08D9E0C5A52A38B530B /* AttributionKey.swift */,
-				B07AC5F4A7D0BECC7D1C82F010134BA3 /* AttributionNetwork.swift */,
-				F5243FAC49A2CCE65FA6A6CFAE252333 /* AttributionStrings.swift */,
-				70AD24FA24CBEDD40C60506AAC75D1E0 /* ConfigureStrings.swift */,
-				3CCBF4E781F4A615073F54941B004366 /* DangerousSettings.swift */,
-				D8BF46C29D62EF4F6EFA2F43A993A98F /* DateExtensions.swift */,
-				12AE0BA8912BEC698C20071A36AF86F4 /* DictionaryExtensions.swift */,
-				071B874D4E5D2D65EA1CCB079A409FF8 /* ETagAndResponseWrapper.swift */,
-				F87EAF230A38CDD2CE0961C23D88AB38 /* ETagManager.swift */,
-				61778A7B0112D97AA4E79425FFF642EF /* HTTPResponse.swift */,
-				C53C4DEEEFEF12B3DE46BDFBB1406A31 /* HTTPStatusCodes.swift */,
-				241E483E15A49F64638CB3FDDE77E87A /* IdentityStrings.swift */,
-				4D1036897D9B84E5BA61CBF3958FDC8F /* InAppPurchase.swift */,
-				D4D35B20ADBC51B719AFBBB90BACA17A /* InAppPurchaseBuilder.swift */,
-				E4D0D702C0B732D597C0DAE22FC97D59 /* IntroEligibilityCalculator.swift */,
-				7AFA70726C3A8666DC5D2983B51F1AEB /* ISO3601DateFormatter.swift */,
-				0814F041956C1F61FE3522562BCD1462 /* Logger.swift */,
-				0F27CD2EE845A669EF2C6FBCC2B04E92 /* LogIntent.swift */,
-				D473DCB39B87D34871E03DF26332D45D /* NetworkStrings.swift */,
-				70760C74CCF11B1302DE66D9AEF4C243 /* OfferingStrings.swift */,
-				F0C803EF6318AA80B9B6262C561CDC3F /* OperationDispatcher.swift */,
-				9801F4856C387BF63F63959B4D5CE191 /* ProductsManager.swift */,
-				6EEEC994DC0C81A97ABC00D99C931370 /* ProductsRequestFactory.swift */,
-				49AB9A89E92890FA3353B92831621CB3 /* PurchaserInfoStrings.swift */,
-				E69BF71A8F21D069932F02ABBB084509 /* PurchaseStrings.swift */,
-				24701D814DB3EB70C17789DC73ADEEC0 /* ReceiptParser.swift */,
-				A0D53A75B2778949973FFC7C8D7F7A42 /* ReceiptParsingError.swift */,
-				65D21DCDA4A1046FDB1A5AEBAC53A64A /* ReceiptStrings.swift */,
-				86C8C2827C1360D45568AF9CEB96E976 /* RestoreStrings.swift */,
-				44B49DE47DC096F24FEC293E5BBF98B0 /* SpecialSubscriberAttributes.swift */,
-				0CB48CFAAFB23EEB5DBD9274A562336E /* Strings.swift */,
-				DBA241C496179F2C219155D6B5710488 /* Transaction.swift */,
-				D23A9BD5B37F84B5BF3B664014DA257C /* TransactionsFactory.swift */,
-				330EF08BFCBC68A5D4DCDA3A10028AF6 /* UInt8+Extensions.swift */,
-				C0D863806DCFCE0DFF5FB39578615EDE /* Support Files */,
+				0E607B8C21FA2BA40F9E59C754C98AD3 /* iOS */,
 			);
-			name = PurchasesCoreSwift;
-			path = PurchasesCoreSwift;
-			sourceTree = "<group>";
-		};
-		BF3B41CA35B8721078EC6D7624671958 /* Purchases */ = {
-			isa = PBXGroup;
-			children = (
-				9ADE01526339570E162C9E0708AA016C /* NSData+RCExtensions.h */,
-				803B734FF9756204697056D9D957DB18 /* NSData+RCExtensions.m */,
-				2B7B935FB0FBEA0463468B9E68E4D701 /* NSDate+RCExtensions.h */,
-				3DDAC27B5AA2ED13FD98F075ACE7ADF5 /* NSDate+RCExtensions.m */,
-				403F56EC16E1C430172CBC264DF31BDE /* NSDictionary+RCExtensions.h */,
-				9E8173D1F6BB78F4BA1538D84F462C11 /* NSDictionary+RCExtensions.m */,
-				2075737BEEB0828AAEE3C315F2631131 /* NSError+RCExtensions.h */,
-				37AD5C01F45742F10485486AC03BDCBD /* NSError+RCExtensions.m */,
-				5ADCD8B2149D3F888191E559C2CB4FF9 /* NSLocale+RCExtensions.h */,
-				27118D3871518BA6403BA603614252C2 /* NSLocale+RCExtensions.m */,
-				32A91B677553CBA8C0E07A5A61ED4B78 /* Purchases.h */,
-				85DF4B09D54F8F5CBB4865D5C3FF1BFC /* RCAttributionData.h */,
-				824D577DC28F63F9B8D871F3F7893131 /* RCAttributionData.m */,
-				4F91F2F63EF39F17BF3E32F8742BE6C6 /* RCAttributionFetcher.h */,
-				18FA94869E04F96380764C9495185690 /* RCAttributionFetcher.m */,
-				E481BEDBE68A4D58471D716AF3A6A41F /* RCAttributionNetwork.h */,
-				9851D0E638508523B3686529DF7FD6E2 /* RCAttributionPoster.h */,
-				2B4DFAB4BCDEFA926E8BCE1BF6C0216C /* RCAttributionPoster.m */,
-				078D8D3FF9E1590418852BFA93DB5D1D /* RCAttributionTypeFactory.h */,
-				0FD83B868797F95D9A1E2FD977CE8D00 /* RCAttributionTypeFactory.m */,
-				016CC51FADF300D4EB3643326BCA4FF5 /* RCAttributionTypeFactory+Protected.h */,
-				E71D024C8A18231F3F479A1668A20D0D /* RCBackend.h */,
-				3D54FF0296F37DE71FC2A5E7CC08DDAF /* RCBackend.m */,
-				7F7CDD3E2C3A569CC1D087F6241E7CF7 /* RCCrossPlatformSupport.h */,
-				0FAF90C20C814146B47FFBB9B02C7E5B /* RCDateProvider.h */,
-				22A218D0CB5B9F39B7C7145BDB6554D0 /* RCDateProvider.m */,
-				FE472BCEE4FE0307C6AC18A1936A62BF /* RCDeviceCache.h */,
-				882DDCD1AC266E8D1E65FAE0C8ED0BF7 /* RCDeviceCache.m */,
-				3462C312665C33CC7ABEAD3CF5E82A9F /* RCDeviceCache+Protected.h */,
-				A33453B48292A25C774D2D631C4C75D0 /* RCEntitlementInfo.h */,
-				1D57EBFD51A79741192263F0C46365EB /* RCEntitlementInfo.m */,
-				F3E54B97D149E95F171CE7798C9C2223 /* RCEntitlementInfo+Protected.h */,
-				4A2E268B8E421A97A2C6F4B424231AD3 /* RCEntitlementInfos.h */,
-				3AA60ED8A112FE6C9104758E2446F5B1 /* RCEntitlementInfos.m */,
-				9FE011114DDF975396E0B42E323C1B5C /* RCEntitlementInfos+Protected.h */,
-				CE37AF398CC57BE1BA14860D9DF4A4EB /* RCHTTPClient.h */,
-				452AE602601F59B64E782307EA67FE48 /* RCHTTPClient.m */,
-				E1626B852CC39B5F4E28B648DAFD380A /* RCHTTPRequest.h */,
-				7BB9CF998DFD87680208C52D08494FE7 /* RCHTTPRequest.m */,
-				1C239778CB1CCBAEFD1D33BE2F988E89 /* RCIdentityManager.h */,
-				33FC9B1B053D9A3695D45CCDBC485915 /* RCIdentityManager.m */,
-				6FE38DEF3F5BA08B07B1100C985CA3BA /* RCIdentityManager+Protected.h */,
-				BC8D8C1E8124467C8A06F5B6B2A1777D /* RCInMemoryCachedObject.h */,
-				C1E3BCA0D95DD6317D9A27826150FDD8 /* RCInMemoryCachedObject.m */,
-				EAE1E3CF68D0020BA266647131374428 /* RCInMemoryCachedObject+Protected.h */,
-				07FDB2411982798D9490B89F44CD78E4 /* RCIntroEligibility.h */,
-				A93BCB0FCE23F7BE6C302E2D00A6B18D /* RCIntroEligibility.m */,
-				4228BF86960CD824BD9CB4E5EB8118C7 /* RCIntroEligibility+Protected.h */,
-				749B58483A16645A55E3B9223F86243C /* RCISOPeriodFormatter.h */,
-				DD214776ED311F6AE4E39BDC344DF88E /* RCISOPeriodFormatter.m */,
-				A5E786C2B46D1F83238A2E7B26141194 /* RCLoggerBridge.h */,
-				91876026C2BEF270293216B8BDDAA5AE /* RCLoggerBridge.m */,
-				7040511027AA44F25524C716F3B78645 /* RCLogLevel.h */,
-				34C5A977958F96F2C4305C19DA89AA5D /* RCLogUtils.h */,
-				05E3CD9F528CE77104D3B2A64AB7B147 /* RCOffering.h */,
-				A63E4B94EF3B0DCB633FAA6DCAF70873 /* RCOffering.m */,
-				83C5F34775DEF8B2363EDC01A616F08C /* RCOffering+Protected.h */,
-				D8EBC807BBA31C26FA0C83074949172A /* RCOfferings.h */,
-				94FFF8D60C7525076F048436EAF4BF83 /* RCOfferings.m */,
-				A5790FBA847B6F400238E62980AAF9E3 /* RCOfferings+Protected.h */,
-				02D2D2DCF145FAA28A1D22AD85AFCBD0 /* RCOfferingsFactory.h */,
-				809A088D1F854CB4B6E434EB3DD5782A /* RCOfferingsFactory.m */,
-				7FC14AA2FB9956AF6559D7204020831E /* RCPackage.h */,
-				9EF8D00C6B2F0145D7FB78DD44805153 /* RCPackage.m */,
-				2943B3A3D6A0317CFFF78C1AC90840FA /* RCPackage+Protected.h */,
-				4A47A195244599A565317A3EADE4D728 /* RCProductInfo.h */,
-				9E34482ACFEAFDF9C78876BA3AC515F0 /* RCProductInfo.m */,
-				B472459ADA715C036BF9341746A18806 /* RCProductInfoExtractor.h */,
-				10943FF2EA4E267062EC9E40B19BA29D /* RCProductInfoExtractor.m */,
-				5D44C65DAF82E9A51F392D270FCF68D3 /* RCPromotionalOffer.h */,
-				E7C1E112A4E2C1104FE5E54407425DED /* RCPromotionalOffer.m */,
-				6FAFAE6849B5B1BB9F83F62B3E41BDB8 /* RCPromotionalOffer+Protected.h */,
-				864AA35565EBC1EE0A6604D485ADF249 /* RCPurchaseOwnershipType.h */,
-				3BE8C72EDB1A2104591AB6787C827C48 /* RCPurchaserInfo.h */,
-				6B514529EFC08F3FBC568AE43B2900AF /* RCPurchaserInfo.m */,
-				206CD49CDA4F3B75007879FDB7C6AA72 /* RCPurchaserInfo+Protected.h */,
-				8AEEB8597812190E1520E9E8ADFA0FA5 /* RCPurchaserInfoManager.h */,
-				23672089433DB32C4F6AFA73F0ABB5D3 /* RCPurchaserInfoManager.m */,
-				A45070F644F842B7FE33CAF1B9CCBE44 /* RCPurchaserInfoManager+Protected.h */,
-				F321A5E0C1B587A918B058D5400EC3AC /* RCPurchases.h */,
-				744278EC9FEF0001E95E3852F22F0C24 /* RCPurchases.m */,
-				C768F22BB1D5B9B8A56F46B0D6B9F284 /* RCPurchases+Protected.h */,
-				38FF85D287AF80292621B5D6FF1E9A12 /* RCPurchases+SubscriberAttributes.h */,
-				5EB5C852E88E14D8299D5E2A0A3AAEDE /* RCPurchases+SubscriberAttributes.m */,
-				5A4EBC1579B06AB053DC60E5E80E05FF /* RCPurchasesErrors.h */,
-				7A86F19B0A5D723DBB5B641D3D2ED7BB /* RCPurchasesErrorUtils.h */,
-				01EF7E7B03F768632874DF06A616BF38 /* RCPurchasesErrorUtils.m */,
-				C762153BF465214790ED9A286A9B34CD /* RCPurchasesErrorUtils+Protected.h */,
-				69416C1390E26311384184FF897C5A89 /* RCReceiptFetcher.h */,
-				D6BBCA335EC77D93CC7666B5D7C66362 /* RCReceiptFetcher.m */,
-				23112183EACEEA07E6EB6D7A2A9C0236 /* RCReceiptRefreshPolicy.h */,
-				6193AC30BD0DF9A7835513B2DC97E226 /* RCStoreKitRequestFetcher.h */,
-				2FCF4D48B1B48D6BBE6DA852F281A03C /* RCStoreKitRequestFetcher.m */,
-				DB76C838C7D3B217E2A1EAD1E9570C6A /* RCStoreKitWrapper.h */,
-				2AA5B6343367E740C1C398FFE33EBC59 /* RCStoreKitWrapper.m */,
-				7382C99601D78FAA49BB47760B2E76F2 /* RCSubscriberAttribute.h */,
-				626FFF131BD2819044C2AADE21543132 /* RCSubscriberAttribute.m */,
-				A4290354744202456185EFF632079FE0 /* RCSubscriberAttribute+Protected.h */,
-				C06F622FB84061785F16D89F2FB1D393 /* RCSubscriberAttributesManager.h */,
-				F431B393B83A75C8045A98F959FA7DA5 /* RCSubscriberAttributesManager.m */,
-				FC908D33A64A7857A63B9A9BBE009520 /* RCSystemInfo.h */,
-				F1D2F0CBC540F287D5563F05E6C18DED /* RCSystemInfo.m */,
-				B280A239ABB985EE55DC3F13AEC864DB /* RCTransaction.h */,
-				E5955C785786269ABE1AA1CF1F21C93F /* Support Files */,
-			);
-			name = Purchases;
-			path = Purchases;
-			sourceTree = "<group>";
-		};
-		C0D863806DCFCE0DFF5FB39578615EDE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AFD6990E34A9A4B4A445B63BDD19AEC4 /* PurchasesCoreSwift.modulemap */,
-				FF46F6817AF7A71A4D44789D7D4C475A /* PurchasesCoreSwift.xcconfig */,
-				AA5C143CD42F128E45336EAC88E15BF4 /* PurchasesCoreSwift-dummy.m */,
-				D934422181CC47AC69B39EEA6BB6C984 /* PurchasesCoreSwift-Info.plist */,
-				DF0ABCCD01A9273EEB00D22AB4DF1C94 /* PurchasesCoreSwift-prefix.pch */,
-				FF0962F19015317EE5F45954986A3B75 /* PurchasesCoreSwift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PurchasesCoreSwift";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				615502CC4B88CFAE6D4E77F46BCC2F18 /* Frameworks */,
-				FC352CAD5D4E0568DBECA2B5AF9CDDAB /* Pods */,
-				10C71EA43ABFD8031411962C877BCE8F /* Products */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				67F793426F881C30B1BE1705B5CCFBE7 /* Pods */,
+				8411A981350BC700E1FFAC83C5ADDCB3 /* Products */,
 				6335A73225F88ECD1FB12BDC0A7E3CA5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		DE86B01FC114C3FA41B4914EBC7CC7E1 /* iOS */ = {
+		FA741218F84A0F856C35755BAD36ABA7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C7CDA4363CBEC03E06A56F9FD1A9E3A /* Foundation.framework */,
-				BE1000410AABAC8444B7B26CD6F6BDB0 /* StoreKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E5955C785786269ABE1AA1CF1F21C93F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				726913B39FF7BE27961733DCC52AD56B /* Purchases.modulemap */,
-				E086AB6DEA468EF94A713B77C0EA26AA /* Purchases.xcconfig */,
-				3BF28366DE4CE1863CAB1CC22B2E5D63 /* Purchases-dummy.m */,
-				C0596510AF5DB2699BB4A13852DD91C0 /* Purchases-Info.plist */,
-				C08F3BE256632EFC6C5EDAF9FB17379A /* Purchases-prefix.pch */,
-				BC372241B2E5FE46892F4A0FAB4CF7CD /* Purchases-umbrella.h */,
+				083A2705D13AAC310767281E69E54BF9 /* JTAppleCalendar.modulemap */,
+				1556F5138C6182F533372D1B073BF515 /* JTAppleCalendar.xcconfig */,
+				4C434CFC9D5D4311BD1BD43D302AE769 /* JTAppleCalendar-dummy.m */,
+				F77DF03342E55635C7E9F5C5AAEE0BBE /* JTAppleCalendar-Info.plist */,
+				DFA2D729D313C5EEF4717CBBD5156242 /* JTAppleCalendar-prefix.pch */,
+				273BBD801D96964E2421D315EC8347A8 /* JTAppleCalendar-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Purchases";
-			sourceTree = "<group>";
-		};
-		FC352CAD5D4E0568DBECA2B5AF9CDDAB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8BA9D812055F5AAB09B1AE5CD44E84DF /* JTAppleCalendar */,
-				BF3B41CA35B8721078EC6D7624671958 /* Purchases */,
-				BA1BB0BD8F8143F7F2724B050EB7FEA0 /* PurchasesCoreSwift */,
-			);
-			name = Pods;
+			path = "../Target Support Files/JTAppleCalendar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -791,134 +452,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59C7E9783E6A7D6C1F8E8DC97F44A6C4 /* Headers */ = {
+		7C84B8BD4E40EB82A74EAFAF6F0935F4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37279E4FA065F5A2333B50D4B662F558 /* PurchasesCoreSwift-umbrella.h in Headers */,
+				8A5B336427C590583A112105E5077D17 /* Pods-BioGenesis-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5262B3C44215B4D6B58C9AD504E4DF3 /* Headers */ = {
+		E542A779A5CF84E402C6E8E05D301619 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3681BAE224B6948C9D2CC09C5A9F18F6 /* Pods-BioGenesis-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF7F1FD0AB19B25F919A1D478FB171C8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF038D94205FE4BBE2FE27F081AC39D7 /* NSData+RCExtensions.h in Headers */,
-				08A5557E3BD7E9B7BA665A9269C5B5B7 /* NSDate+RCExtensions.h in Headers */,
-				BEA433425892DECCA310828601A11276 /* NSDictionary+RCExtensions.h in Headers */,
-				8338DEFE734E10FE2055E168B176BB4D /* NSError+RCExtensions.h in Headers */,
-				3586C894A8F9D6899B58FF1160FBE210 /* NSLocale+RCExtensions.h in Headers */,
-				7291EB0A6F29A7B25C01496116F7F4CA /* Purchases.h in Headers */,
-				96DDEB32AD31DE0A46E3B4EB93AF1410 /* Purchases-umbrella.h in Headers */,
-				C39E03BA46FBCD6C70FFD51AB162E200 /* RCAttributionData.h in Headers */,
-				482C07C72501CA699D1BCBF96208C278 /* RCAttributionFetcher.h in Headers */,
-				0BD2E89A7AAA05D5A538A5914B58ABB9 /* RCAttributionNetwork.h in Headers */,
-				4A1B1BF5F301CBCB7C1DCAF0CA0929D8 /* RCAttributionPoster.h in Headers */,
-				98CBFCE16D2AA4722E6EC48A009D7FF5 /* RCAttributionTypeFactory.h in Headers */,
-				4E37CC804F64488B9827DD4CB3F4FF66 /* RCAttributionTypeFactory+Protected.h in Headers */,
-				A53406C5CE32985EF111C3400ACF6E3C /* RCBackend.h in Headers */,
-				F53C7E8B7A1773D29A2D19D7F40840B8 /* RCCrossPlatformSupport.h in Headers */,
-				D407A92C27700D9CF5467960FCC7421A /* RCDateProvider.h in Headers */,
-				D692FD061FBA4D9A927A462F3219A930 /* RCDeviceCache.h in Headers */,
-				94BD2EB5AE63998A9BAA20887CC1BD01 /* RCDeviceCache+Protected.h in Headers */,
-				CC7ED8226E76F900421F8FC43BACC55E /* RCEntitlementInfo.h in Headers */,
-				D5BEF5A52A8ADAB31A094AF802EEA619 /* RCEntitlementInfo+Protected.h in Headers */,
-				2AAABB893962BFB924DA818C212BEA9D /* RCEntitlementInfos.h in Headers */,
-				FC7F069C8450D347FE3491A5D859E70A /* RCEntitlementInfos+Protected.h in Headers */,
-				2812B721BED6BE953ECD68150FBE6CD3 /* RCHTTPClient.h in Headers */,
-				48F80ACF4FEC3B84A3DCB2DF48368C33 /* RCHTTPRequest.h in Headers */,
-				6B23F5AB49A66DCDCCE1B21F9A856CB2 /* RCIdentityManager.h in Headers */,
-				3A714A6754BBA07F03B2F22001DA0B88 /* RCIdentityManager+Protected.h in Headers */,
-				EB37949C795305AE1460F1C494B7F727 /* RCInMemoryCachedObject.h in Headers */,
-				BA00167EC0B42D098C69F5C6E7A07BD4 /* RCInMemoryCachedObject+Protected.h in Headers */,
-				E7F99883D83E44FD05C28CE855CB7140 /* RCIntroEligibility.h in Headers */,
-				53EF3C49D20A0BED0271FD0475137774 /* RCIntroEligibility+Protected.h in Headers */,
-				2692D9AC8E9DC5E6B4105D9F5410E2A7 /* RCISOPeriodFormatter.h in Headers */,
-				0A3A2668F99B31B2183EB1913246D005 /* RCLoggerBridge.h in Headers */,
-				B4FA08EEBC6A9EDDD6AA7982F2081BC8 /* RCLogLevel.h in Headers */,
-				E8B0E392B4AE5F0C6EFD396C60C2FBCF /* RCLogUtils.h in Headers */,
-				307EF710FC757851790A8D99262E4A92 /* RCOffering.h in Headers */,
-				E7FC1492ACEEDA165F9256C6A801F42E /* RCOffering+Protected.h in Headers */,
-				6D6EDCC7D7202EADE3088A678BDB2F5E /* RCOfferings.h in Headers */,
-				8DBCD7E99622711FE2B9AB05E180B997 /* RCOfferings+Protected.h in Headers */,
-				464B578C5212326009A5D0E593586BAF /* RCOfferingsFactory.h in Headers */,
-				5C1FCFD5C527A5605E1F9A30070BEF93 /* RCPackage.h in Headers */,
-				E282383667819FE0378D624646B811F8 /* RCPackage+Protected.h in Headers */,
-				D15A2D50D9BB7631D7DAA958E2FE6F94 /* RCProductInfo.h in Headers */,
-				F28B39E2400C1B96B00E1ABD2859C1A3 /* RCProductInfoExtractor.h in Headers */,
-				DDD61C009F4AB0632CD4A529DD62E842 /* RCPromotionalOffer.h in Headers */,
-				A5AD50B23C32E8BAEAA6C4C72FABD0D1 /* RCPromotionalOffer+Protected.h in Headers */,
-				04B35D5E8E3BDB76AA389EED57EC1116 /* RCPurchaseOwnershipType.h in Headers */,
-				774ACCC4BD83A35155BCC7929A1F2CBE /* RCPurchaserInfo.h in Headers */,
-				1F47E2F1CF2A4B8B6DC2C78AED914739 /* RCPurchaserInfo+Protected.h in Headers */,
-				0566194A10D04FB93EC9CA4B2BC70F4F /* RCPurchaserInfoManager.h in Headers */,
-				7B353E9A3750EC0936BDA3685D837C14 /* RCPurchaserInfoManager+Protected.h in Headers */,
-				91089FF5417C09081F6B45786961D3EC /* RCPurchases.h in Headers */,
-				D2CFCA366056D9F91FA3CF63DADBAB3E /* RCPurchases+Protected.h in Headers */,
-				B6EBBC72939240945FD16BC5BA8CFC93 /* RCPurchases+SubscriberAttributes.h in Headers */,
-				09CF559639BB069216683CB824182AB7 /* RCPurchasesErrors.h in Headers */,
-				ED47C5F2EFD2E26DBFE122C19E67FCEE /* RCPurchasesErrorUtils.h in Headers */,
-				C7CADEA812C4C30A1AC67B55A26A1102 /* RCPurchasesErrorUtils+Protected.h in Headers */,
-				EAA8288DA97B76EAED5D938AE3E56756 /* RCReceiptFetcher.h in Headers */,
-				E6946A573BCC5CA0FC2B2C7CDD3911BE /* RCReceiptRefreshPolicy.h in Headers */,
-				2C085DFB5D84D7B24B0308D647B448F7 /* RCStoreKitRequestFetcher.h in Headers */,
-				3BA811B685EEDC0EDF87ADEC3F95C1CB /* RCStoreKitWrapper.h in Headers */,
-				E66EC903A77057852F8DD6EDC697CC2F /* RCSubscriberAttribute.h in Headers */,
-				8411099B302D729ECB43C1938C19D7C7 /* RCSubscriberAttribute+Protected.h in Headers */,
-				143C34EB9F90159828CD83EDB573A327 /* RCSubscriberAttributesManager.h in Headers */,
-				B19DCC4BCF710D2A1D09F37259B5B26A /* RCSystemInfo.h in Headers */,
-				97C133E3BE45BD0F9584768A6800D85D /* RCTransaction.h in Headers */,
+				4F7F8AE43DF1AB79674EB6510C6E44E5 /* Hero-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		19EF5509BA60F0CD4916B9F24A2F7886 /* Purchases */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E95B84E02F24984380AF0847B14388B4 /* Build configuration list for PBXNativeTarget "Purchases" */;
-			buildPhases = (
-				BF7F1FD0AB19B25F919A1D478FB171C8 /* Headers */,
-				024E5FB475547EBC07893EF12BEEDC3A /* Sources */,
-				C1664A69793FBF6BF777628FE7D17492 /* Frameworks */,
-				694ECFFD7E1D693F6C1F5A5990C7AAFF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BB2E04088F2226CCC3B248A2A6EC3DAF /* PBXTargetDependency */,
-			);
-			name = Purchases;
-			productName = Purchases;
-			productReference = FBA7F9EF3FAEB0BC7D79BB1AFF265A06 /* Purchases.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		2BC2CC6A5EB8F91429DC14E6BDC342DF /* PurchasesCoreSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 08C9C3E0F82A93D3E145B9301CD68700 /* Build configuration list for PBXNativeTarget "PurchasesCoreSwift" */;
-			buildPhases = (
-				59C7E9783E6A7D6C1F8E8DC97F44A6C4 /* Headers */,
-				95A313A9059A7C7E77BB2D10AF2A20F5 /* Sources */,
-				7B436AAB952E5D58342163530AD4809E /* Frameworks */,
-				7FC72155C466D2032EB0C2C8E0064645 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PurchasesCoreSwift;
-			productName = PurchasesCoreSwift;
-			productReference = A8744BFCBA0EFF3EFCB22EF6E0408B42 /* PurchasesCoreSwift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF636A81C49EA9BA9E2CF1FB077B0200 /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */;
@@ -939,23 +491,40 @@
 		};
 		48744C34DBBC39DE42E89A0C9275532D /* Pods-BioGenesis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B9F8B0BF40E905FDBBDF1BCC7376897 /* Build configuration list for PBXNativeTarget "Pods-BioGenesis" */;
+			buildConfigurationList = 9B2943D1A3DB1317152BCA4EAF7ED149 /* Build configuration list for PBXNativeTarget "Pods-BioGenesis" */;
 			buildPhases = (
-				B5262B3C44215B4D6B58C9AD504E4DF3 /* Headers */,
-				0F7FE57030D5C337D809082DBEFA3682 /* Sources */,
-				EA216C471599B6A394CB6E77BB77349D /* Frameworks */,
-				C80F129F7B49D78D17A77C6AE71909DD /* Resources */,
+				7C84B8BD4E40EB82A74EAFAF6F0935F4 /* Headers */,
+				0D7A707C76DBA8E519C69F340C2F5846 /* Sources */,
+				318AFD03FFFF1DF76968FD20CA68AA4F /* Frameworks */,
+				A523EE8EBFAB5CAE6D00D20DEB22F58D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5C24A1AEB739269313613C8B0073AED0 /* PBXTargetDependency */,
-				7F889B4AEC50A5149FB98DCE12692155 /* PBXTargetDependency */,
-				B0E9E46B11491279431C8ED79D4CAEE7 /* PBXTargetDependency */,
+				DA585A2FF66FD6FA249DF5DA4A7D02B8 /* PBXTargetDependency */,
+				53258595627A9814F99B582FC40EC3F3 /* PBXTargetDependency */,
 			);
 			name = "Pods-BioGenesis";
 			productName = "Pods-BioGenesis";
 			productReference = 737C2B95702E353414C6CFFA60C1E592 /* Pods_BioGenesis.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B3893AEA4D7DBB9A086E889FC469132D /* Hero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B48FD803474F197A141870B2A427A1D0 /* Build configuration list for PBXNativeTarget "Hero" */;
+			buildPhases = (
+				E542A779A5CF84E402C6E8E05D301619 /* Headers */,
+				2EBCDDBB3DB759C34B8F8A066ADDA700 /* Sources */,
+				AC7E4C127E39C69B641065809FD55DFF /* Frameworks */,
+				0953330A81F88A15FF8EC873F28472DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hero;
+			productName = Hero;
+			productReference = 13E778F4B833EE5D7ABE882406A8215E /* Hero.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -976,19 +545,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 10C71EA43ABFD8031411962C877BCE8F /* Products */;
+			productRefGroup = 8411A981350BC700E1FFAC83C5ADDCB3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				B3893AEA4D7DBB9A086E889FC469132D /* Hero */,
 				421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */,
 				48744C34DBBC39DE42E89A0C9275532D /* Pods-BioGenesis */,
-				19EF5509BA60F0CD4916B9F24A2F7886 /* Purchases */,
-				2BC2CC6A5EB8F91429DC14E6BDC342DF /* PurchasesCoreSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0953330A81F88A15FF8EC873F28472DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66D13D8FA977B712FBC2E366A52514B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -996,21 +571,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		694ECFFD7E1D693F6C1F5A5990C7AAFF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7FC72155C466D2032EB0C2C8E0064645 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C80F129F7B49D78D17A77C6AE71909DD /* Resources */ = {
+		A523EE8EBFAB5CAE6D00D20DEB22F58D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1020,58 +581,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		024E5FB475547EBC07893EF12BEEDC3A /* Sources */ = {
+		0D7A707C76DBA8E519C69F340C2F5846 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				630C3DEFE8976FF95A8339906AD5CC47 /* NSData+RCExtensions.m in Sources */,
-				99660F8E8EE5FCD4F6076976226309FB /* NSDate+RCExtensions.m in Sources */,
-				76C08815BF82C14A6836F9A21B205B09 /* NSDictionary+RCExtensions.m in Sources */,
-				1C43299521B1C61C8F4B2E42340273D5 /* NSError+RCExtensions.m in Sources */,
-				64AC61118AF6E39FB0035540BFA8D7E0 /* NSLocale+RCExtensions.m in Sources */,
-				745450A4D5C013C2554E3CCBBCA316B1 /* Purchases-dummy.m in Sources */,
-				2381899139C3681D5BA64C95CC946D48 /* RCAttributionData.m in Sources */,
-				97964662AA025D062BD65F255AF4CD95 /* RCAttributionFetcher.m in Sources */,
-				DF5ECDC054A4E16C3706806FD3067B93 /* RCAttributionPoster.m in Sources */,
-				E65C573E9E6D4734D4F0CAA1B223B57F /* RCAttributionTypeFactory.m in Sources */,
-				8C53537A7C874EFF8211967EED2BB48F /* RCBackend.m in Sources */,
-				70BDEA2E1DF03B586F48B5E27DA8056C /* RCDateProvider.m in Sources */,
-				95CF69A431E9C19595F087C32EA342D7 /* RCDeviceCache.m in Sources */,
-				CA3B460DDAF5A6FF1EC7E5F0B38D2A13 /* RCEntitlementInfo.m in Sources */,
-				2BB7923E64D65806DE3F1EB60A18D290 /* RCEntitlementInfos.m in Sources */,
-				1F2AADAA96CCF383E1B02992207FB1C4 /* RCHTTPClient.m in Sources */,
-				103799F164613DFCF9B6413D265E1F0B /* RCHTTPRequest.m in Sources */,
-				80FC057D1D6361A4ABCF3FF28739A9B2 /* RCIdentityManager.m in Sources */,
-				0C92157532BED99A62518A7B5722FC6B /* RCInMemoryCachedObject.m in Sources */,
-				7997D1523380A9D7B9516FC708F88C36 /* RCIntroEligibility.m in Sources */,
-				410E98660E092C183D9DDDE255557FD8 /* RCISOPeriodFormatter.m in Sources */,
-				B5CE0B26FC2305594A3B4C23B08C5993 /* RCLoggerBridge.m in Sources */,
-				D18A9D795ACC6AD572914E6873C7A07F /* RCOffering.m in Sources */,
-				3C2D6CE127D127A954E72531D832B0C1 /* RCOfferings.m in Sources */,
-				18371F1B9EBCFFB030D8C25E35DFF03B /* RCOfferingsFactory.m in Sources */,
-				0230DCCD0AB407DAF3016451583642E5 /* RCPackage.m in Sources */,
-				3D454C4CF8E6466965C1A3D386C2C458 /* RCProductInfo.m in Sources */,
-				728CAA84B0161D41A04B372E517BBD34 /* RCProductInfoExtractor.m in Sources */,
-				704D62A0764E09E128682AC304D49406 /* RCPromotionalOffer.m in Sources */,
-				4033174A407D22B70BD1BD036FDA196C /* RCPurchaserInfo.m in Sources */,
-				7AD3BC61901379788FE24B955271B194 /* RCPurchaserInfoManager.m in Sources */,
-				19F3FBF0DEA56AE7B7A790B9FB038667 /* RCPurchases.m in Sources */,
-				47B1FF7E2CB8DC8786B73B01EA61F6AB /* RCPurchases+SubscriberAttributes.m in Sources */,
-				77E53E173970C24379557CDEFD475EAE /* RCPurchasesErrorUtils.m in Sources */,
-				BC089C3C3FDD4EE70E7B67AAD87BBDFB /* RCReceiptFetcher.m in Sources */,
-				AC5AC1B2E7CC96287E53F3F1234D5D85 /* RCStoreKitRequestFetcher.m in Sources */,
-				27B95A43786C28321FF555D5A49D151B /* RCStoreKitWrapper.m in Sources */,
-				EDEEE3B56F59D4AEBFE1DAC49529FCC2 /* RCSubscriberAttribute.m in Sources */,
-				F392E27B979D9E53E32083DDCDCFD973 /* RCSubscriberAttributesManager.m in Sources */,
-				996B2400B9513CACFFBAAE396CCC05FC /* RCSystemInfo.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0F7FE57030D5C337D809082DBEFA3682 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B36601E66EF160B05245CD34F411AA3E /* Pods-BioGenesis-dummy.m in Sources */,
+				B008A5800728427905BC1E4DBAD293D5 /* Pods-BioGenesis-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1106,89 +620,84 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95A313A9059A7C7E77BB2D10AF2A20F5 /* Sources */ = {
+		2EBCDDBB3DB759C34B8F8A066ADDA700 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF7CBA3C098B8B7FED7CA39D4A5E1DC /* AppleReceipt.swift in Sources */,
-				2BE3A5E73EF8B82A7B81502AF9E80ED7 /* AppleReceiptBuilder.swift in Sources */,
-				6A29F2D6851ABB9EA15521CAD91E03AB /* ArraySlice_UInt8+Extensions.swift in Sources */,
-				80EB8958EEB0B0DBB5701477C1049419 /* ASN1Container.swift in Sources */,
-				2703B7F6A15DEBFB65601CC622975A31 /* ASN1ContainerBuilder.swift in Sources */,
-				1FC76FA7A66B7AE3D037D0C9EB384B93 /* ASN1ObjectIdentifier.swift in Sources */,
-				E85C680D55CCF8B8437B41FCF178FDB1 /* ASN1ObjectIdentifierBuilder.swift in Sources */,
-				19CEBEF508C5835E67A402ED6FB98BBB /* AttributionDataMigrator.swift in Sources */,
-				B7A7B1E784F3D28B50D0B36AF58E04B2 /* AttributionKey.swift in Sources */,
-				7C07C634D3DF4C7D1795C59755827ACC /* AttributionNetwork.swift in Sources */,
-				E3092DBF1361A12E3F7680D4FEA9D009 /* AttributionStrings.swift in Sources */,
-				DA494B20C4207AE8F311C0587CED706F /* ConfigureStrings.swift in Sources */,
-				2D4ABC9716A57AB626AC73C724E75996 /* DangerousSettings.swift in Sources */,
-				7EB322AEBE02421192C2F6924C6E78F2 /* DateExtensions.swift in Sources */,
-				4751A8CC9CDFC0C41E1E542013940FDA /* DictionaryExtensions.swift in Sources */,
-				24C36B6B0BA909BB0171F53D30DAC20C /* ETagAndResponseWrapper.swift in Sources */,
-				5ECB9F417ECC6EF74BBE8F4217FC9525 /* ETagManager.swift in Sources */,
-				7A7C27D30895A3EF7A01DD7E1D88BC8C /* HTTPResponse.swift in Sources */,
-				A09A802375949BE022C76596E0EDA71A /* HTTPStatusCodes.swift in Sources */,
-				3BF79DD81978E3BC329CDDF1BF39909F /* IdentityStrings.swift in Sources */,
-				82CC618B9FAB2DBA02C9F521A771E3D5 /* InAppPurchase.swift in Sources */,
-				DBA18634741BB229E4862BB1E53AD3CD /* InAppPurchaseBuilder.swift in Sources */,
-				1D48E5B0A4642EC6F0470FF4FF310D91 /* IntroEligibilityCalculator.swift in Sources */,
-				88BD14A313603D2CFB9B85E38DECE848 /* ISO3601DateFormatter.swift in Sources */,
-				4E87E227877FC7BB5E936FCCD70D6E87 /* Logger.swift in Sources */,
-				61767315E6CFA7EC7354C266CB6AF591 /* LogIntent.swift in Sources */,
-				D1D8E8AC31B87DBD8926FA894AE3C032 /* NetworkStrings.swift in Sources */,
-				A71A29A0ED7D7F7E4C18601430D66474 /* OfferingStrings.swift in Sources */,
-				50674FB357AE5C0A5DD5364B0E9C4B65 /* OperationDispatcher.swift in Sources */,
-				09E0562C816CF7C9D41ABB405F579EFC /* ProductsManager.swift in Sources */,
-				CD77CD50F4CA74148A2502A953E21247 /* ProductsRequestFactory.swift in Sources */,
-				DA70BFDC230F0996C0D7AA61235BAF32 /* PurchaserInfoStrings.swift in Sources */,
-				053039E63AC6F1E670D36130D6E02608 /* PurchasesCoreSwift-dummy.m in Sources */,
-				B5582FA69C3ED5E70DC1257080DA2D3D /* PurchaseStrings.swift in Sources */,
-				4879D4123D4E107F9B6CA79FC3ACF702 /* ReceiptParser.swift in Sources */,
-				58FCC8624A5E78C000C9EBE2C59A6302 /* ReceiptParsingError.swift in Sources */,
-				9A9A710881C64DE296499B4505C91AA4 /* ReceiptStrings.swift in Sources */,
-				DF0FE98619168A163F383AC3CE92345C /* RestoreStrings.swift in Sources */,
-				3B87A484460CF9B35E12B49012648B95 /* SpecialSubscriberAttributes.swift in Sources */,
-				36A01BD66C9502F0410902A348C4B265 /* Strings.swift in Sources */,
-				3AEF8A82708368D2A79B1E51FC5A9BE8 /* Transaction.swift in Sources */,
-				2B43850C62F142CDDCD7A651E75D6216 /* TransactionsFactory.swift in Sources */,
-				8CFB704B579ED10FF4AC70ED5098A179 /* UInt8+Extensions.swift in Sources */,
+				DFCEF4119773B01B6687F843B041E617 /* Array+HeroModifier.swift in Sources */,
+				367E21EEFB329A9FD356A6185D082603 /* BasePreprocessor.swift in Sources */,
+				32B5846E4ADF469791BF1B7F9A1CAC5E /* CALayer+Hero.swift in Sources */,
+				085AFCB4D71063724F278021DA822198 /* CAMediaTimingFunction+Hero.swift in Sources */,
+				36F163200D6A41005B555B38013A214A /* CascadePreprocessor.swift in Sources */,
+				7281DE987651950A7318A09DF2E24372 /* CG+Hero.swift in Sources */,
+				949F0A0B188D9E6BD51E98FBC85A5CEE /* ConditionalPreprocessor.swift in Sources */,
+				8C02DB25E8B4AB8D32C214FDD87D0036 /* DefaultAnimationPreprocessor.swift in Sources */,
+				0DDD24DFD337E152787B013BA4DCCD23 /* DispatchQueue+Hero.swift in Sources */,
+				0B3A9B0F3496EEA3E2E0DE59E6DB49DC /* Hero-dummy.m in Sources */,
+				DA9C90BFAEEC54AA49BF99201BECAE49 /* HeroAnimatorViewContext.swift in Sources */,
+				8B15A63206BA4D4BF7610B34767E44F1 /* HeroCompatible.swift in Sources */,
+				ED4FE4311465D22B9C4E7C2D920FE8DA /* HeroContext.swift in Sources */,
+				65858CE46D9F7ED57E1D0EF948A1AC56 /* HeroCoreAnimationViewContext.swift in Sources */,
+				9931D7F27562160A85E60EDD493AFE58 /* HeroDebugPlugin.swift in Sources */,
+				BC69EB4B3E8CF10764DC844B51EE197F /* HeroDebugView.swift in Sources */,
+				920F1920947C76839AF08A50BFFEEE68 /* HeroDefaultAnimator.swift in Sources */,
+				6C004F5A1FAA0DF5F23465E08793A464 /* HeroModifier.swift in Sources */,
+				CF7D20E7415AB9E45EA225CC45D271DF /* HeroModifier+Advanced.swift in Sources */,
+				0F3D8947B1E6926316A24BE91FEA2CF8 /* HeroModifier+HeroStringConvertible.swift in Sources */,
+				7A4BD208A1ADA3DED29A48D1884C3FD8 /* HeroPlugin.swift in Sources */,
+				EAF7DC77ED4BAF2CA4107DDC6740CC0E /* HeroProgressRunner.swift in Sources */,
+				67C04D3CB7D0F8B5E255C6E4702EAB6C /* HeroStringConvertible.swift in Sources */,
+				B785A596F623450D4CD33C0C1B271995 /* HeroTargetState.swift in Sources */,
+				2505D7C1BD283BA7A830422E794ED894 /* HeroTransition.swift in Sources */,
+				7B20370B4F50DAE25801E3D2CECEE4EE /* HeroTransition+Animate.swift in Sources */,
+				507BA0125ABD719B27A9CA86184465CD /* HeroTransition+Complete.swift in Sources */,
+				6D268D7513384B45CABF1F91F6AB2A54 /* HeroTransition+CustomTransition.swift in Sources */,
+				FB10926EC4C14B61466E4128D8188F8F /* HeroTransition+Interactive.swift in Sources */,
+				71193BF5EEB2F6A8663EAE65B38DA8BD /* HeroTransition+Start.swift in Sources */,
+				32C3EA12C84BD849278FD9BF7C494500 /* HeroTransition+UINavigationControllerDelegate.swift in Sources */,
+				A91BEEBFC32225594801B58F9771093F /* HeroTransition+UITabBarControllerDelegate.swift in Sources */,
+				6913F6CC524C0C872DB868D8E5D0AE7A /* HeroTransition+UIViewControllerTransitioningDelegate.swift in Sources */,
+				72B8E4F7D996DC27939C24B1F2979050 /* HeroTransitionState.swift in Sources */,
+				88B20356E23CBE86F045C102F134E70E /* HeroTypes.swift in Sources */,
+				5ED12CA47F6B502F4CAD49243ED32071 /* HeroViewControllerDelegate.swift in Sources */,
+				2F3427251D6056AA646ADED026182ADB /* HeroViewPropertyViewContext.swift in Sources */,
+				BD15BCF3D66ED66F5960860173087846 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */,
+				F1169703761EADA60A08EEFE95E64D8E /* Lexer.swift in Sources */,
+				3955A815007C657E4F5C73F4AA8D17DA /* Locale+Hero.swift in Sources */,
+				D0E4CB8767D190C3F33DA2C33A0259E5 /* MatchPreprocessor.swift in Sources */,
+				9A598F468DDF8EE38280C42D25C041EB /* Nodes.swift in Sources */,
+				D2EC7E0F3B7433FDB0687651D9F8886F /* Parser.swift in Sources */,
+				E8803B092DB99C9F66CBC0748F2CFA56 /* Regex.swift in Sources */,
+				305A936F60547735F12FDD914EF1353A /* SourcePreprocessor.swift in Sources */,
+				2253F9883DE686852CC6DA6E3EFAF08B /* SwiftSupport.swift in Sources */,
+				6C6B0014D75DEB7FA52A3C0B7607DE71 /* UIColor+HexString.swift in Sources */,
+				9B320D5DBA6AC2F1AC191F128CDF757C /* UIKit+Hero.swift in Sources */,
+				397098FDB2057B6D501A3876652017F6 /* UIView+Hero.swift in Sources */,
+				FE027DE3BA18004EAB675CAFB5AF28ED /* UIViewController+Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5C24A1AEB739269313613C8B0073AED0 /* PBXTargetDependency */ = {
+		53258595627A9814F99B582FC40EC3F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JTAppleCalendar;
 			target = 421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */;
-			targetProxy = 676036DEA879D68C3E1B8C021737CA23 /* PBXContainerItemProxy */;
+			targetProxy = DDD05D8954AF0E11764DAF063AC60979 /* PBXContainerItemProxy */;
 		};
-		7F889B4AEC50A5149FB98DCE12692155 /* PBXTargetDependency */ = {
+		DA585A2FF66FD6FA249DF5DA4A7D02B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Purchases;
-			target = 19EF5509BA60F0CD4916B9F24A2F7886 /* Purchases */;
-			targetProxy = BF09335D2C157CDC48F1AF2FEC91DCA2 /* PBXContainerItemProxy */;
-		};
-		B0E9E46B11491279431C8ED79D4CAEE7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PurchasesCoreSwift;
-			target = 2BC2CC6A5EB8F91429DC14E6BDC342DF /* PurchasesCoreSwift */;
-			targetProxy = 513AF302EFB40DA0BBCDEA59F58911EB /* PBXContainerItemProxy */;
-		};
-		BB2E04088F2226CCC3B248A2A6EC3DAF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PurchasesCoreSwift;
-			target = 2BC2CC6A5EB8F91429DC14E6BDC342DF /* PurchasesCoreSwift */;
-			targetProxy = CC101351B59F718B1B84F96709B76A55 /* PBXContainerItemProxy */;
+			name = Hero;
+			target = B3893AEA4D7DBB9A086E889FC469132D /* Hero */;
+			targetProxy = FCC142841E3AF272730B7A80D7988D3B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00863F94944B6F495916B5D25F075CDB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19B11FC5C4D1C120BFB2D17D1850CE04 /* JTAppleCalendar.xcconfig */;
+			baseConfigurationReference = 1556F5138C6182F533372D1B073BF515 /* JTAppleCalendar.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1222,9 +731,9 @@
 			};
 			name = Release;
 		};
-		1E75F4DE608CD189CDECFA893585E009 /* Debug */ = {
+		0F64EA631F00FED97C3B6D094D1E96BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ADF1115DD3D724333AC299348E5E223 /* Pods-BioGenesis.debug.xcconfig */;
+			baseConfigurationReference = D61DBF8540D7277BE9F6F19EF2B34764 /* Pods-BioGenesis.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1254,10 +763,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		1ECA0555EE0836E3B5FFB136EEBE1F4E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1326,7 +836,7 @@
 		};
 		24BF8BAD1A53FB313A4EEC5D7A550CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19B11FC5C4D1C120BFB2D17D1850CE04 /* JTAppleCalendar.xcconfig */;
+			baseConfigurationReference = 1556F5138C6182F533372D1B073BF515 /* JTAppleCalendar.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1359,9 +869,9 @@
 			};
 			name = Debug;
 		};
-		35CBB98A335BD5439C085DF6F49E49C6 /* Release */ = {
+		51A278A21498063683C2A7E5627B22CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D61DBF8540D7277BE9F6F19EF2B34764 /* Pods-BioGenesis.release.xcconfig */;
+			baseConfigurationReference = 4ADF1115DD3D724333AC299348E5E223 /* Pods-BioGenesis.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1391,68 +901,36 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		581D02B90A53B21CCC3051338D2C15AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF46F6817AF7A71A4D44789D7D4C475A /* PurchasesCoreSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift.modulemap";
-				PRODUCT_MODULE_NAME = PurchasesCoreSwift;
-				PRODUCT_NAME = PurchasesCoreSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7F054CB963A5019C7E543DF2DCC40129 /* Release */ = {
+		7AE2CBBAC6AC1D30ED79D13877175BB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF46F6817AF7A71A4D44789D7D4C475A /* PurchasesCoreSwift.xcconfig */;
+			baseConfigurationReference = E52231EA3EBAC6BD69D1D444E4B7B377 /* Hero.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Hero/Hero-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hero/Hero-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/PurchasesCoreSwift/PurchasesCoreSwift.modulemap";
-				PRODUCT_MODULE_NAME = PurchasesCoreSwift;
-				PRODUCT_NAME = PurchasesCoreSwift;
+				MODULEMAP_FILE = "Target Support Files/Hero/Hero.modulemap";
+				PRODUCT_MODULE_NAME = Hero;
+				PRODUCT_NAME = Hero;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1463,39 +941,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		BF635547DE5AFF88EC021E65FA0FF6F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E086AB6DEA468EF94A713B77C0EA26AA /* Purchases.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Purchases/Purchases-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Purchases/Purchases-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Purchases/Purchases.modulemap";
-				PRODUCT_MODULE_NAME = Purchases;
-				PRODUCT_NAME = Purchases;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		C3D64790A0FE037697A0C2CDF06EBC03 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1558,61 +1003,44 @@
 			};
 			name = Release;
 		};
-		DB8B1DBFBDA16935C6522030D4443B25 /* Release */ = {
+		F29B3D3C29E3A3E9F18C45636BACB879 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E086AB6DEA468EF94A713B77C0EA26AA /* Purchases.xcconfig */;
+			baseConfigurationReference = E52231EA3EBAC6BD69D1D444E4B7B377 /* Hero.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Purchases/Purchases-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Purchases/Purchases-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Hero/Hero-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hero/Hero-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Purchases/Purchases.modulemap";
-				PRODUCT_MODULE_NAME = Purchases;
-				PRODUCT_NAME = Purchases;
+				MODULEMAP_FILE = "Target Support Files/Hero/Hero.modulemap";
+				PRODUCT_MODULE_NAME = Hero;
+				PRODUCT_NAME = Hero;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08C9C3E0F82A93D3E145B9301CD68700 /* Build configuration list for PBXNativeTarget "PurchasesCoreSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				581D02B90A53B21CCC3051338D2C15AD /* Debug */,
-				7F054CB963A5019C7E543DF2DCC40129 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0B9F8B0BF40E905FDBBDF1BCC7376897 /* Build configuration list for PBXNativeTarget "Pods-BioGenesis" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1E75F4DE608CD189CDECFA893585E009 /* Debug */,
-				35CBB98A335BD5439C085DF6F49E49C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1622,11 +1050,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E95B84E02F24984380AF0847B14388B4 /* Build configuration list for PBXNativeTarget "Purchases" */ = {
+		9B2943D1A3DB1317152BCA4EAF7ED149 /* Build configuration list for PBXNativeTarget "Pods-BioGenesis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF635547DE5AFF88EC021E65FA0FF6F3 /* Debug */,
-				DB8B1DBFBDA16935C6522030D4443B25 /* Release */,
+				51A278A21498063683C2A7E5627B22CD /* Debug */,
+				0F64EA631F00FED97C3B6D094D1E96BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B48FD803474F197A141870B2A427A1D0 /* Build configuration list for PBXNativeTarget "Hero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29B3D3C29E3A3E9F18C45636BACB879 /* Debug */,
+				7AE2CBBAC6AC1D30ED79D13877175BB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

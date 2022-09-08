@@ -33,5 +33,4 @@ class ECheckupVC: UIViewController {
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true)
     }
-
 }

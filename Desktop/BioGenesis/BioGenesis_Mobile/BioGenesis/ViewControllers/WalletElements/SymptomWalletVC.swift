@@ -14,20 +14,25 @@ class SymptomWalletVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
-        scrollView.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
+        view.backgroundColor = backgroundColorMain
+        scrollView.backgroundColor = backgroundColorMain
         
         setupScrollView()
     }
 
     func setupScrollView() {
         
+        let topView = CustomTopBar()
+        topView.title = "Symptoms"
+        topView.height = normalTabBarHeight
+        self.view.addSubview(topView)
+        
         var yPosition: CGFloat = 30
         
         let pageTitleLabel = UILabel()
         pageTitleLabel.frame = CGRect(x: 0, y: yPosition, width: screenSize.width, height: 40)
         pageTitleLabel.textAlignment = .center
-        pageTitleLabel.text = "Symptoms"
+        pageTitleLabel.text = "Protocols"
         pageTitleLabel.font = .header1()
         scrollView.addSubview(pageTitleLabel)
         
@@ -57,6 +62,7 @@ class SymptomWalletVC: UIViewController {
         detailsBox.backgroundColor = .white
         detailsBox.layer.cornerRadius = 10
         detailsBox.frame = CGRect(x: sideSpacing, y: yPosition, width: screenSize.width - (sideSpacing * 1.5), height: boxHeight)
+        detailsBox.addTarget(self, action: #selector(symptomDetailsPressed(_:)), for: .touchUpInside)
         
         scrollView.addSubview(detailsBox)
         
@@ -64,6 +70,7 @@ class SymptomWalletVC: UIViewController {
         let titleLabel = UILabel()
         titleLabel.frame = CGRect(x: 24, y: 12, width: screenSize.width - (48), height: 20)
         titleLabel.text = title
+        titleLabel.textColor = .black
         titleLabel.font = .header2()
         
         detailsBox.addSubview(titleLabel)
@@ -72,9 +79,17 @@ class SymptomWalletVC: UIViewController {
         let frequencyLabel = UILabel()
         frequencyLabel.frame = CGRect(x: 24, y: 32, width: screenSize.width - (48), height: 20)
         frequencyLabel.text = frequency
+        frequencyLabel.textColor = .black
         frequencyLabel.font = .paragraph2()
         
         detailsBox.addSubview(frequencyLabel)
         
     }
+    
+    @IBAction func symptomDetailsPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "SymptomDetailsVC")
+        present(vc, animated: true, completion: nil)
+    }
+    
 }

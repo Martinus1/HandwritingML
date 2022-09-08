@@ -30,6 +30,7 @@ class ProtocolDetailsVC: UIViewController {
         protocolName.frame = CGRect(x: 12, y: yPosition, width: screenSize.width - 24, height: 40)
         protocolName.textAlignment = .left
         protocolName.text = "Acetaminophen"
+        protocolName.textColor = .black
         protocolName.font = .header1()
         scrollView.addSubview(protocolName)
         
@@ -40,6 +41,7 @@ class ProtocolDetailsVC: UIViewController {
         let protocolType = UILabel()
         protocolType.frame = CGRect(x: 12, y: yPosition, width: screenSize.width - 24, height: 20)
         protocolType.textAlignment = .left
+        protocolType.textColor = .black
         protocolType.text = "Small Molecule"
         protocolType.font = .paragraph4()
         scrollView.addSubview(protocolType)
@@ -52,6 +54,7 @@ class ProtocolDetailsVC: UIViewController {
         protocolGroup.frame = CGRect(x: 12, y: yPosition, width: screenSize.width - 24, height: 20)
         protocolGroup.textAlignment = .left
         protocolGroup.text = "Approved"
+        protocolGroup.textColor = .black
         protocolGroup.font = .paragraph4()
         scrollView.addSubview(protocolGroup)
         
@@ -63,6 +66,7 @@ class ProtocolDetailsVC: UIViewController {
         protocolDescription.frame = CGRect(x: 12, y: yPosition, width: screenSize.width - 24, height: 80)
         protocolDescription.textAlignment = .left
         protocolDescription.numberOfLines = 0
+        protocolDescription.textColor = .black
         protocolDescription.text = "Acetaminophen is an analgesic drug used alone or in combination with opioids for pain management, and as an antipyretic agent."
         protocolDescription.font = .paragraph1()
         scrollView.addSubview(protocolDescription)
@@ -78,6 +82,7 @@ class ProtocolDetailsVC: UIViewController {
         distributionDetailsTitle.textAlignment = .left
         distributionDetailsTitle.text = "Distribution"
         distributionDetailsTitle.font = .header3()
+        distributionDetailsTitle.textColor = .black
         scrollView.addSubview(distributionDetailsTitle)
         
         yPosition += distributionDetailsTitle.frame.height + 12
@@ -89,6 +94,7 @@ class ProtocolDetailsVC: UIViewController {
         protocolDistributionParagraph.numberOfLines = 0
         protocolDistributionParagraph.text = "Volume of distribution is about 0.9L/kg. 10 to 20% of the drug is bound to red blood cells.11 Acetaminophen appears to be widely distributed throughout most body tissues except in fat."
         protocolDistributionParagraph.font = .paragraph2()
+        protocolDistributionParagraph.textColor = .black
         scrollView.addSubview(protocolDistributionParagraph)
         
         yPosition += protocolDistributionParagraph.frame.height + 12
@@ -99,6 +105,7 @@ class ProtocolDetailsVC: UIViewController {
         foodInteractionsTitle.frame = CGRect(x: 12, y: yPosition, width: screenSize.width - 24, height: 20)
         foodInteractionsTitle.textAlignment = .left
         foodInteractionsTitle.text = "Food Interactions"
+        foodInteractionsTitle.textColor = .black
         foodInteractionsTitle.font = .header3()
         scrollView.addSubview(foodInteractionsTitle)
         
@@ -108,6 +115,7 @@ class ProtocolDetailsVC: UIViewController {
         foodInteractionsParagraph.frame = CGRect(x: 12, y: yPosition, width: screenSize.width - 24, height: 80)
         foodInteractionsParagraph.textAlignment = .left
         foodInteractionsParagraph.numberOfLines = 0
+        foodInteractionsParagraph.textColor = .black
         foodInteractionsParagraph.text = "Avoid alcohol. Alcohol may increase the risk of hepatotoxicity. Take with or without food. The absorption is unaffected by food."
         foodInteractionsParagraph.font = .paragraph2()
         scrollView.addSubview(foodInteractionsParagraph)
@@ -126,6 +134,7 @@ class ProtocolDetailsVC: UIViewController {
         let disclaimerTitle = UILabel()
         disclaimerTitle.frame = CGRect(x: 24, y: 12, width: disclaimerBox.frame.width, height: 20)
         disclaimerTitle.textAlignment = .left
+        disclaimerTitle.textColor = .black
         disclaimerTitle.text = "Medical Disclaimer"
         disclaimerTitle.font = .header3()
         
@@ -134,6 +143,7 @@ class ProtocolDetailsVC: UIViewController {
         let disclaimerText = UILabel()
         disclaimerText.frame = CGRect(x: 24, y: 32, width: disclaimerBox.frame.width - 48, height: disclaimerBox.frame.height - 32)
         disclaimerText.textAlignment = .left
+        disclaimerText.textColor = .black
         disclaimerText.numberOfLines = 0
         disclaimerText.text = "The material contained within this page is for information purposes only. It is not a substitute for medical advice, diagnosis or treatement."
         disclaimerText.font = .paragraph3()

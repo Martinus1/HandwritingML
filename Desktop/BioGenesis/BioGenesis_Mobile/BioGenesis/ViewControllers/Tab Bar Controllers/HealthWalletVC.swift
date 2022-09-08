@@ -8,62 +8,102 @@
 import UIKit
 
 class HealthWalletVC: UIViewController {
-
-    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
+    let scrollView = UIScrollView()
+    let topView = CustomTopBar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
+        view.backgroundColor = backgroundColorMain
         setupScrollView()
     }
     
     let healthWalletElements = [
-        "names" : ["Blood", "Profile", "Symptoms", "Therapeutic Protocols", "Allergies"],
-        "images" : []
+        "names" : ["Blood", "Profile", "Vitals", "Symptoms", "Protocols", "Allergies", "Connect +"],
+        "images" : ["wallet_blood", "wallet_profile", "wallet_vitals", "wallet_symptoms", "wallet_protocols", "wallet_allergy", "wallet_connect"]
     ]
+    
+    let walletVCidentifiers: [String] = ["BloodWalletVC", "ProfileWalletVC", "VitalDetailsVC", "SymptomWalletVC", "ProtocolsWalletVC", "AllergyWalletVC", "ImmunizationDetailsVC"]
     
     func setupScrollView() {
         
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
         
-        //TODO: remove + 40 after adding topbar
-        var yPosition: CGFloat = 64 + 40
+        
+        topView.title = "Wallet"
+        topView.height = normalTabBarHeight
+        self.view.addSubview(topView)
         
         let settingsButton = UIButton()
-        settingsButton.frame = CGRect(x: screenSize.width - 80, y: 30, width: 40, height: 40)
-        settingsButton.backgroundColor = .black
+        settingsButton.frame = CGRect(x: screenSize.width - 24 - 12, y: topView.frame.height - 24 - 12, width: 24, height: 24)
+        settingsButton.setImage(UIImage(named: "settings_button") , for: .normal)
+        settingsButton.imageView?.contentMode = .scaleAspectFit
         settingsButton.addTarget(self, action: #selector(settingsButtonPressed(_:)), for: .touchUpInside)
         
-        scrollView.addSubview(settingsButton)
+        topView.addSubview(settingsButton)
+        
+        scrollView.frame = CGRect(x: 0, y: topView.frame.height, width: screenSize.width, height: screenSize.height - topView.frame.height)
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
+        self.view.addSubview(scrollView)
+        
+        var yPosition: CGFloat = 12
+        
+        //MARK: Wallet Variables
+        let tapBarHeight = self.tabBarController?.tabBar.frame.height ?? 49.0
+        let elementHeight: CGFloat = ((screenSize.height - tapBarHeight - (48) - normalTabBarHeight)) / 3
+        let elementWidth: CGFloat = (screenSize.width - (12 * 3)) / 2
         
         for (index, name) in (healthWalletElements["names"] ?? []).enumerated() {
             
             let walletElement = UIButton()
-            walletElement.frame = CGRect(x: 12, y: yPosition, width: screenSize.width - 24, height: 70)
+            if (index + 1) % 2 == 0 {
+                walletElement.frame = CGRect(x: 24 + elementWidth, y: yPosition, width: elementWidth, height: elementHeight)
+                
+                if (index + 1) != healthWalletElements["names"]?.count {
+                    yPosition += walletElement.frame.height + 16
+                }
+            } else {
+                walletElement.frame = CGRect(x: 12, y: yPosition, width: elementWidth, height: elementHeight)
+            }
+            
             walletElement.addTarget(self, action: #selector(elementButtonPressed(_:)), for: .touchUpInside)
             walletElement.backgroundColor = .white
             walletElement.layer.cornerRadius = 10
             walletElement.tag = index
-            
             scrollView.addSubview(walletElement)
             
-            yPosition += walletElement.frame.height + 16
+            let walletElementImage = UIImageView()
+            let walletImageWH: CGFloat = elementHeight / 4
+            // let margin: CGFloat = 14
+            walletElementImage.image = UIImage(named: healthWalletElements["images"]![index])
+//                .withInset(UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin))
+            walletElementImage.contentMode = .scaleAspectFit
+            walletElementImage.frame = CGRect(x: (elementWidth - walletImageWH) / 2, y: ((elementHeight - walletImageWH) / 2) - 24, width: walletImageWH, height: walletImageWH)
+            walletElement.addSubview(walletElementImage)
             
             let elementTitle = UILabel()
-            elementTitle.frame = CGRect(x: 16, y: 16, width: walletElement.frame.width , height: 17)
+            elementTitle.frame = CGRect(x: 0, y: walletElement.frame.height - 17 - 12, width: walletElement.frame.width, height: 17)
             elementTitle.font = .header2()
             elementTitle.text = name
+            elementTitle.textAlignment = .center
             elementTitle.textColor = .black
-            
             walletElement.addSubview(elementTitle)
+            
+            if index == (healthWalletElements["names"]!.count - 1){
+                walletElement.backgroundColor = mainColor
+                elementTitle.textColor = .white
+            }
             
         }
         
-        scrollView.contentSize = CGSize(width: screenSize.width, height: yPosition + 100)
+        scrollView.contentSize = CGSize(width: screenSize.width, height: yPosition + elementHeight + 12)
         
     }
+    
     @IBAction func settingsButtonPressed(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let settingsVC = storyboard.instantiateViewController(identifier: "SettingsVC")
@@ -72,40 +112,9 @@ class HealthWalletVC: UIViewController {
     }
     
     @IBAction func elementButtonPressed(_ sender: UIButton) {
-        switch sender.tag {
-        case 0:
-            //MARK: Blood
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "BloodWalletVC")
-            present(vc, animated: true, completion: nil)
-        case 1:
-            //MARK: Profile
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "ProfileWalletVC")
-            present(vc, animated: true, completion: nil)
-        case 2:
-            //MARK: Symptoms
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "SymptomWalletVC")
-            present(vc, animated: true, completion: nil)
-        case 3:
-            //MARK: Protocols
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "ProtocolsWalletVC")
-            present(vc, animated: true, completion: nil)
-        case 4:
-            //MARK: Allergy
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "AllergyWalletVC")
-            present(vc, animated: true, completion: nil)
-        case 5:
-            //MARK: Immunization
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "ImmunizationDetailsVC")
-            present(vc, animated: true, completion: nil)
-        default:
-            break
-        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: walletVCidentifiers[sender.tag])
+        present(vc, animated: true, completion: nil)
     }
 
 }

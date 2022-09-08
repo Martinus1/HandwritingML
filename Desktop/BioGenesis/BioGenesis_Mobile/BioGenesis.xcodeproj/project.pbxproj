@@ -12,6 +12,34 @@
 		416554CCB97BD31A9781E159 /* Therapeutics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8AC92E7E65F8F90C6D0F07 /* Therapeutics.swift */; };
 		4814D8E5478725657C53205D /* Symptoms+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ADFA34FBA3976B03BE967 /* Symptoms+Schema.swift */; };
 		5AA00FE48104C20974DA5A08 /* Profile+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C7B1E22A58645105D5825B /* Profile+Schema.swift */; };
+		5B00170428C101D100FA7DCA /* Graphik-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016F228C101D100FA7DCA /* Graphik-LightItalic.otf */; };
+		5B00170528C101D100FA7DCA /* Graphik-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016F328C101D100FA7DCA /* Graphik-Regular.otf */; };
+		5B00170628C101D100FA7DCA /* Graphik-SuperItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016F428C101D100FA7DCA /* Graphik-SuperItalic.otf */; };
+		5B00170728C101D100FA7DCA /* Graphik-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016F528C101D100FA7DCA /* Graphik-Medium.otf */; };
+		5B00170828C101D100FA7DCA /* Graphik-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016F628C101D100FA7DCA /* Graphik-MediumItalic.otf */; };
+		5B00170928C101D100FA7DCA /* Graphik-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016F728C101D100FA7DCA /* Graphik-RegularItalic.otf */; };
+		5B00170A28C101D100FA7DCA /* Graphik-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016F828C101D100FA7DCA /* Graphik-ThinItalic.otf */; };
+		5B00170B28C101D100FA7DCA /* Graphik-Super.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016F928C101D100FA7DCA /* Graphik-Super.otf */; };
+		5B00170C28C101D100FA7DCA /* Graphik-Extralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016FA28C101D100FA7DCA /* Graphik-Extralight.otf */; };
+		5B00170D28C101D100FA7DCA /* Graphik-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016FB28C101D100FA7DCA /* Graphik-BoldItalic.otf */; };
+		5B00170E28C101D100FA7DCA /* Graphik-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016FC28C101D100FA7DCA /* Graphik-BlackItalic.otf */; };
+		5B00170F28C101D100FA7DCA /* Graphik-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016FD28C101D100FA7DCA /* Graphik-Black.otf */; };
+		5B00171028C101D100FA7DCA /* Graphik-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016FE28C101D100FA7DCA /* Graphik-Bold.otf */; };
+		5B00171128C101D100FA7DCA /* Graphik-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B0016FF28C101D100FA7DCA /* Graphik-Semibold.otf */; };
+		5B00171228C101D100FA7DCA /* Graphik-ExtralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B00170028C101D100FA7DCA /* Graphik-ExtralightItalic.otf */; };
+		5B00171328C101D100FA7DCA /* Graphik-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B00170128C101D100FA7DCA /* Graphik-Light.otf */; };
+		5B00171428C101D100FA7DCA /* Graphik-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B00170228C101D100FA7DCA /* Graphik-SemiboldItalic.otf */; };
+		5B00171528C101D100FA7DCA /* Graphik-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B00170328C101D100FA7DCA /* Graphik-Thin.otf */; };
+		5B3E7E1E28C4F5F900AF6FAE /* AddVitalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7E1D28C4F5F800AF6FAE /* AddVitalVC.swift */; };
+		5B3E7E2028C52BEE00AF6FAE /* LabworkResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7E1F28C52BEE00AF6FAE /* LabworkResultsVC.swift */; };
+		5B3E7E2228C74CB900AF6FAE /* SymptomDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7E2128C74CB900AF6FAE /* SymptomDetailsVC.swift */; };
+		5B3E7E2428C7807900AF6FAE /* BloodworkDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7E2328C7807900AF6FAE /* BloodworkDetailsVC.swift */; };
+		5B3E7E2B28C7A9BA00AF6FAE /* CustomTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7E2A28C7A9BA00AF6FAE /* CustomTopBar.swift */; };
+		5B3E7E2D28C7C80200AF6FAE /* CustomSegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7E2C28C7C80200AF6FAE /* CustomSegmentedController.swift */; };
+		5B3E7E2F28C7D50300AF6FAE /* CustomLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7E2E28C7D50300AF6FAE /* CustomLabels.swift */; };
+		5B3E7E3228C80E3E00AF6FAE /* SettingsAboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7E3128C80E3D00AF6FAE /* SettingsAboutVC.swift */; };
+		5B3E7E3428C80E6100AF6FAE /* SettingsAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7E3328C80E6100AF6FAE /* SettingsAccountVC.swift */; };
+		5B3E7E3628C8C22300AF6FAE /* VitalDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7E3528C8C22300AF6FAE /* VitalDetailsVC.swift */; };
 		5B55FD2428A69FEB0054BF1E /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5B55FD2328A69FEB0054BF1E /* AWSAPIPlugin */; };
 		5B55FD2628A69FEB0054BF1E /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5B55FD2528A69FEB0054BF1E /* AWSCognitoAuthPlugin */; };
 		5B55FD2828A69FEB0054BF1E /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 5B55FD2728A69FEB0054BF1E /* AWSDataStorePlugin */; };
@@ -60,6 +88,7 @@
 		5BFC909928BBD17800B9D1CE /* SearchProtocolsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC909828BBD17800B9D1CE /* SearchProtocolsVC.swift */; };
 		5BFC909D28BBD37B00B9D1CE /* YouVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC909C28BBD37B00B9D1CE /* YouVC.swift */; };
 		5BFC909F28BBD38C00B9D1CE /* SymptomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC909E28BBD38C00B9D1CE /* SymptomsVC.swift */; };
+		5BFC90A128BF7E4500B9D1CE /* HorizontalCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC90A028BF7E4500B9D1CE /* HorizontalCalendarCell.swift */; };
 		AC6C2FC87E1938F9FDFF9ABC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C5E1FB8261DBA6CD5C9EFCA5 /* amplifyconfiguration.json */; };
 		B6A0A418BBCCB8E3D9EB304D /* Pods_BioGenesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0919510ACE3E777EBD14A308 /* Pods_BioGenesis.framework */; };
 		CD990DC7020A92A85B9B3B7C /* Therapeutics+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8955D882FA366A3188D80B /* Therapeutics+Schema.swift */; };
@@ -71,6 +100,34 @@
 		08C7B1E22A58645105D5825B /* Profile+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Profile+Schema.swift"; path = "amplify/generated/models/Profile+Schema.swift"; sourceTree = "<group>"; };
 		0919510ACE3E777EBD14A308 /* Pods_BioGenesis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioGenesis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8955D882FA366A3188D80B /* Therapeutics+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Therapeutics+Schema.swift"; path = "amplify/generated/models/Therapeutics+Schema.swift"; sourceTree = "<group>"; };
+		5B0016F228C101D100FA7DCA /* Graphik-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-LightItalic.otf"; sourceTree = "<group>"; };
+		5B0016F328C101D100FA7DCA /* Graphik-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Regular.otf"; sourceTree = "<group>"; };
+		5B0016F428C101D100FA7DCA /* Graphik-SuperItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-SuperItalic.otf"; sourceTree = "<group>"; };
+		5B0016F528C101D100FA7DCA /* Graphik-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Medium.otf"; sourceTree = "<group>"; };
+		5B0016F628C101D100FA7DCA /* Graphik-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-MediumItalic.otf"; sourceTree = "<group>"; };
+		5B0016F728C101D100FA7DCA /* Graphik-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-RegularItalic.otf"; sourceTree = "<group>"; };
+		5B0016F828C101D100FA7DCA /* Graphik-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-ThinItalic.otf"; sourceTree = "<group>"; };
+		5B0016F928C101D100FA7DCA /* Graphik-Super.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Super.otf"; sourceTree = "<group>"; };
+		5B0016FA28C101D100FA7DCA /* Graphik-Extralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Extralight.otf"; sourceTree = "<group>"; };
+		5B0016FB28C101D100FA7DCA /* Graphik-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-BoldItalic.otf"; sourceTree = "<group>"; };
+		5B0016FC28C101D100FA7DCA /* Graphik-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-BlackItalic.otf"; sourceTree = "<group>"; };
+		5B0016FD28C101D100FA7DCA /* Graphik-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Black.otf"; sourceTree = "<group>"; };
+		5B0016FE28C101D100FA7DCA /* Graphik-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Bold.otf"; sourceTree = "<group>"; };
+		5B0016FF28C101D100FA7DCA /* Graphik-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Semibold.otf"; sourceTree = "<group>"; };
+		5B00170028C101D100FA7DCA /* Graphik-ExtralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-ExtralightItalic.otf"; sourceTree = "<group>"; };
+		5B00170128C101D100FA7DCA /* Graphik-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Light.otf"; sourceTree = "<group>"; };
+		5B00170228C101D100FA7DCA /* Graphik-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		5B00170328C101D100FA7DCA /* Graphik-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Thin.otf"; sourceTree = "<group>"; };
+		5B3E7E1D28C4F5F800AF6FAE /* AddVitalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVitalVC.swift; sourceTree = "<group>"; };
+		5B3E7E1F28C52BEE00AF6FAE /* LabworkResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabworkResultsVC.swift; sourceTree = "<group>"; };
+		5B3E7E2128C74CB900AF6FAE /* SymptomDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomDetailsVC.swift; sourceTree = "<group>"; };
+		5B3E7E2328C7807900AF6FAE /* BloodworkDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodworkDetailsVC.swift; sourceTree = "<group>"; };
+		5B3E7E2A28C7A9BA00AF6FAE /* CustomTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTopBar.swift; sourceTree = "<group>"; };
+		5B3E7E2C28C7C80200AF6FAE /* CustomSegmentedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedController.swift; sourceTree = "<group>"; };
+		5B3E7E2E28C7D50300AF6FAE /* CustomLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabels.swift; sourceTree = "<group>"; };
+		5B3E7E3128C80E3D00AF6FAE /* SettingsAboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAboutVC.swift; sourceTree = "<group>"; };
+		5B3E7E3328C80E6100AF6FAE /* SettingsAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAccountVC.swift; sourceTree = "<group>"; };
+		5B3E7E3528C8C22300AF6FAE /* VitalDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalDetailsVC.swift; sourceTree = "<group>"; };
 		5B55FD2B28A6BE250054BF1E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5B55FD2D28A6BE4C0054BF1E /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		5B55FD2F28A7FEF30054BF1E /* Therapeutics+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Therapeutics+Extensions.swift"; sourceTree = "<group>"; };
@@ -117,6 +174,7 @@
 		5BFC909828BBD17800B9D1CE /* SearchProtocolsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocolsVC.swift; sourceTree = "<group>"; };
 		5BFC909C28BBD37B00B9D1CE /* YouVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouVC.swift; sourceTree = "<group>"; };
 		5BFC909E28BBD38C00B9D1CE /* SymptomsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsVC.swift; sourceTree = "<group>"; };
+		5BFC90A028BF7E4500B9D1CE /* HorizontalCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCalendarCell.swift; sourceTree = "<group>"; };
 		5C5B8E67ACCDE92565AED923 /* Profile.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Profile.swift; path = amplify/generated/models/Profile.swift; sourceTree = "<group>"; };
 		66328802D9D8422ADCE9C1D3 /* Pods-BioGenesis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioGenesis.debug.xcconfig"; path = "Target Support Files/Pods-BioGenesis/Pods-BioGenesis.debug.xcconfig"; sourceTree = "<group>"; };
 		B96D628F1BB74062D90D8F64 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
@@ -153,6 +211,49 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5B0016C928C1012200FA7DCA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5B0016F128C101D100FA7DCA /* Graphik */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5B0016F128C101D100FA7DCA /* Graphik */ = {
+			isa = PBXGroup;
+			children = (
+				5B0016F228C101D100FA7DCA /* Graphik-LightItalic.otf */,
+				5B0016F328C101D100FA7DCA /* Graphik-Regular.otf */,
+				5B0016F428C101D100FA7DCA /* Graphik-SuperItalic.otf */,
+				5B0016F528C101D100FA7DCA /* Graphik-Medium.otf */,
+				5B0016F628C101D100FA7DCA /* Graphik-MediumItalic.otf */,
+				5B0016F728C101D100FA7DCA /* Graphik-RegularItalic.otf */,
+				5B0016F828C101D100FA7DCA /* Graphik-ThinItalic.otf */,
+				5B0016F928C101D100FA7DCA /* Graphik-Super.otf */,
+				5B0016FA28C101D100FA7DCA /* Graphik-Extralight.otf */,
+				5B0016FB28C101D100FA7DCA /* Graphik-BoldItalic.otf */,
+				5B0016FC28C101D100FA7DCA /* Graphik-BlackItalic.otf */,
+				5B0016FD28C101D100FA7DCA /* Graphik-Black.otf */,
+				5B0016FE28C101D100FA7DCA /* Graphik-Bold.otf */,
+				5B0016FF28C101D100FA7DCA /* Graphik-Semibold.otf */,
+				5B00170028C101D100FA7DCA /* Graphik-ExtralightItalic.otf */,
+				5B00170128C101D100FA7DCA /* Graphik-Light.otf */,
+				5B00170228C101D100FA7DCA /* Graphik-SemiboldItalic.otf */,
+				5B00170328C101D100FA7DCA /* Graphik-Thin.otf */,
+			);
+			name = Graphik;
+			path = ../../../../Graphik;
+			sourceTree = "<group>";
+		};
+		5B3E7E3028C80E0200AF6FAE /* Settings Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B3E7E3128C80E3D00AF6FAE /* SettingsAboutVC.swift */,
+				5B3E7E3328C80E6100AF6FAE /* SettingsAccountVC.swift */,
+			);
+			path = "Settings Controllers";
+			sourceTree = "<group>";
+		};
 		5BBBF29F287C6B6900B47AF6 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +277,7 @@
 		5BBBF2AA287C6B6900B47AF6 /* BioGenesis */ = {
 			isa = PBXGroup;
 			children = (
+				5B0016C928C1012200FA7DCA /* Fonts */,
 				5BDE794128840C7400923579 /* Elements */,
 				5BDE79402881622D00923579 /* ViewCells */,
 				5BDE793D2881617F00923579 /* Misc */,
@@ -219,13 +321,15 @@
 			isa = PBXGroup;
 			children = (
 				5BFC909B28BBD1C000B9D1CE /* Tab Bar Controllers */,
+				5BDE79462884319100923579 /* WalletElements */,
 				5BFC909A28BBD1A100B9D1CE /* Add Data Controllers */,
 				5BE78EB828B24E80006C01F0 /* Detail Controllers */,
-				5BDE79462884319100923579 /* WalletElements */,
+				5B3E7E3028C80E0200AF6FAE /* Settings Controllers */,
 				5BBC5D8E2887FF9000F0A2AF /* ECheckupVC.swift */,
 				5B55FD2B28A6BE250054BF1E /* LoginVC.swift */,
 				5B55FD2D28A6BE4C0054BF1E /* SignupVC.swift */,
 				5B55FD3128A8F2A00054BF1E /* SettingsVC.swift */,
+				5B3E7E1F28C52BEE00AF6FAE /* LabworkResultsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -243,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				5BC2A27D287E0EF30011CF3B /* Global.swift */,
+				5B3E7E2E28C7D50300AF6FAE /* CustomLabels.swift */,
 				5BC09B0428856DB0008FAC9E /* Fonts.swift */,
 				5BBC5D6F28857CF600F0A2AF /* Extensions.swift */,
 				5B55FD3528A916880054BF1E /* Auth.swift */,
@@ -255,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				5B8AF0BA287ED37700C32DB1 /* WeekCalendarCell.swift */,
+				5BFC90A028BF7E4500B9D1CE /* HorizontalCalendarCell.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -262,7 +368,9 @@
 		5BDE794128840C7400923579 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				5B3E7E2A28C7A9BA00AF6FAE /* CustomTopBar.swift */,
 				5B8AF0B8287E1D6200C32DB1 /* TabBarController.swift */,
+				5B3E7E2C28C7C80200AF6FAE /* CustomSegmentedController.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -272,6 +380,7 @@
 			children = (
 				5BDE79442884318B00923579 /* BloodWalletVC.swift */,
 				5BDE794D2884322E00923579 /* ProfileWalletVC.swift */,
+				5B3E7E3528C8C22300AF6FAE /* VitalDetailsVC.swift */,
 				5BDE79512884327800923579 /* SymptomWalletVC.swift */,
 				5BDE79532884328E00923579 /* ProtocolsWalletVC.swift */,
 				5B860A28289BF32C008D597F /* AllergyWalletVC.swift */,
@@ -287,6 +396,8 @@
 			children = (
 				5BE78EB928B24EA5006C01F0 /* ConditionDetailsVC.swift */,
 				5BE78EBB28B272C5006C01F0 /* ProtocolDetailsVC.swift */,
+				5B3E7E2128C74CB900AF6FAE /* SymptomDetailsVC.swift */,
+				5B3E7E2328C7807900AF6FAE /* BloodworkDetailsVC.swift */,
 			);
 			path = "Detail Controllers";
 			sourceTree = "<group>";
@@ -295,8 +406,9 @@
 			isa = PBXGroup;
 			children = (
 				5B5B9115287EF68700178C15 /* AddSymptomVC.swift */,
-				5BFC909828BBD17800B9D1CE /* SearchProtocolsVC.swift */,
 				5B5B9113287EEAC000178C15 /* AddProtocolVC.swift */,
+				5BFC909828BBD17800B9D1CE /* SearchProtocolsVC.swift */,
+				5B3E7E1D28C4F5F800AF6FAE /* AddVitalVC.swift */,
 			);
 			path = "Add Data Controllers";
 			sourceTree = "<group>";
@@ -414,11 +526,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BBBF2B8287C6B6F00B47AF6 /* LaunchScreen.storyboard in Resources */,
+				5B00171128C101D100FA7DCA /* Graphik-Semibold.otf in Resources */,
+				5B00170728C101D100FA7DCA /* Graphik-Medium.otf in Resources */,
+				5B00170A28C101D100FA7DCA /* Graphik-ThinItalic.otf in Resources */,
+				5B00170828C101D100FA7DCA /* Graphik-MediumItalic.otf in Resources */,
+				5B00171528C101D100FA7DCA /* Graphik-Thin.otf in Resources */,
+				5B00170B28C101D100FA7DCA /* Graphik-Super.otf in Resources */,
+				5B00171228C101D100FA7DCA /* Graphik-ExtralightItalic.otf in Resources */,
+				5B00170C28C101D100FA7DCA /* Graphik-Extralight.otf in Resources */,
+				5B00170428C101D100FA7DCA /* Graphik-LightItalic.otf in Resources */,
+				5B00170D28C101D100FA7DCA /* Graphik-BoldItalic.otf in Resources */,
 				5BBBF2B5287C6B6F00B47AF6 /* Assets.xcassets in Resources */,
 				5BBBF2B3287C6B6900B47AF6 /* Main.storyboard in Resources */,
+				5B00171028C101D100FA7DCA /* Graphik-Bold.otf in Resources */,
+				5B00170E28C101D100FA7DCA /* Graphik-BlackItalic.otf in Resources */,
 				5B55FD3828A91BBA0054BF1E /* Onboarding.storyboard in Resources */,
 				3EBCDFE038554179124614B6 /* awsconfiguration.json in Resources */,
 				AC6C2FC87E1938F9FDFF9ABC /* amplifyconfiguration.json in Resources */,
+				5B00170F28C101D100FA7DCA /* Graphik-Black.otf in Resources */,
+				5B00170528C101D100FA7DCA /* Graphik-Regular.otf in Resources */,
+				5B00171328C101D100FA7DCA /* Graphik-Light.otf in Resources */,
+				5B00170628C101D100FA7DCA /* Graphik-SuperItalic.otf in Resources */,
+				5B00171428C101D100FA7DCA /* Graphik-SemiboldItalic.otf in Resources */,
+				5B00170928C101D100FA7DCA /* Graphik-RegularItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,13 +563,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BioGenesis/Pods-BioGenesis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BioGenesis/Pods-BioGenesis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -485,14 +611,20 @@
 				5BDE794E2884322E00923579 /* ProfileWalletVC.swift in Sources */,
 				5BDE793B2881615900923579 /* InfermedicaAPIFunctions.swift in Sources */,
 				5B8AF0B9287E1D6200C32DB1 /* TabBarController.swift in Sources */,
+				5B3E7E3428C80E6100AF6FAE /* SettingsAccountVC.swift in Sources */,
 				5BDE794328841A5D00923579 /* HealthWalletVC.swift in Sources */,
 				5B55FD2C28A6BE250054BF1E /* LoginVC.swift in Sources */,
+				5B3E7E2F28C7D50300AF6FAE /* CustomLabels.swift in Sources */,
+				5B3E7E3228C80E3E00AF6FAE /* SettingsAboutVC.swift in Sources */,
 				5B860A2D289BF5A9008D597F /* HumanAPIFunctions.swift in Sources */,
+				5B3E7E3628C8C22300AF6FAE /* VitalDetailsVC.swift in Sources */,
 				5B860A2B289BF573008D597F /* AllergieData.swift in Sources */,
 				5B55FD2E28A6BE4C0054BF1E /* SignupVC.swift in Sources */,
 				5BBC5D7028857CF600F0A2AF /* Extensions.swift in Sources */,
 				5BBC5D8F2887FF9000F0A2AF /* ECheckupVC.swift in Sources */,
+				5B3E7E2428C7807900AF6FAE /* BloodworkDetailsVC.swift in Sources */,
 				5BDE79452884318B00923579 /* BloodWalletVC.swift in Sources */,
+				5B3E7E1E28C4F5F900AF6FAE /* AddVitalVC.swift in Sources */,
 				5BBBF2B0287C6B6900B47AF6 /* HomeVC.swift in Sources */,
 				5BE78EBA28B24EA5006C01F0 /* ConditionDetailsVC.swift in Sources */,
 				5BDE79522884327800923579 /* SymptomWalletVC.swift in Sources */,
@@ -502,6 +634,8 @@
 				5BBC5D93289A71A700F0A2AF /* BiomarkersData.swift in Sources */,
 				5B860A29289BF32C008D597F /* AllergyWalletVC.swift in Sources */,
 				5BDE793F288161FA00923579 /* DrugBankAPIFunctions.swift in Sources */,
+				5BFC90A128BF7E4500B9D1CE /* HorizontalCalendarCell.swift in Sources */,
+				5B3E7E2B28C7A9BA00AF6FAE /* CustomTopBar.swift in Sources */,
 				5BBBF2AC287C6B6900B47AF6 /* AppDelegate.swift in Sources */,
 				5B860A27289BF30E008D597F /* ImmunizationDetailsVC.swift in Sources */,
 				5B55FD3628A916880054BF1E /* Auth.swift in Sources */,
@@ -513,7 +647,9 @@
 				5BBBF2AE287C6B6900B47AF6 /* SceneDelegate.swift in Sources */,
 				39A95AE23871B2859EA8E6B1 /* AmplifyModels.swift in Sources */,
 				5B55FD3028A7FEF30054BF1E /* Therapeutics+Extensions.swift in Sources */,
+				5B3E7E2228C74CB900AF6FAE /* SymptomDetailsVC.swift in Sources */,
 				5AA00FE48104C20974DA5A08 /* Profile+Schema.swift in Sources */,
+				5B3E7E2D28C7C80200AF6FAE /* CustomSegmentedController.swift in Sources */,
 				E346D582EEC7FC56001FB9AD /* Profile.swift in Sources */,
 				5B61382828AD0F590095D620 /* DBManager.swift in Sources */,
 				5BE78EBC28B272C5006C01F0 /* ProtocolDetailsVC.swift in Sources */,
@@ -521,6 +657,7 @@
 				4814D8E5478725657C53205D /* Symptoms+Schema.swift in Sources */,
 				F072CC741761F8FCC28A56EC /* Symptoms.swift in Sources */,
 				CD990DC7020A92A85B9B3B7C /* Therapeutics+Schema.swift in Sources */,
+				5B3E7E2028C52BEE00AF6FAE /* LabworkResultsVC.swift in Sources */,
 				416554CCB97BD31A9781E159 /* Therapeutics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,8 +816,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -702,7 +839,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W4P8P42LX7;
+				DEVELOPMENT_TEAM = CBZKLDJNB2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BioGenesis/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BioGenesis;
@@ -710,8 +847,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -6,7 +6,8 @@ target 'BioGenesis' do
   use_frameworks!
   # General Pods
   pod 'JTAppleCalendar', '~> 8.0.3'
-  pod 'Purchases'
+  # pod 'Purchases'
+  pod 'Hero'
 
   # AWS Pods
   #pod 'AWSCore'

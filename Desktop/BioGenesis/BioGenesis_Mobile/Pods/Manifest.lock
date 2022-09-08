@@ -1,24 +1,20 @@
 PODS:
+  - Hero (1.6.2)
   - JTAppleCalendar (8.0.4)
-  - Purchases (3.14.2):
-    - PurchasesCoreSwift (= 3.14.2)
-  - PurchasesCoreSwift (3.14.2)
 
 DEPENDENCIES:
+  - Hero
   - JTAppleCalendar (~> 8.0.3)
-  - Purchases
 
 SPEC REPOS:
   trunk:
+    - Hero
     - JTAppleCalendar
-    - Purchases
-    - PurchasesCoreSwift
 
 SPEC CHECKSUMS:
+  Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
   JTAppleCalendar: f95b02c64f56d6f938fbf6582a04dcab9d709ebd
-  Purchases: 5af37054554583f973b0ad0b9653e412bb8649db
-  PurchasesCoreSwift: 588d3702282fb96222d7d5e05acd84f37e50a1ce
 
-PODFILE CHECKSUM: b2b68c731ea35936cbd3795b93c7400bb6491be2
+PODFILE CHECKSUM: a595f243d8bfbf162708dfe25119b8ea808aa44a
 
 COCOAPODS: 1.8.4

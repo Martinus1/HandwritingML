@@ -17,35 +17,52 @@ class AddSymptomVC: UIViewController {
 
     //MARK: Elements
     var searchResultsTableView = UITableView()
-    
+    let searchTextField = UITextField()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = backgroundColorMain
+        self.searchResultsTableView.backgroundColor = backgroundColorMain
+        
         setupScreen()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        searchTextField.becomeFirstResponder()
+        
     }
     
     func setupScreen() {
         
         //MARK: Top View - Search Bar & Back Buttom
+
+        var yPosition: CGFloat = 50
         
         let backBtn = UIButton()
-        backBtn.frame = CGRect(x: 20, y: 50, width: 30, height: 30)
-        backBtn.backgroundColor = .black
+        backBtn.frame = CGRect(x: 12, y: yPosition, width: backBtnWH, height: backBtnWH)
+        backBtn.setImage(UIImage(named: "back_button") , for: .normal)
         backBtn.addTarget(self, action: #selector(backBtnPressed(_:)), for: .touchUpInside)
         
         view.addSubview(backBtn)
         
+        yPosition += backBtnWH + 12
+        
         let searchBox = UIView()
-        searchBox.frame = CGRect(x: 20, y: 80, width: screenSize.width - 40, height: 50)
-        searchBox.backgroundColor = .red
+        searchBox.frame = CGRect(x: 20, y: yPosition, width: screenSize.width - 40, height: 50)
+        searchBox.backgroundColor = .white
+        searchBox.layer.cornerRadius = 10
         view.addSubview(searchBox)
         
-        let searchTextField = UITextField()
-        searchTextField.frame = CGRect(x: 0, y: 0, width: searchBox.frame.width, height: searchBox.frame.height)
+        searchTextField.frame = CGRect(x: 12, y: 0, width: searchBox.frame.width - 24, height: searchBox.frame.height)
         searchTextField.addTarget(self, action: #selector(textFieldEditingDidChange), for: UIControl.Event.editingChanged)
-        searchTextField.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        searchTextField.textColor = .black
+        searchTextField.font = .paragraph1()
         searchTextField.tintColor = mainColor
         searchTextField.delegate = self
+        
+        yPosition += searchBox.frame.height + 12
         
         searchBox.addSubview(searchTextField)
         
@@ -56,7 +73,7 @@ class AddSymptomVC: UIViewController {
         //Table View - Shows Search Results
         // -------------------------
         
-        searchResultsTableView.frame = CGRect(x: 0, y: 135, width: view.frame.width, height: view.frame.height - 105)
+        searchResultsTableView.frame = CGRect(x: 0, y: yPosition, width: view.frame.width, height: view.frame.height - 105)
         searchResultsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "symptomCell")
         
         searchResultsTableView.delegate = self

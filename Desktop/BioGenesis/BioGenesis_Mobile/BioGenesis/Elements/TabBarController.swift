@@ -28,6 +28,23 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         tabItems[0].titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 0)
         tabItems[1].titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 0)
         
+        tabBar.backgroundColor = backgroundColorMain
+        tabBar.tintColor = mainColor
+        tabBar.barTintColor = .white
+        tabBar.isTranslucent = true
+        
+        let normalAttributes = [NSAttributedString.Key.font : UIFont(name: "Graphik-Regular", size: 10), NSAttributedString.Key.foregroundColor : grayTextColor]
+        
+        let selectedAttributes = [NSAttributedString.Key.font : UIFont(name: "Graphik-Regular", size: 10), NSAttributedString.Key.foregroundColor : mainColor]
+
+        UITabBarItem.appearance().setTitleTextAttributes(normalAttributes, for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes, for: .selected)
+        
+
+//        for item in tabItems {
+//            item.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
+//        }
+        
     }
 
 }

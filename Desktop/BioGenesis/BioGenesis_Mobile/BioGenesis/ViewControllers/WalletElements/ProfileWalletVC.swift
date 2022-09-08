@@ -14,8 +14,8 @@ class ProfileWalletVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
-        scrollView.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
+        view.backgroundColor = backgroundColorMain
+        scrollView.backgroundColor = backgroundColorMain
         
         setupScrollView()
     }
@@ -24,12 +24,10 @@ class ProfileWalletVC: UIViewController {
         
         var yPosition: CGFloat = 30
         
-        let pageTitleLabel = UILabel()
-        pageTitleLabel.frame = CGRect(x: 0, y: yPosition, width: screenSize.width, height: 40)
-        pageTitleLabel.textAlignment = .center
-        pageTitleLabel.text = "Profile"
-        pageTitleLabel.font = .header1()
-        scrollView.addSubview(pageTitleLabel)
+        let topView = CustomTopBar()
+        topView.title = "Profile"
+        topView.height = normalTabBarHeight
+        self.view.addSubview(topView)
         
         yPosition += 40 + 24
         
@@ -65,6 +63,7 @@ class ProfileWalletVC: UIViewController {
         let titleLabel = UILabel()
         titleLabel.frame = CGRect(x: 24, y: boxHeight / 2 - (20 / 2), width: detailsBox.frame.width - (48), height: 20)
         titleLabel.text = title
+        titleLabel.textColor = .black
         titleLabel.font = .header2()
         
         detailsBox.addSubview(titleLabel)
@@ -74,6 +73,7 @@ class ProfileWalletVC: UIViewController {
         valueLabel.frame = CGRect(x: 24, y: boxHeight / 2 - (20 / 2), width: detailsBox.frame.width - (48), height: 20)
         valueLabel.textAlignment = .right
         valueLabel.text = valueText
+        valueLabel.textColor = .black
         valueLabel.font = .paragraph1()
         
         detailsBox.addSubview(valueLabel)

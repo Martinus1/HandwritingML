@@ -14,8 +14,8 @@ class BloodWalletVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
-        scrollView.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
+        view.backgroundColor = backgroundColorMain
+        scrollView.backgroundColor = backgroundColorMain
         setupScrollView()
     }
     
@@ -27,20 +27,14 @@ class BloodWalletVC: UIViewController {
         backBtn.frame = CGRect(x: 20, y: 50, width: 30, height: 30)
         backBtn.backgroundColor = .black
         backBtn.addTarget(self, action: #selector(backBtnPressed(_:)), for: .touchUpInside)
-        
-        
 //        scrollView.addSubview(backBtn)
         
-        var yPosition: CGFloat = 30
-        
-        let pageTitleLabel = UILabel()
-        pageTitleLabel.frame = CGRect(x: 0, y: yPosition, width: screenSize.width, height: 40)
-        pageTitleLabel.textAlignment = .center
-        pageTitleLabel.text = "Bloodwork"
-        pageTitleLabel.font = .header1()
-        scrollView.addSubview(pageTitleLabel)
-        
-        yPosition += 40 + 24
+        let topView = CustomTopBar()
+        topView.title = "Bloodwork"
+        topView.height = normalTabBarHeight
+        self.view.addSubview(topView)
+
+        var yPosition: CGFloat = topView.frame.maxY + 12
         
         for data in biomarkerValues {
             
@@ -89,6 +83,7 @@ class BloodWalletVC: UIViewController {
         detailsBox.backgroundColor = .white
         detailsBox.layer.cornerRadius = 10
         detailsBox.frame = CGRect(x: sideSpacing, y: yPosition, width: screenSize.width - (sideSpacing * 1.5), height: boxHeight)
+        detailsBox.addTarget(self, action: #selector(bloodDetailsPressed(_:)), for: .touchUpInside)
         
         scrollView.addSubview(detailsBox)
         
@@ -98,6 +93,7 @@ class BloodWalletVC: UIViewController {
         
         //MARK: Lab Value Name
         let labValueNameLabel = UILabel()
+        labValueNameLabel.textColor = .black
         labValueNameLabel.frame = CGRect(x: 24, y: 24, width: screenSize.width - (48), height: 18)
         labValueNameLabel.text =  labValueName
         labValueNameLabel.font = .header3()
@@ -106,6 +102,7 @@ class BloodWalletVC: UIViewController {
         
         //MARK: Value Label + Unit
         let currentValueLabel = UILabel()
+        currentValueLabel.textColor = .black
         currentValueLabel.frame = CGRect(x: 24, y: labValueNameLabel.frame.maxY + 8, width: screenSize.width - (48), height: 20)
         
         var adjustedValue = 0.0
@@ -126,6 +123,7 @@ class BloodWalletVC: UIViewController {
         detailsBox.addSubview(riskIndicatorBox)
         
         let riskIndicatorLabel = UILabel()
+        riskIndicatorLabel.textColor = .black
         riskIndicatorLabel.frame = CGRect(x: 0, y: 0, width: 80, height: 18)
         riskIndicatorLabel.textAlignment = .center
         riskIndicatorLabel.textColor = .white
@@ -234,28 +232,33 @@ class BloodWalletVC: UIViewController {
         let opitmalValueTitle = UILabel()
         opitmalValueTitle.frame = CGRect(x: 50, y: barSkeleton.frame.maxY + 12, width: 60, height: 14)
         opitmalValueTitle.textAlignment = .center
+        opitmalValueTitle.textColor = .black
         opitmalValueTitle.text =  "Optimized"
         opitmalValueTitle.font = .paragraph3()
+        
+        getAddLabel(yPosition: barSkeleton.frame.maxY + 12, text: "Optimized", parent: detailsBox, height: 14, font: UIFont.paragraph3()!)
         
         let optimalValue = UILabel()
         optimalValue.frame = CGRect(x: 50, y: opitmalValueTitle.frame.maxY, width: 60, height: 14)
         optimalValue.textAlignment = .center
+        optimalValue.textColor = .black
         optimalValue.text = String(adjustedValueOptimal)
         optimalValue.font = .paragraph4()
         
         let highValueTitle = UILabel()
         highValueTitle.frame = CGRect(x: detailsBox.frame.width - 60 - 50, y: barSkeleton.frame.maxY + 12, width: 60, height: 14)
         highValueTitle.textAlignment = .center
+        highValueTitle.textColor = .black
         highValueTitle.text =  "High"
         highValueTitle.font = .paragraph3()
         
         let highValue = UILabel()
         highValue.frame = CGRect(x: detailsBox.frame.width - 60 - 50, y: highValueTitle.frame.maxY, width: 60, height: 14)
         highValue.textAlignment = .center
+        highValue.textColor = .black
         highValue.text = String(adjustedValueHigh)
         highValue.font = .paragraph4()
         
-        detailsBox.addSubview(opitmalValueTitle)
         detailsBox.addSubview(optimalValue)
         detailsBox.addSubview(highValueTitle)
         detailsBox.addSubview(highValue)
@@ -280,8 +283,14 @@ class BloodWalletVC: UIViewController {
         
     }
     
+    @IBAction func bloodDetailsPressed(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "BloodworkDetailsVC")
+        present(vc, animated: true, completion: nil)
+    }
+    
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true)
     }
-    
+
 }

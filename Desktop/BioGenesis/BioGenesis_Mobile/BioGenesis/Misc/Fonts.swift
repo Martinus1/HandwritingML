@@ -8,36 +8,47 @@
 import UIKit
 
 extension UIFont {
-    static func unicaRegular(size: CGFloat) -> UIFont? {
-        return UIFont(name: "Avenir", size: size)
+    static func graphikRegular(size: CGFloat) -> UIFont? {
+        return UIFont(name: "Graphik-Regular", size: size)
     }
     
+    static func graphikMedium(size: CGFloat) -> UIFont? {
+        return UIFont(name: "Graphik-Medium", size: size)
+    }
+    
+    static func graphikBold(size: CGFloat) -> UIFont? {
+        return UIFont(name: "Graphik-Bold", size: size)
+    }
+    
+    
+    
+    
     static func header1() -> UIFont? {
-        return UIFont(name: "Avenir-Heavy", size: 18)
+        return UIFont(name: "Graphik-Bold", size: 18)
     }
     
     static func header2() -> UIFont? {
-        return UIFont(name: "Avenir-Medium", size: 16)
+        return UIFont(name: "Graphik-Medium", size: 16)
     }
     
     static func header3() -> UIFont? {
-        return UIFont(name: "Avenir-Heavy", size: 16)
+        return UIFont(name: "Graphik-Medium", size: 14)
     }
     
     static func paragraph1() -> UIFont? {
-        return UIFont(name: "Avenir-Roman", size: 14)
+        return UIFont(name: "Graphik-Regular", size: 14)
     }
     
     static func paragraph2() -> UIFont? {
-        return UIFont(name: "Avenir", size: 12)
+        return UIFont(name: "Graphik-Regular", size: 12)
     }
     
     static func paragraph3() -> UIFont? {
-        return UIFont(name: "Avenir-Light", size: 12)
+        return UIFont(name: "Graphik-Light", size: 12)
     }
     
     static func paragraph4() -> UIFont? {
-        return UIFont(name: "Avenir-Heavy", size: 10)
+        return UIFont(name: "Graphik-Bold", size: 10)
     }
 }
 

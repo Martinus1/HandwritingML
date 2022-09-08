@@ -14,24 +14,20 @@ class ProtocolsWalletVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
-        scrollView.backgroundColor = #colorLiteral(red: 0.955485642, green: 0.9675140977, blue: 0.9673025012, alpha: 1)
+        view.backgroundColor = backgroundColorMain
+        scrollView.backgroundColor = backgroundColorMain
         
         setupScrollView()
     }
 
     func setupScrollView() {
         
-        var yPosition: CGFloat = 30
-        
-        let pageTitleLabel = UILabel()
-        pageTitleLabel.frame = CGRect(x: 0, y: yPosition, width: screenSize.width, height: 40)
-        pageTitleLabel.textAlignment = .center
-        pageTitleLabel.text = "Therapeutic Protocols"
-        pageTitleLabel.font = .header1()
-        scrollView.addSubview(pageTitleLabel)
-        
-        yPosition += 40 + 24
+        let topView = CustomTopBar()
+        topView.title = "Protocols"
+        topView.height = normalTabBarHeight
+        self.view.addSubview(topView)
+
+        var yPosition: CGFloat = topView.frame.maxY + 12
         
         let profileValues = [
                 "titles": ["Advill", "Cabergoline","Vitamin B12", "Vitamin D"],
@@ -63,6 +59,7 @@ class ProtocolsWalletVC: UIViewController {
         let titleLabel = UILabel()
         titleLabel.frame = CGRect(x: 24, y: 12, width: screenSize.width - (48), height: 20)
         titleLabel.text = title
+        titleLabel.textColor = .black
         titleLabel.font = .header2()
         
         detailsBox.addSubview(titleLabel)
@@ -71,6 +68,7 @@ class ProtocolsWalletVC: UIViewController {
         let frequencyLabel = UILabel()
         frequencyLabel.frame = CGRect(x: 24, y: 32, width: screenSize.width - (48), height: 20)
         frequencyLabel.text = frequency
+        frequencyLabel.textColor = .black
         frequencyLabel.font = .paragraph2()
         
         detailsBox.addSubview(frequencyLabel)

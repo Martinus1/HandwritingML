@@ -29,6 +29,7 @@ class ConditionDetailsVC: UIViewController {
         let conditionName = UILabel()
         conditionName.frame = CGRect(x: 12, y: yPosition, width: screenSize.width, height: 40)
         conditionName.textAlignment = .left
+        conditionName.textColor = .black
         conditionName.text = "Hyperprolactinemia"
         conditionName.font = .header1()
         scrollView.addSubview(conditionName)
@@ -40,6 +41,7 @@ class ConditionDetailsVC: UIViewController {
         let conditionRisk = UILabel()
         conditionRisk.frame = CGRect(x: 12, y: yPosition, width: screenSize.width, height: 20)
         conditionRisk.textAlignment = .left
+        conditionRisk.textColor = .black
         conditionRisk.text = "You are at high risk of this condition"
         conditionRisk.font = .paragraph4()
         scrollView.addSubview(conditionRisk)
@@ -51,6 +53,7 @@ class ConditionDetailsVC: UIViewController {
         let conditionDescription = UILabel()
         conditionDescription.frame = CGRect(x: 12, y: yPosition, width: screenSize.width, height: 80)
         conditionDescription.textAlignment = .left
+        conditionDescription.textColor = .black
         conditionDescription.numberOfLines = 0
         conditionDescription.text = "Hyperprolactinemia means you have higher-than-normal levels of prolactin in your blood. The most common cause is a prolactinoma, a benign (noncancerous) tumor in your pituitary gland. Certain health conditions and medications can also cause hyperprolactinemia"
         conditionDescription.font = .paragraph1()
@@ -63,6 +66,7 @@ class ConditionDetailsVC: UIViewController {
         let symptomsTitle = UILabel()
         symptomsTitle.frame = CGRect(x: 12, y: yPosition, width: screenSize.width, height: 20)
         symptomsTitle.textAlignment = .left
+        symptomsTitle.textColor = .black
         symptomsTitle.text = "Symptoms"
         symptomsTitle.font = .header3()
         scrollView.addSubview(symptomsTitle)
@@ -75,6 +79,7 @@ class ConditionDetailsVC: UIViewController {
         let biomarkersTitle = UILabel()
         biomarkersTitle.frame = CGRect(x: 12, y: yPosition, width: screenSize.width, height: 20)
         biomarkersTitle.textAlignment = .left
+        biomarkersTitle.textColor = .black
         biomarkersTitle.text = "Biomarkers"
         biomarkersTitle.font = .header3()
         scrollView.addSubview(biomarkersTitle)
@@ -87,6 +92,7 @@ class ConditionDetailsVC: UIViewController {
         let riskFactorsTitle = UILabel()
         riskFactorsTitle.frame = CGRect(x: 12, y: yPosition, width: screenSize.width, height: 20)
         riskFactorsTitle.textAlignment = .left
+        riskFactorsTitle.textColor = .black
         riskFactorsTitle.text = "Risk Factors"
         riskFactorsTitle.font = .header3()
         scrollView.addSubview(riskFactorsTitle)
